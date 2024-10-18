@@ -14,6 +14,7 @@ $bodygroup "flag"
 
 
 $flags 0
+$eyeposition 0 0 73
 $cbox 0 0 0 0 0 0
 $hbox 0 "DUM - MVR" 0 0 0 0 0 0
 $hbox 3 "AIRNGR" -3.98 -5.25 -0.98 5.38 5.59 11.86
@@ -35,14 +36,17 @@ $attachment 0 "MUZZLE01" 0 0 0
 $sequence "DefaultConditionState STA" {
 	"anims\AIRNGR_STA"
 	fps 35 loop rotate -90
+	ACT_IDLE 1
 }
 $sequence "DefaultConditionState IDA" {
 	"anims\AIRNGR_IDA"
 	fps 30 loop rotate -90
+	ACT_IDLE 1
 }
 $sequence "DefaultConditionState IDB" {
 	"anims\AIRNGR_IDB"
 	fps 30 loop rotate -90
+	ACT_IDLE 1
 }
 $sequence "REALLYDAMAGED STB" {
 	"anims\AIRngr_STB"
@@ -66,6 +70,9 @@ $sequence "TRANS_Stand TRANS_StandInjured SA2SB" {
 $sequence "USING_WEAPON_A ATA" {
 	"anims\AIRngr_ATA"
 	fps 30 loop rotate -90
+	ACT_RANGE_ATTACK1 1
+	{ event 4 0 }
+	{ event 5001 0 "50" }
 }
 $sequence "USING_WEAPON_A REALLYDAMAGED ATA2" {
 	"anims\AIRNGR_ATA2"
@@ -104,7 +111,9 @@ $sequence "PREATTACK_B ATBA" {
 }
 $sequence "FIRING_B ATBB" {
 	"anims\AIRNGR_ATBB"
-	fps 30 loop rotate -90
+	fps 30 rotate -90
+	ACT_RANGE_ATTACK2 1
+	{ event 8 0 }
 }
 $sequence "TRANS_Stand TRANS_FiringB ATBST1" {
 	"anims\AIRNGR_ATBST1"
@@ -147,10 +156,14 @@ $sequence "TRANS_FiringB TRANS_FiringA ATA2AB" {
 $sequence "MOVING RNA" {
 	"anims\AIRNGR_RNA"
 	fps 30 loop rotate -90
+	ACT_RUN 1
+	LX
 }
 $sequence "MOVING REALLYDAMAGED RNB" {
 	"anims\AIRNGR_RNB"
 	fps 30 loop rotate -90
+	ACT_RUN_HURT 1
+	LX
 }
 
 
@@ -158,10 +171,18 @@ $sequence "MOVING REALLYDAMAGED RNB" {
 $sequence "DYING DTA" {
 	"anims\AIRNGR_DTA"
 	fps 30 rotate -90
+	ACT_DIESIMPLE 1
+	{ event 11 3 }
+	{ event 2001 180 }
+	X
 }
 $sequence "DYING DTB" {
 	"anims\AIRNGR_DTB"
 	fps 30 rotate -90
+	ACT_DIESIMPLE 1
+	{ event 11 3 }
+	{ event 2001 66 }
+	X
 }
 $sequence "TRANS_Dying TRANS_Flailing ADTF1" {
 	"anims\AIRNGR_ADTF1"
@@ -230,8 +251,10 @@ $sequence "TRANS_Raising TRANS_Packing FDP2" {
 $sequence "RAPPELLING RPL1" {
 	"anims\AIRNGR_RPL1"
 	fps 30 loop rotate -90
+	ACT_GLIDE 1
 }
 $sequence "TRANS_Rappelling TRANS_Stand RPL2" {
 	"anims\AIRNGR_RPL2"
 	fps 30 rotate -90
+	ACT_LAND 1
 }
