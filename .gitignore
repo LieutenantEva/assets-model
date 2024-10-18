@@ -1,5 +1,5 @@
-.w3d
-.mdl
-.tga
-.dds
-.png
+*.w3d
+*.mdl
+*.tga
+*.dds
+*.png
