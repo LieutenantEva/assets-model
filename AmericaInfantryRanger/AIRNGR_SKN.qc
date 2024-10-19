@@ -321,7 +321,7 @@ $sequence "drop_grenade" {
 	"anims\AIRNGR_FDP1"
 	fps 60 rotate -90
 	ACT_SPECIAL_ATTACK1 1
-	{ event 9 102 }
+	{ event 9 100 }
 }
 $sequence "crouching_mp5" {
 	"anims\AIRngr_ATA"
