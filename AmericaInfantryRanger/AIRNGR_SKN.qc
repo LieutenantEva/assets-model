@@ -279,3 +279,104 @@ $sequence "TRANS_Rappelling TRANS_Stand RPL2" {
 	fps 30 rotate -90
 	ACT_LAND 1
 }
+
+
+// HGrunt/Massn specific anims
+$sequence "victorydance" {
+	"anims\AIRNGR_CHA"
+	fps 21 rotate -90
+	ACT_VICTORY_DANCE 1
+}
+$sequence "cower" {
+	"anims\AIRNGR_ATAST"
+	fps 1 rotate -90
+	ACT_COWER 1
+	frame 24 24
+}
+$sequence "combatidle" {
+	"anims\AIRNGR_ATAST"
+	fps 1 loop rotate -90
+	ACT_IDLE_ANGRY 1
+	frame 24 24
+}
+$sequence "crouching_wait" {
+	"anims\AIRNGR_ATAST"
+	fps 1 loop rotate -90
+	ACT_CROUCH 0
+	frame 24 24
+}
+$sequence "throwgrenade" {
+	"anims\AIRngr_ATBA"
+	fps 30 rotate -90
+	ACT_RANGE_ATTACK2 1
+	{ event 7 9 }
+}
+$sequence "launchgrenade" {
+	"anims\AIRNGR_ATBB"
+	fps 30 rotate -90
+	ACT_RANGE_ATTACK2 1
+	{ event 8 0 }
+}
+$sequence "drop_grenade" {
+	"anims\AIRNGR_FDP1"
+	fps 60 rotate -90
+	ACT_SPECIAL_ATTACK1 1
+	{ event 9 102 }
+}
+$sequence "crouching_mp5" {
+	"anims\AIRngr_ATA"
+	fps 30 loop rotate -90
+	ACT_RANGE_ATTACK1 1
+	{ event 4 0 }
+	{ event 5001 0 "50" }
+}
+$sequence "standing_mp5" {
+	"anims\AIRNGR_ATA2"
+	fps 30 loop rotate -90
+	ACT_RANGE_ATTACK1 1
+	{ event 4 0 }
+	{ event 5001 0 "50" }
+	{ event 5 6 }
+	{ event 5001 6 "50" }
+	{ event 6 12 }
+	{ event 5001 12 "50" }
+	{ event 4 18 }
+	{ event 5001 18 "50" }
+	{ event 5 24 }
+	{ event 5001 24 "50" }
+	{ event 6 30 }
+	{ event 5001 30 "50" }
+	{ event 4 36 }
+	{ event 5001 36 "50" }
+}
+$sequence "crouching_shotgun" {
+	"anims\AIRngr_ATA"
+	fps 15 loop rotate -90
+	ACT_RANGE_ATTACK1 1
+	{ event 4 0 }
+	{ event 5001 0 "51" }
+}
+$sequence "standing_shotgun" {
+	"anims\AIRNGR_ATA2"
+	fps 30 loop rotate -90
+	ACT_RANGE_ATTACK1 1
+	{ event 4 0 }
+	{ event 5001 0 "51" }
+	{ event 4 12 }
+	{ event 5001 12 "51" }
+	{ event 4 24 }
+	{ event 5001 24 "51" }
+	{ event 4 36 }
+	{ event 5001 36 "51" }
+}
+$sequence "reload_shotgun" {
+	"anims\AIRNGR_ATAST"
+	fps 30 rotate -90
+	ACT_RELOAD 1
+	{ event 2 47 }
+}
+$sequence "repel_shoot" {
+	"anims\AIRNGR_RPL1"
+	fps 30 loop rotate -90
+	ACT_FLY 1
+}
