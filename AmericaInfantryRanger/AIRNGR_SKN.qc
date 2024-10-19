@@ -79,6 +79,21 @@ $sequence "USING_WEAPON_A ATA" {
 $sequence "USING_WEAPON_A REALLYDAMAGED ATA2" {
 	"anims\AIRNGR_ATA2"
 	fps 30 loop rotate -90
+	ACT_RANGE_ATTACK1 1
+	{ event 4 0 }
+	{ event 5001 0 "50" }
+	{ event 5 6 }
+	{ event 5001 6 "50" }
+	{ event 6 12 }
+	{ event 5001 12 "50" }
+	{ event 4 18 }
+	{ event 5001 18 "50" }
+	{ event 5 24 }
+	{ event 5001 24 "50" }
+	{ event 6 30 }
+	{ event 5001 30 "50" }
+	{ event 4 36 }
+	{ event 5001 36 "50" }
 }
 $sequence "TRANS_FiringA TRANS_FiringAInjured A2WAA" {
 	"anims\AIRNGR_A2WAA"
