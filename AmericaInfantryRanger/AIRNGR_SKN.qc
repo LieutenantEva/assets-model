@@ -2,7 +2,7 @@ $modelname "AmericaInfantryRanger.mdl"
 $cd "."
 $cdtexture "."
 $cliptotextures
-$scale 5.0
+$scale 4.8
 
 
 $body studio "AIRNGR_SKN"
@@ -30,6 +30,8 @@ $hbox 7 "AIRNGR R THIGH" 0.00 -3.19 -3.24 34.14 4.33 3.81
 $hbox 7 "AIRNGR R FOOT" -0.15 -3.47 -2.52 3.84 10.31 2.70
 $hbox 0 "BONE-GUN" 0 0 0 0 0 0
 $attachment 0 "MUZZLE01" 0 0 0
+$attachment 1 "AIRNGR R HAND" 0 0 0
+$attachment 2 "AIRNGR HEAD" 0 0 0
 
 
 // --- Idle
@@ -85,6 +87,8 @@ $sequence "TRANS_FiringA TRANS_FiringAInjured A2WAA" {
 $sequence "TRANS_Stand TRANS_FiringA ATAST" {
 	"anims\AIRNGR_ATAST"
 	fps 30 rotate -90
+	ACT_RELOAD 1
+	{ event 2 0 }
 }
 $sequence "TRANS_FiringA TRANS_Stand ATAED" {
 	"anims\AIRNGR_ATAED"
@@ -108,6 +112,8 @@ $sequence "TRANS_Stand TRANS_Move STA2RNA" {
 $sequence "PREATTACK_B ATBA" {
 	"anims\AIRngr_ATBA"
 	fps 30 rotate -90
+	ACT_RANGE_ATTACK2 1
+	{ event 7 9 }
 }
 $sequence "FIRING_B ATBB" {
 	"anims\AIRNGR_ATBB"
