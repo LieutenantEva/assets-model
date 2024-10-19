@@ -331,23 +331,11 @@ $sequence "crouching_mp5" {
 	{ event 5001 0 "50" }
 }
 $sequence "standing_mp5" {
-	"anims\AIRNGR_ATA2"
+	"anims\AIRngr_ATA"
 	fps 30 loop rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 4 0 }
 	{ event 5001 0 "50" }
-	{ event 5 6 }
-	{ event 5001 6 "50" }
-	{ event 6 12 }
-	{ event 5001 12 "50" }
-	{ event 4 18 }
-	{ event 5001 18 "50" }
-	{ event 5 24 }
-	{ event 5001 24 "50" }
-	{ event 6 30 }
-	{ event 5001 30 "50" }
-	{ event 4 36 }
-	{ event 5001 36 "50" }
 }
 $sequence "crouching_shotgun" {
 	"anims\AIRngr_ATA"
@@ -357,17 +345,11 @@ $sequence "crouching_shotgun" {
 	{ event 5001 0 "51" }
 }
 $sequence "standing_shotgun" {
-	"anims\AIRNGR_ATA2"
-	fps 30 loop rotate -90
+	"anims\AIRngr_ATA"
+	fps 15 loop rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 4 0 }
 	{ event 5001 0 "51" }
-	{ event 4 12 }
-	{ event 5001 12 "51" }
-	{ event 4 24 }
-	{ event 5001 24 "51" }
-	{ event 4 36 }
-	{ event 5001 36 "51" }
 }
 $sequence "repel_shoot" {
 	"anims\AIRNGR_RPL1"
