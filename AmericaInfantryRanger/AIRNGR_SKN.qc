@@ -43,12 +43,12 @@ $sequence "DefaultConditionState STA" {
 $sequence "DefaultConditionState IDA" {
 	"anims\AIRNGR_IDA"
 	fps 30 loop rotate -90
-	ACT_IDLE 10
+	ACT_IDLE 3
 }
 $sequence "DefaultConditionState IDB" {
 	"anims\AIRNGR_IDB"
 	fps 30 loop rotate -90
-	ACT_IDLE 10
+	ACT_IDLE 2
 }
 $sequence "REALLYDAMAGED STB" {
 	"anims\AIRngr_STB"
