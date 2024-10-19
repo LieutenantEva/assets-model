@@ -2,7 +2,7 @@ $modelname "AmericaInfantryRanger.mdl"
 $cd "."
 $cdtexture "."
 $cliptotextures
-$scale 4.8
+$scale 5.0
 
 
 $body studio "AIRNGR_SKN"
