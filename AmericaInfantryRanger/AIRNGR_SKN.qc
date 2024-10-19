@@ -38,17 +38,17 @@ $attachment 2 "AIRNGR HEAD" 0 0 0
 $sequence "DefaultConditionState STA" {
 	"anims\AIRNGR_STA"
 	fps 35 loop rotate -90
-	ACT_IDLE 1
+	ACT_IDLE 50
 }
 $sequence "DefaultConditionState IDA" {
 	"anims\AIRNGR_IDA"
 	fps 30 loop rotate -90
-	ACT_IDLE 1
+	ACT_IDLE 10
 }
 $sequence "DefaultConditionState IDB" {
 	"anims\AIRNGR_IDB"
 	fps 30 loop rotate -90
-	ACT_IDLE 1
+	ACT_IDLE 10
 }
 $sequence "REALLYDAMAGED STB" {
 	"anims\AIRngr_STB"
@@ -72,28 +72,10 @@ $sequence "TRANS_Stand TRANS_StandInjured SA2SB" {
 $sequence "USING_WEAPON_A ATA" {
 	"anims\AIRngr_ATA"
 	fps 30 loop rotate -90
-	ACT_RANGE_ATTACK1 1
-	{ event 4 0 }
-	{ event 5001 0 "50" }
 }
 $sequence "USING_WEAPON_A REALLYDAMAGED ATA2" {
 	"anims\AIRNGR_ATA2"
 	fps 30 loop rotate -90
-	ACT_RANGE_ATTACK1 1
-	{ event 4 0 }
-	{ event 5001 0 "50" }
-	{ event 5 6 }
-	{ event 5001 6 "50" }
-	{ event 6 12 }
-	{ event 5001 12 "50" }
-	{ event 4 18 }
-	{ event 5001 18 "50" }
-	{ event 5 24 }
-	{ event 5001 24 "50" }
-	{ event 6 30 }
-	{ event 5001 30 "50" }
-	{ event 4 36 }
-	{ event 5001 36 "50" }
 }
 $sequence "TRANS_FiringA TRANS_FiringAInjured A2WAA" {
 	"anims\AIRNGR_A2WAA"
@@ -127,14 +109,10 @@ $sequence "TRANS_Stand TRANS_Move STA2RNA" {
 $sequence "PREATTACK_B ATBA" {
 	"anims\AIRngr_ATBA"
 	fps 30 rotate -90
-	ACT_RANGE_ATTACK2 1
-	{ event 7 9 }
 }
 $sequence "FIRING_B ATBB" {
 	"anims\AIRNGR_ATBB"
 	fps 30 rotate -90
-	ACT_RANGE_ATTACK2 1
-	{ event 8 0 }
 }
 $sequence "TRANS_Stand TRANS_FiringB ATBST1" {
 	"anims\AIRNGR_ATBST1"
@@ -193,7 +171,7 @@ $sequence "DYING DTA" {
 	"anims\AIRNGR_DTA"
 	fps 30 rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 3 }
+	{ event 11 0 }
 	{ event 2001 180 }
 	X
 }
@@ -201,7 +179,7 @@ $sequence "DYING DTB" {
 	"anims\AIRNGR_DTB"
 	fps 30 rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 3 }
+	{ event 11 0 }
 	{ event 2001 66 }
 	X
 }
@@ -282,26 +260,33 @@ $sequence "TRANS_Rappelling TRANS_Stand RPL2" {
 
 
 // HGrunt/Massn specific anims
+$sequence "advance_signal" {
+	"anims\AIRNGR_ATAST"
+	fps 30 rotate -90
+	ACT_SIGNAL1 1
+	{ event 10 0 }
+	frame 24 24
+}
 $sequence "victorydance" {
 	"anims\AIRNGR_CHA"
-	fps 21 rotate -90
+	fps 30 rotate -90
 	ACT_VICTORY_DANCE 1
 }
 $sequence "cower" {
 	"anims\AIRNGR_ATAST"
-	fps 1 rotate -90
+	fps 30 rotate -90
 	ACT_COWER 1
 	frame 24 24
 }
 $sequence "combatidle" {
 	"anims\AIRNGR_ATAST"
-	fps 1 loop rotate -90
+	fps 30 loop rotate -90
 	ACT_IDLE_ANGRY 1
 	frame 24 24
 }
 $sequence "crouching_wait" {
 	"anims\AIRNGR_ATAST"
-	fps 1 loop rotate -90
+	fps 30 loop rotate -90
 	ACT_CROUCH 0
 	frame 24 24
 }
@@ -339,14 +324,14 @@ $sequence "standing_mp5" {
 }
 $sequence "crouching_shotgun" {
 	"anims\AIRngr_ATA"
-	fps 15 loop rotate -90
+	fps 13 loop rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 4 0 }
 	{ event 5001 0 "51" }
 }
 $sequence "standing_shotgun" {
 	"anims\AIRngr_ATA"
-	fps 15 loop rotate -90
+	fps 13 loop rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 4 0 }
 	{ event 5001 0 "51" }
