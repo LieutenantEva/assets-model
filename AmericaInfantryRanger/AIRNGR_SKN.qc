@@ -175,13 +175,13 @@ $sequence "TRANS_FiringB TRANS_FiringA ATA2AB" {
 
 // --- moving
 $sequence "MOVING RNA" {
-	"anims\AIRNGR_RNA"
+	"anims\RNA"
 	fps 30 loop rotate -90
 	ACT_RUN 1
 	LX
 }
 $sequence "MOVING REALLYDAMAGED RNB" {
-	"anims\AIRNGR_RNB"
+	"anims\RNB"
 	fps 30 loop rotate -90
 	ACT_RUN_HURT 1
 	LX
