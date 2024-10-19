@@ -369,12 +369,6 @@ $sequence "standing_shotgun" {
 	{ event 4 36 }
 	{ event 5001 36 "51" }
 }
-$sequence "reload_shotgun" {
-	"anims\AIRNGR_ATAST"
-	fps 30 rotate -90
-	ACT_RELOAD 1
-	{ event 2 47 }
-}
 $sequence "repel_shoot" {
 	"anims\AIRNGR_RPL1"
 	fps 30 loop rotate -90
