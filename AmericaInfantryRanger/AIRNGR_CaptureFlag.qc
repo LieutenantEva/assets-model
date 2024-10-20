@@ -45,3 +45,38 @@ $sequence "lower" {
 	fps 30
 	rotate -90
 }
+
+
+$origin 0 0 0
+
+
+$sequence "positioned_idle_raise" {
+	"anims\FDP2"
+	fps 1
+	loop
+	rotate -90
+	frame 0 0
+}
+
+
+$sequence "positioned_raise" {
+	"anims\FDP2"
+	fps 30
+	rotate -90
+}
+
+
+$sequence "positioned_idle_lower" {
+	"anims\FDP2-reversed"
+	fps 1
+	loop
+	rotate -90
+	frame 0 0
+}
+
+
+$sequence "positioned_lower" {
+	"anims\FDP2-reversed"
+	fps 30
+	rotate -90
+}

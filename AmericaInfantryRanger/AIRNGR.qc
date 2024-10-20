@@ -6,11 +6,6 @@ $scale 5.0
 
 
 $body studio "AIRNGR_SKN"
-$bodygroup "flag"
-{
-	blank
-	studio "AIRNGR_CaptureFlag"
-}
 
 
 $flags 0
@@ -233,7 +228,7 @@ $sequence "UNPACKING FDP1" {
 	fps 30 rotate -90
 }
 $sequence "RAISING_FLAG FDP2" {
-	"anims\FDP2"
+	"anims\AIRNGR_FDP2"
 	fps 30 rotate -90
 }
 $sequence "PACKING FDP1" {
@@ -241,7 +236,7 @@ $sequence "PACKING FDP1" {
 	fps 30 rotate -90
 }
 $sequence "TRANS_Raising TRANS_Packing FDP2" {
-	"anims\FDP2-reversed"
+	"anims\AIRNGR_FDP2-reversed"
 	fps 30 rotate -90
 }
 
@@ -264,7 +259,7 @@ $sequence "advance_signal" {
 	"anims\AIRNGR_ATAST"
 	fps 30 rotate -90
 	ACT_SIGNAL1 1
-	{ event 10 0 }
+	{ event 10 1 }
 	frame 24 24
 }
 $sequence "victorydance" {
