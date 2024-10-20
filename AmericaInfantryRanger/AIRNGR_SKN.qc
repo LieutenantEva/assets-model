@@ -1,6 +1,6 @@
 $modelname "AmericaInfantryRanger.mdl"
 $cd "."
-$cdtexture "."
+$cdtexture "./textures"
 $cliptotextures
 $scale 5.0
 
