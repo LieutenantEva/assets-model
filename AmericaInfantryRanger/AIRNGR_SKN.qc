@@ -9,7 +9,7 @@ $body studio "AIRNGR_SKN"
 $bodygroup "flag"
 {
 	blank
-	studio "FLAG"
+	studio "AIRNGR_CaptureFlag"
 }
 
 
