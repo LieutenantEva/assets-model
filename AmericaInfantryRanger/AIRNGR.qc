@@ -5,6 +5,7 @@ $cliptotextures
 $scale 5.0
 
 
+$keepallbones
 $body studio "AIRNGR_SKN"
 
 
