@@ -77,7 +77,7 @@ $sequence "TRANS_Stand TRANS_StandInjured" {
 // ---- moving
 $sequence "MOVING" {
 	"anims\RNA"
-	fps 30
+	fps 15
 	loop
 	rotate -90
 	ACT_RUN 1
@@ -167,6 +167,8 @@ $sequence "TRANS_Standing TRANS_Firing" {
 	"anims\UIRGrd_ATAST"
 	fps 30
 	rotate -90
+	ACT_RELOAD 1
+	{ event 2 1 }
 }
 $sequence "TRANS_Firing TRANS_Standing" {
 	"anims\UIRGrd_ATAED"
@@ -389,16 +391,12 @@ $sequence "crouching_shotgun" {
 	ACT_RANGE_ATTACK1 1
 	{ event 4 1 }
 	{ event 5001 1 "51" }
-	{ event 4 9 }
-	{ event 5001 9 "51" }
-	{ event 4 17 }
-	{ event 5001 17 "51" }
+	{ event 4 13 }
+	{ event 5001 13 "51" }
 	{ event 4 25 }
 	{ event 5001 25 "51" }
-	{ event 4 33 }
-	{ event 5001 33 "51" }
-	{ event 4 41 }
-	{ event 5001 41 "51" }
+	{ event 4 37 }
+	{ event 5001 37 "51" }
 	{ event 4 49 }
 	{ event 5001 49 "51" }
 }
@@ -410,16 +408,12 @@ $sequence "standing_shotgun" {
 	ACT_RANGE_ATTACK1 1
 	{ event 4 1 }
 	{ event 5001 1 "51" }
-	{ event 4 9 }
-	{ event 5001 9 "51" }
-	{ event 4 17 }
-	{ event 5001 17 "51" }
+	{ event 4 13 }
+	{ event 5001 13 "51" }
 	{ event 4 25 }
 	{ event 5001 25 "51" }
-	{ event 4 33 }
-	{ event 5001 33 "51" }
-	{ event 4 41 }
-	{ event 5001 41 "51" }
+	{ event 4 37 }
+	{ event 5001 37 "51" }
 	{ event 4 49 }
 	{ event 5001 49 "51" }
 }
