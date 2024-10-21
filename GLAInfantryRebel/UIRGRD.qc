@@ -252,3 +252,200 @@ $sequence "unused SSTB" {
 	loop
 	rotate -90
 }
+
+
+// HGrunt/Massn specific anims
+$sequence "advance_signal" {
+	"anims\UIRGrd_ATA"
+	fps 30
+	rotate -90
+	ACT_SIGNAL1 1
+	{ event 10 1 }
+	frame 0 0
+}
+$sequence "victorydance" {
+	"anims\UIRGrd_CHA"
+	fps 30
+	rotate -90
+	ACT_VICTORY_DANCE 1
+}
+$sequence "cower" {
+	"anims\UIRGrd_ATA"
+	fps 30
+	rotate -90
+	ACT_COWER 1
+	frame 0 0
+}
+$sequence "combatidle" {
+	"anims\UIRGrd_ATA"
+	fps 30
+	loop
+	rotate -90
+	ACT_IDLE_ANGRY 1
+	frame 0 0
+}
+$sequence "crouching_wait" {
+	"anims\UIRGrd_ATA"
+	fps 30
+	loop
+	rotate -90
+	ACT_CROUCH 0
+	frame 0 0
+}
+$sequence "throwgrenade" {
+	"anims\UIRGrd_ATA"
+	fps 30
+	rotate -90
+	ACT_RANGE_ATTACK2 1
+	{ event 7 1 }
+	frame 0 2
+}
+$sequence "launchgrenade" {
+	"anims\UIRGrd_ATA"
+	fps 30
+	rotate -90
+	ACT_RANGE_ATTACK2 1
+	{ event 8 1 }
+	frame 0 2
+}
+$sequence "drop_grenade" {
+	"anims\UIRGRD_SUR"
+	fps 300
+	rotate -90
+	ACT_SPECIAL_ATTACK1 1
+	{ event 9 128 }
+}
+$sequence "crouching_mp5" {
+	"anims\UIRGrd_ATA"
+	fps 30
+	loop
+	rotate -90
+	ACT_RANGE_ATTACK1 1
+	{ event 4 1 }
+	{ event 5001 1 "50" }
+	{ event 5 5 }
+	{ event 5001 5 "50" }
+	{ event 6 9 }
+	{ event 5001 9 "50" }
+	{ event 4 13 }
+	{ event 5001 13 "50" }
+	{ event 5 17 }
+	{ event 5001 17 "50" }
+	{ event 6 21 }
+	{ event 5001 21 "50" }
+	{ event 4 25 }
+	{ event 5001 25 "50" }
+	{ event 5 29 }
+	{ event 5001 29 "50" }
+	{ event 6 33 }
+	{ event 5001 33 "50" }
+	{ event 4 37 }
+	{ event 5001 37 "50" }
+	{ event 5 41 }
+	{ event 5001 41 "50" }
+	{ event 6 45 }
+	{ event 5001 45 "50" }
+	{ event 4 49 }
+	{ event 5001 49 "50" }
+}
+$sequence "standing_mp5" {
+	"anims\UIRGrd_ATA"
+	fps 30
+	loop
+	rotate -90
+	ACT_RANGE_ATTACK1 1
+	{ event 4 1 }
+	{ event 5001 1 "50" }
+	{ event 5 5 }
+	{ event 5001 5 "50" }
+	{ event 6 9 }
+	{ event 5001 9 "50" }
+	{ event 4 13 }
+	{ event 5001 13 "50" }
+	{ event 5 17 }
+	{ event 5001 17 "50" }
+	{ event 6 21 }
+	{ event 5001 21 "50" }
+	{ event 4 25 }
+	{ event 5001 25 "50" }
+	{ event 5 29 }
+	{ event 5001 29 "50" }
+	{ event 6 33 }
+	{ event 5001 33 "50" }
+	{ event 4 37 }
+	{ event 5001 37 "50" }
+	{ event 5 41 }
+	{ event 5001 41 "50" }
+	{ event 6 45 }
+	{ event 5001 45 "50" }
+	{ event 4 49 }
+	{ event 5001 49 "50" }
+}
+$sequence "crouching_shotgun" {
+	"anims\UIRGrd_ATA"
+	fps 30
+	loop
+	rotate -90
+	ACT_RANGE_ATTACK1 1
+	{ event 4 1 }
+	{ event 5001 1 "51" }
+	{ event 4 9 }
+	{ event 5001 9 "51" }
+	{ event 4 17 }
+	{ event 5001 17 "51" }
+	{ event 4 25 }
+	{ event 5001 25 "51" }
+	{ event 4 33 }
+	{ event 5001 33 "51" }
+	{ event 4 41 }
+	{ event 5001 41 "51" }
+	{ event 4 49 }
+	{ event 5001 49 "51" }
+}
+$sequence "standing_shotgun" {
+	"anims\UIRGrd_ATA"
+	fps 30
+	loop
+	rotate -90
+	ACT_RANGE_ATTACK1 1
+	{ event 4 1 }
+	{ event 5001 1 "51" }
+	{ event 4 9 }
+	{ event 5001 9 "51" }
+	{ event 4 17 }
+	{ event 5001 17 "51" }
+	{ event 4 25 }
+	{ event 5001 25 "51" }
+	{ event 4 33 }
+	{ event 5001 33 "51" }
+	{ event 4 41 }
+	{ event 5001 41 "51" }
+	{ event 4 49 }
+	{ event 5001 49 "51" }
+}
+$sequence "repel_jump" {
+	"anims\UIRGrd_POP"
+	fps 30
+	rotate -90
+	ACT_HOVER 1
+}
+$sequence "repel_repel" {
+	"anims\UIRGrd_PHG"
+	fps 30
+	loop
+	rotate -90
+	ACT_GLIDE 1
+}
+$sequence "repel_shoot" {
+	"anims\UIRGrd_PHG"
+	fps 30
+	loop
+	rotate -90
+	ACT_FLY 1
+}
+$sequence "repel_land" {
+	"anims\UIRGrd_PTD"
+	fps 30
+	rotate -90
+	ACT_LAND 1
+}
