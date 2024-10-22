@@ -100,7 +100,7 @@ $sequence "TRANS_Stand TRANS_FiringA ATAST" {
 	fps 30
 	rotate -90
 	ACT_RELOAD 1
-	{ event 2 0 }
+	{ event 2 1 }
 }
 $sequence "TRANS_FiringA TRANS_Stand ATAED" {
 	"anims\AIRNGR_ATAED"
@@ -179,6 +179,11 @@ $sequence "TRANS_FiringB TRANS_FiringA ATA2AB" {
 	fps 30
 	rotate -90
 }
+$sequence "TRANS_FiringAInjured TRANS_FiringBInjured" {
+	"anims\AIRNGR_AA22AB2"
+	fps 30
+	rotate -90
+}
 
 
 // --- moving
@@ -206,7 +211,7 @@ $sequence "DYING DTA" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 0 }
+	{ event 11 1 }
 	{ event 2001 180 }
 	X
 }
@@ -215,7 +220,7 @@ $sequence "DYING DTB" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 0 }
+	{ event 11 1 }
 	{ event 2001 66 }
 	X
 }
@@ -316,8 +321,8 @@ $sequence "TRANS_Rappelling TRANS_Stand RPL2" {
 
 
 // !!!UNUSED!!!
-$sequence "unused AA22AB2" {
-	"anims\AIRNGR_AA22AB2"
+$sequence "unused ENC" {
+	"anims\AIRNGR_ENC"
 	fps 30
 	loop
 	rotate -90
@@ -330,12 +335,6 @@ $sequence "unused CAP" {
 }
 $sequence "unused CAPB" {
 	"anims\AIRNGR_CAPB"
-	fps 30
-	loop
-	rotate -90
-}
-$sequence "unused ENC" {
-	"anims\AIRNGR_ENC"
 	fps 30
 	loop
 	rotate -90
@@ -374,12 +373,11 @@ $sequence "unused SWKB" {
 
 // HGrunt/Massn specific anims
 $sequence "advance_signal" {
-	"anims\AIRNGR_ATAST"
-	fps 30
+	"anims\AIRNGR_ENC"
+	fps 100
 	rotate -90
 	ACT_SIGNAL1 1
 	{ event 10 1 }
-	frame 24 24
 }
 $sequence "victorydance" {
 	"anims\AIRNGR_CHA"
@@ -388,27 +386,29 @@ $sequence "victorydance" {
 	ACT_VICTORY_DANCE 1
 }
 $sequence "cower" {
-	"anims\AIRNGR_ATAST"
+	"anims\AIRNGR_ATAED"
 	fps 30
 	rotate -90
 	ACT_COWER 1
-	frame 24 24
 }
 $sequence "combatidle" {
 	"anims\AIRNGR_ATAST"
 	fps 30
-	loop
 	rotate -90
 	ACT_IDLE_ANGRY 1
-	frame 24 24
+}
+$sequence "crouching_idle" {
+	"anims\AIRNGR_ATAST"
+	fps 30
+	rotate -90
 }
 $sequence "crouching_wait" {
-	"anims\AIRNGR_ATAST"
+	"anims\AIRNGR_ATAED"
 	fps 30
 	loop
 	rotate -90
 	ACT_CROUCH 0
-	frame 24 24
+	frame 0 0
 }
 $sequence "throwgrenade" {
 	"anims\AIRngr_ATBA"
@@ -422,14 +422,14 @@ $sequence "launchgrenade" {
 	fps 30
 	rotate -90
 	ACT_RANGE_ATTACK2 1
-	{ event 8 0 }
+	{ event 8 1 }
 }
 $sequence "drop_grenade" {
 	"anims\AIRNGR_FDP1"
 	fps 60
 	rotate -90
 	ACT_SPECIAL_ATTACK1 1
-	{ event 9 100 }
+	{ event 9 83 }
 }
 $sequence "crouching_mp5" {
 	"anims\AIRngr_ATA"
@@ -437,8 +437,8 @@ $sequence "crouching_mp5" {
 	loop
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 4 0 }
-	{ event 5001 0 "50" }
+	{ event 4 1 }
+	{ event 5001 1 "50" }
 }
 $sequence "standing_mp5" {
 	"anims\AIRngr_ATA"
@@ -446,8 +446,8 @@ $sequence "standing_mp5" {
 	loop
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 4 0 }
-	{ event 5001 0 "50" }
+	{ event 4 1 }
+	{ event 5001 1 "50" }
 }
 $sequence "crouching_shotgun" {
 	"anims\AIRngr_ATA"
@@ -455,8 +455,8 @@ $sequence "crouching_shotgun" {
 	loop
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 4 0 }
-	{ event 5001 0 "51" }
+	{ event 4 1 }
+	{ event 5001 1 "51" }
 }
 $sequence "standing_shotgun" {
 	"anims\AIRngr_ATA"
@@ -464,8 +464,8 @@ $sequence "standing_shotgun" {
 	loop
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 4 0 }
-	{ event 5001 0 "51" }
+	{ event 4 1 }
+	{ event 5001 1 "51" }
 }
 $sequence "repel_shoot" {
 	"anims\AIRNGR_RPL1"
