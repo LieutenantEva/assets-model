@@ -6,7 +6,7 @@ $scale 5.0
 
 
 $keepallbones
-$body studio "AIRNGR_CaptureFlag"
+$body studio "bodies/AIRNGR_CaptureFlag"
 
 
 $flags 0
