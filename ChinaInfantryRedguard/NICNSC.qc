@@ -190,7 +190,7 @@ $sequence "TRANS_Chute TRANS_Stand" {
 
 // ------- Movement Animations
 $sequence "MOVING" {
-	"anims\NICNSC_RNA"
+	"anims\RNA"
 	fps 26
 	loop
 	rotate -90
@@ -198,7 +198,7 @@ $sequence "MOVING" {
 	LX
 }
 $sequence "MOVING REALLYDAMAGED" {
-	"anims\NICNSC_RNB"
+	"anims\RNB"
 	fps 30
 	loop
 	rotate -90
