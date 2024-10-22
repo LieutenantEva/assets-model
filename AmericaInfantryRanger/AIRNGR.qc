@@ -11,8 +11,6 @@ $body studio "bodies/AIRNGR_SKN"
 
 $flags 0
 $eyeposition 0 0 73
-$cbox 0 0 0 0 0 0
-$hbox 0 "DUM - MVR" 0 0 0 0 0 0
 $hbox 3 "AIRNGR" -3.98 -5.25 -0.98 5.38 5.59 11.86
 $hbox 2 "AIRNGR SPINE1" 0.00 -4.33 -7.93 10.58 5.61 7.93
 $hbox 1 "AIRNGR HEAD" 0.00 -6.05 -5.48 12.57 6.29 5.03
@@ -24,7 +22,6 @@ $hbox 6 "AIRNGR L THIGH" 0.00 -3.19 -3.30 34.14 4.46 3.19
 $hbox 6 "AIRNGR L FOOT" 0.00 -3.20 -2.68 3.83 10.28 2.77
 $hbox 7 "AIRNGR R THIGH" 0.00 -3.19 -3.24 34.14 4.33 3.81
 $hbox 7 "AIRNGR R FOOT" -0.15 -3.47 -2.52 3.84 10.31 2.70
-$hbox 0 "BONE-GUN" 0 0 0 0 0 0
 $attachment 0 "MUZZLE01" 0 0 0
 $attachment 1 "AIRNGR R HAND" 0 0 0
 $attachment 2 "AIRNGR HEAD" 0 0 0
@@ -70,7 +67,7 @@ $sequence "REALLYDAMAGED IDD" {
 	loop
 	rotate -90
 }
-$sequence "TRANS_Stand TRANS_StandInjured SA2SB" {
+$sequence "TRANS_Stand TRANS_StandInjured" {
 	"anims\AIRNGR_SA2SB"
 	fps 30
 	rotate -90
@@ -78,46 +75,46 @@ $sequence "TRANS_Stand TRANS_StandInjured SA2SB" {
 
 
 // --- attacking (Machine Gun)
-$sequence "USING_WEAPON_A ATA" {
+$sequence "USING_WEAPON_A" {
 	"anims\AIRngr_ATA"
 	fps 30
 	loop
 	rotate -90
 }
-$sequence "USING_WEAPON_A REALLYDAMAGED ATA2" {
+$sequence "USING_WEAPON_A REALLYDAMAGED" {
 	"anims\AIRNGR_ATA2"
 	fps 30
 	loop
 	rotate -90
 }
-$sequence "TRANS_FiringA TRANS_FiringAInjured A2WAA" {
+$sequence "TRANS_FiringA TRANS_FiringAInjured" {
 	"anims\AIRNGR_A2WAA"
 	fps 30
 	rotate -90
 }
-$sequence "TRANS_Stand TRANS_FiringA ATAST" {
+$sequence "TRANS_Stand TRANS_FiringA" {
 	"anims\AIRNGR_ATAST"
 	fps 30
 	rotate -90
 	ACT_RELOAD 1
 	{ event 2 1 }
 }
-$sequence "TRANS_FiringA TRANS_Stand ATAED" {
+$sequence "TRANS_FiringA TRANS_Stand" {
 	"anims\AIRNGR_ATAED"
 	fps 30
 	rotate -90
 }
-$sequence "TRANS_StandInjured TRANS_FiringAInjured S2WAA" {
+$sequence "TRANS_StandInjured TRANS_FiringAInjured" {
 	"anims\AIRNGR_S2WAA"
 	fps 30
 	rotate -90
 }
-$sequence "TRANS_FiringAInjured TRANS_StandInjured WAA2S" {
+$sequence "TRANS_FiringAInjured TRANS_StandInjured" {
 	"anims\AIRNGR_WAA2S"
 	fps 30
 	rotate -90
 }
-$sequence "TRANS_Stand TRANS_Move STA2RNA" {
+$sequence "TRANS_Stand TRANS_Move" {
 	"anims\AIRNGR_STA2RNA"
 	fps 30
 	rotate -90
@@ -125,43 +122,43 @@ $sequence "TRANS_Stand TRANS_Move STA2RNA" {
 
 
 // --- attacking (Grenade Launcher)
-$sequence "PREATTACK_B ATBA" {
+$sequence "PREATTACK_B" {
 	"anims\AIRngr_ATBA"
 	fps 30
 	rotate -90
 }
-$sequence "FIRING_B ATBB" {
+$sequence "FIRING_B" {
 	"anims\AIRNGR_ATBB"
 	fps 30
 	rotate -90
 }
-$sequence "TRANS_Stand TRANS_FiringB ATBST1" {
+$sequence "TRANS_Stand TRANS_FiringB" {
 	"anims\AIRNGR_ATBST1"
 	fps 30
 	rotate -90
 }
-$sequence "TRANS_FiringB TRANS_Stand ATBST2" {
+$sequence "TRANS_FiringB TRANS_Stand" {
 	"anims\AIRNGR_ATBST2"
 	fps 30
 	rotate -90
 }
-$sequence "PREATTACK_B REALLYDAMAGED ATB2A" {
+$sequence "PREATTACK_B REALLYDAMAGED" {
 	"anims\AIRNGR_ATB2A"
 	fps 30
 	rotate -90
 }
-$sequence "FIRING_B REALLYDAMAGED ATB2B" {
+$sequence "FIRING_B REALLYDAMAGED" {
 	"anims\AIRNGR_ATB2B"
 	fps 30
 	loop
 	rotate -90
 }
-$sequence "TRANS_StandInjured TRANS_FiringBInjured ATB2ST1" {
+$sequence "TRANS_StandInjured TRANS_FiringBInjured" {
 	"anims\AIRNGR_ATB2ST1"
 	fps 30
 	rotate -90
 }
-$sequence "TRANS_FiringBInjured TRANS_StandInjured ATB2ST2" {
+$sequence "TRANS_FiringBInjured TRANS_StandInjured" {
 	"anims\AIRNGR_ATB2ST2"
 	fps 30
 	rotate -90
@@ -169,12 +166,12 @@ $sequence "TRANS_FiringBInjured TRANS_StandInjured ATB2ST2" {
 
 
 // -- cross-attack transitions
-$sequence "TRANS_FiringA TRANS_FiringB ATA2AB" {
+$sequence "TRANS_FiringA TRANS_FiringB" {
 	"anims\AIRNGR_ATA2AB"
 	fps 30
 	rotate -90
 }
-$sequence "TRANS_FiringB TRANS_FiringA ATA2AB" {
+$sequence "TRANS_FiringB TRANS_FiringA" {
 	"anims\AIRNGR_ATA2AB-reversed"
 	fps 30
 	rotate -90
@@ -187,7 +184,7 @@ $sequence "TRANS_FiringAInjured TRANS_FiringBInjured" {
 
 
 // --- moving
-$sequence "MOVING RNA" {
+$sequence "MOVING" {
 	"anims\RNA"
 	fps 30
 	loop
@@ -195,7 +192,7 @@ $sequence "MOVING RNA" {
 	ACT_RUN 1
 	LX
 }
-$sequence "MOVING REALLYDAMAGED RNB" {
+$sequence "MOVING REALLYDAMAGED" {
 	"anims\RNB"
 	fps 30
 	loop
@@ -224,18 +221,18 @@ $sequence "DYING DTB" {
 	{ event 2001 66 }
 	X
 }
-$sequence "TRANS_Dying TRANS_Flailing ADTF1" {
+$sequence "TRANS_Dying TRANS_Flailing" {
 	"anims\AIRNGR_ADTF1"
 	fps 30
 	rotate -90
 }
-$sequence "DYING EXPLODED_FLAILING ADTF2" {
+$sequence "DYING EXPLODED_FLAILING" {
 	"anims\AIRNGR_ADTF2"
 	fps 30
 	loop
 	rotate -90
 }
-$sequence "DYING EXPLODED_BOUNCING ADTF3" {
+$sequence "DYING EXPLODED_BOUNCING" {
 	"anims\AIRNGR_ADTF3"
 	fps 30
 	rotate -90
@@ -243,13 +240,13 @@ $sequence "DYING EXPLODED_BOUNCING ADTF3" {
 
 
 // --- cheering
-$sequence "SPECIAL_CHEERING CHA" {
+$sequence "SPECIAL_CHEERING" {
 	"anims\AIRNGR_CHA"
 	fps 30
 	loop
 	rotate -90
 }
-$sequence "SPECIAL_CHEERING REALLYDAMAGED CHB" {
+$sequence "SPECIAL_CHEERING REALLYDAMAGED" {
 	"anims\AIRNGR_CHB"
 	fps 30
 	loop
@@ -258,23 +255,23 @@ $sequence "SPECIAL_CHEERING REALLYDAMAGED CHB" {
 
 
 // ----- PARACHUTING ANIMATIONS
-$sequence "FREEFALL PFL" {
+$sequence "FREEFALL" {
 	"anims\AIRNGR_PFL"
 	fps 30
 	rotate -90
 }
-$sequence "PARACHUTING PHG" {
+$sequence "PARACHUTING" {
 	"anims\AIRNGR_PHG"
 	fps 30
 	loop
 	rotate -90
 }
-$sequence "TRANS_Falling TRANS_Chute POP" {
+$sequence "TRANS_Falling TRANS_Chute" {
 	"anims\AIRNGR_POP"
 	fps 30
 	rotate -90
 }
-$sequence "TRANS_Chute TRANS_Stand PTD" {
+$sequence "TRANS_Chute TRANS_Stand" {
 	"anims\AIRNGR_PTD"
 	fps 30
 	rotate -90
@@ -282,22 +279,22 @@ $sequence "TRANS_Chute TRANS_Stand PTD" {
 
 
 // ------- Bldg-capture
-$sequence "UNPACKING FDP1" {
+$sequence "UNPACKING" {
 	"anims\AIRNGR_FDP1"
 	fps 30
 	rotate -90
 }
-$sequence "RAISING_FLAG FDP2" {
+$sequence "RAISING_FLAG" {
 	"anims\AIRNGR_FDP2"
 	fps 30
 	rotate -90
 }
-$sequence "PACKING FDP1" {
+$sequence "PACKING" {
 	"anims\AIRNGR_FDP1-reversed"
 	fps 30
 	rotate -90
 }
-$sequence "TRANS_Raising TRANS_Packing FDP2" {
+$sequence "TRANS_Raising TRANS_Packing" {
 	"anims\AIRNGR_FDP2-reversed"
 	fps 30
 	rotate -90
@@ -305,14 +302,14 @@ $sequence "TRANS_Raising TRANS_Packing FDP2" {
 
 
 // --- RAPPELLING ANIMATIONS
-$sequence "RAPPELLING RPL1" {
+$sequence "RAPPELLING" {
 	"anims\AIRNGR_RPL1"
 	fps 30
 	loop
 	rotate -90
 	ACT_GLIDE 1
 }
-$sequence "TRANS_Rappelling TRANS_Stand RPL2" {
+$sequence "TRANS_Rappelling TRANS_Stand" {
 	"anims\AIRNGR_RPL2"
 	fps 30
 	rotate -90
