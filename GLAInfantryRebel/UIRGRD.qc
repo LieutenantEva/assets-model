@@ -149,8 +149,14 @@ $sequence "SPECIAL_CHEERING REALLYDAMAGED" {
 
 
 // ---- firing
-$sequence "USING_WEAPON_A" {
+$sequence "USING_WEAPON_A ATA" {
 	"anims\UIRGrd_ATA"
+	fps 30
+	loop
+	rotate -90
+}
+$sequence "USING_WEAPON_A ATA3" {
+	"anims\UIRGrd_ATA3"
 	fps 30
 	loop
 	rotate -90
@@ -218,12 +224,6 @@ $sequence "TRANS_Chute TRANS_Stand" {
 
 
 // !!!UNUSED!!!
-$sequence "unused ATA3" {
-	"anims\UIRGrd_ATA3"
-	fps 30
-	loop
-	rotate -90
-}
 $sequence "unused CAP" {
 	"anims\UIRGRD_CAP"
 	fps 30
@@ -264,12 +264,11 @@ $sequence "unused SSTB" {
 
 // HGrunt/Massn specific anims
 $sequence "advance_signal" {
-	"anims\UIRGrd_ATA"
-	fps 30
+	"anims\UIRGrd_CHB"
+	fps 200
 	rotate -90
 	ACT_SIGNAL1 1
 	{ event 10 1 }
-	frame 0 0
 }
 $sequence "victorydance" {
 	"anims\UIRGrd_CHA"
@@ -278,22 +277,25 @@ $sequence "victorydance" {
 	ACT_VICTORY_DANCE 1
 }
 $sequence "cower" {
-	"anims\UIRGrd_ATA"
+	"anims\UIRGrd_ATAED"
 	fps 30
 	rotate -90
 	ACT_COWER 1
-	frame 0 0
 }
 $sequence "combatidle" {
-	"anims\UIRGrd_ATA"
+	"anims\UIRGrd_ATAST"
 	fps 30
-	loop
 	rotate -90
 	ACT_IDLE_ANGRY 1
-	frame 0 0
+}
+$sequence "crouching_idle" {
+	"anims\UIRGrd_ATAST"
+	fps 30
+	rotate -90
+	ACT_IDLE_ANGRY 1
 }
 $sequence "crouching_wait" {
-	"anims\UIRGrd_ATA"
+	"anims\UIRGrd_ATAED"
 	fps 30
 	loop
 	rotate -90
@@ -301,20 +303,18 @@ $sequence "crouching_wait" {
 	frame 0 0
 }
 $sequence "throwgrenade" {
-	"anims\UIRGrd_ATA"
-	fps 30
+	"anims\UIRGrd_ATA3"
+	fps 90
 	rotate -90
 	ACT_RANGE_ATTACK2 1
 	{ event 7 1 }
-	frame 0 2
 }
 $sequence "launchgrenade" {
-	"anims\UIRGrd_ATA"
-	fps 30
+	"anims\UIRGrd_ATA3"
+	fps 90
 	rotate -90
 	ACT_RANGE_ATTACK2 1
 	{ event 8 1 }
-	frame 0 2
 }
 $sequence "drop_grenade" {
 	"anims\UIRGRD_SUR"
@@ -353,8 +353,6 @@ $sequence "crouching_mp5" {
 	{ event 5001 41 "50" }
 	{ event 6 45 }
 	{ event 5001 45 "50" }
-	{ event 4 49 }
-	{ event 5001 49 "50" }
 }
 $sequence "standing_mp5" {
 	"anims\UIRGrd_ATA"
@@ -386,8 +384,6 @@ $sequence "standing_mp5" {
 	{ event 5001 41 "50" }
 	{ event 6 45 }
 	{ event 5001 45 "50" }
-	{ event 4 49 }
-	{ event 5001 49 "50" }
 }
 $sequence "crouching_shotgun" {
 	"anims\UIRGrd_ATA"
@@ -403,8 +399,6 @@ $sequence "crouching_shotgun" {
 	{ event 5001 25 "51" }
 	{ event 4 37 }
 	{ event 5001 37 "51" }
-	{ event 4 49 }
-	{ event 5001 49 "51" }
 }
 $sequence "standing_shotgun" {
 	"anims\UIRGrd_ATA"
@@ -420,8 +414,6 @@ $sequence "standing_shotgun" {
 	{ event 5001 25 "51" }
 	{ event 4 37 }
 	{ event 5001 37 "51" }
-	{ event 4 49 }
-	{ event 5001 49 "51" }
 }
 $sequence "repel_shoot" {
 	"anims\UIRGrd_PHG"
