@@ -6,7 +6,10 @@ $scale 5.0
 
 
 $keepallbones
-$body studio "bodies/UIRGRD_SKN"
+$bodygroup "body" {
+	studio "bodies/UIRGRD_SKN"
+	studio "bodies/UIRGRDTOX_SKN"
+}
 
 
 $flags 0
