@@ -315,6 +315,63 @@ $sequence "TRANS_Rappelling TRANS_Stand RPL2" {
 }
 
 
+// !!!UNUSED!!!
+$sequence "unused AA22AB2" {
+	"anims\AIRNGR_AA22AB2"
+	fps 30
+	loop
+	rotate -90
+}
+$sequence "unused CAP" {
+	"anims\AIRNGR_CAP"
+	fps 30
+	loop
+	rotate -90
+}
+$sequence "unused CAPB" {
+	"anims\AIRNGR_CAPB"
+	fps 30
+	loop
+	rotate -90
+}
+$sequence "unused ENC" {
+	"anims\AIRNGR_ENC"
+	fps 30
+	loop
+	rotate -90
+}
+$sequence "unused SUR" {
+	"anims\AIRNGR_SUR"
+	fps 30
+	loop
+	rotate -90
+}
+$sequence "unused SURB" {
+	"anims\AIRNGR_SURB"
+	fps 30
+	loop
+	rotate -90
+}
+$sequence "unused SST" {
+	"anims\AIRNGR_SST"
+	fps 30
+	loop
+	rotate -90
+}
+$sequence "unused SSTB" {
+	"anims\AIRNGR_SSTB"
+	fps 30
+	loop
+	rotate -90
+}
+$sequence "unused SWKB" {
+	"anims\AIRNGR_SWKB"
+	fps 30
+	loop
+	rotate -90
+}
+
+
 // HGrunt/Massn specific anims
 $sequence "advance_signal" {
 	"anims\AIRNGR_ATAST"
