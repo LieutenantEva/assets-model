@@ -292,7 +292,6 @@ $sequence "crouching_idle" {
 	"anims\UIRGrd_ATAST"
 	fps 30
 	rotate -90
-	ACT_IDLE_ANGRY 1
 }
 $sequence "crouching_wait" {
 	"anims\UIRGrd_ATAED"
