@@ -236,7 +236,7 @@ $sequence "DYING DTA" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 0 }
+	{ event 11 1 }
 	{ event 2001 20 }
 	X
 }
@@ -245,7 +245,7 @@ $sequence "DYING DTB" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 0 }
+	{ event 11 1 }
 	{ event 2001 28 }
 	X
 }
@@ -399,29 +399,15 @@ $sequence "crouching_mp5" {
 	rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 4 1 }
+	{ event 5 1 }
+	{ event 6 1 }
+	{ event 4 1 }
+	{ event 5 1 }
+	{ event 6 1 }
+	{ event 4 1 }
+	{ event 5 1 }
+	{ event 6 1 }
 	{ event 5001 1 "50" }
-	{ event 5 2 }
-	{ event 5001 2 "50" }
-	{ event 6 3 }
-	{ event 5001 3 "50" }
-	{ event 4 4 }
-	{ event 5001 4 "50" }
-	{ event 5 5 }
-	{ event 5001 5 "50" }
-	{ event 6 6 }
-	{ event 5001 6 "50" }
-	{ event 4 7 }
-	{ event 5001 7 "50" }
-	{ event 5 8 }
-	{ event 5001 8 "50" }
-	{ event 6 9 }
-	{ event 5001 9 "50" }
-	{ event 4 10 }
-	{ event 5001 10 "50" }
-	{ event 5 11 }
-	{ event 5001 11 "50" }
-	{ event 6 12 }
-	{ event 5001 12 "50" }
 }
 $sequence "standing_mp5" {
 	"anims\NICNSC_ATA"
@@ -430,29 +416,15 @@ $sequence "standing_mp5" {
 	rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 4 1 }
+	{ event 5 1 }
+	{ event 6 1 }
+	{ event 4 1 }
+	{ event 5 1 }
+	{ event 6 1 }
+	{ event 4 1 }
+	{ event 5 1 }
+	{ event 6 1 }
 	{ event 5001 1 "50" }
-	{ event 5 2 }
-	{ event 5001 2 "50" }
-	{ event 6 3 }
-	{ event 5001 3 "50" }
-	{ event 4 4 }
-	{ event 5001 4 "50" }
-	{ event 5 5 }
-	{ event 5001 5 "50" }
-	{ event 6 6 }
-	{ event 5001 6 "50" }
-	{ event 4 7 }
-	{ event 5001 7 "50" }
-	{ event 5 8 }
-	{ event 5001 8 "50" }
-	{ event 6 9 }
-	{ event 5001 9 "50" }
-	{ event 4 10 }
-	{ event 5001 10 "50" }
-	{ event 5 11 }
-	{ event 5001 11 "50" }
-	{ event 6 12 }
-	{ event 5001 12 "50" }
 }
 $sequence "crouching_shotgun" {
 	"anims\NICNSC_ATA"
@@ -461,11 +433,9 @@ $sequence "crouching_shotgun" {
 	rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 4 1 }
+	{ event 4 1 }
+	{ event 4 1 }
 	{ event 5001 1 "51" }
-	{ event 4 2 }
-	{ event 5001 2 "51" }
-	{ event 4 3 }
-	{ event 5001 3 "51" }
 }
 $sequence "standing_shotgun" {
 	"anims\NICNSC_ATA"
@@ -474,11 +444,9 @@ $sequence "standing_shotgun" {
 	rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 4 1 }
+	{ event 4 1 }
+	{ event 4 1 }
 	{ event 5001 1 "51" }
-	{ event 4 2 }
-	{ event 5001 2 "51" }
-	{ event 4 3 }
-	{ event 5001 3 "51" }
 }
 $sequence "repel_shoot" {
 	"anims\NICNSC_PHG"
