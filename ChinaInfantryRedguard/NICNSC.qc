@@ -434,7 +434,6 @@ $sequence "crouching_shotgun" {
 	ACT_RANGE_ATTACK1 1
 	{ event 4 1 }
 	{ event 4 1 }
-	{ event 4 1 }
 	{ event 5001 1 "51" }
 }
 $sequence "standing_shotgun" {
@@ -443,7 +442,6 @@ $sequence "standing_shotgun" {
 	loop
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 4 1 }
 	{ event 4 1 }
 	{ event 4 1 }
 	{ event 5001 1 "51" }
