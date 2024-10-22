@@ -102,7 +102,7 @@ $sequence "DYING DTA" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 0 }
+	{ event 11 1 }
 	{ event 2001 42 }
 	X
 }
@@ -111,7 +111,7 @@ $sequence "DYING DTB" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 0 }
+	{ event 11 1 }
 	{ event 2001 32 }
 	X
 }
@@ -330,28 +330,56 @@ $sequence "crouching_mp5" {
 	ACT_RANGE_ATTACK1 1
 	{ event 4 1 }
 	{ event 5001 1 "50" }
-	{ event 5 5 }
+	{ event 5 3 }
+	{ event 5001 3 "50" }
+	{ event 6 5 }
 	{ event 5001 5 "50" }
-	{ event 6 9 }
+	{ event 4 7 }
+	{ event 5001 7 "50" }
+	{ event 5 9 }
 	{ event 5001 9 "50" }
+	{ event 6 11 }
+	{ event 5001 11 "50" }
 	{ event 4 13 }
 	{ event 5001 13 "50" }
-	{ event 5 17 }
+	{ event 5 15 }
+	{ event 5001 15 "50" }
+	{ event 6 17 }
 	{ event 5001 17 "50" }
-	{ event 6 21 }
+	{ event 4 19 }
+	{ event 5001 19 "50" }
+	{ event 5 21 }
 	{ event 5001 21 "50" }
+	{ event 6 23 }
+	{ event 5001 23 "50" }
 	{ event 4 25 }
 	{ event 5001 25 "50" }
-	{ event 5 29 }
+	{ event 5 27 }
+	{ event 5001 27 "50" }
+	{ event 6 29 }
 	{ event 5001 29 "50" }
-	{ event 6 33 }
+	{ event 4 31 }
+	{ event 5001 31 "50" }
+	{ event 5 33 }
 	{ event 5001 33 "50" }
-	{ event 4 37 }
-	{ event 5001 37 "50" }
+	{ event 6 35 }
+	{ event 5001 35 "50" }
+	{ event 4 39 }
+	{ event 5001 39 "50" }
 	{ event 5 41 }
 	{ event 5001 41 "50" }
-	{ event 6 45 }
+	{ event 6 43 }
+	{ event 5001 43 "50" }
+	{ event 4 45 }
 	{ event 5001 45 "50" }
+	{ event 5 47 }
+	{ event 5001 47 "50" }
+	{ event 6 49 }
+	{ event 5001 49 "50" }
+	{ event 4 51 }
+	{ event 5001 51 "50" }
+	{ event 5 53 }
+	{ event 5001 53 "50" }
 }
 $sequence "standing_mp5" {
 	"anims\UIRGrd_ATA"
@@ -361,28 +389,56 @@ $sequence "standing_mp5" {
 	ACT_RANGE_ATTACK1 1
 	{ event 4 1 }
 	{ event 5001 1 "50" }
-	{ event 5 5 }
+	{ event 5 3 }
+	{ event 5001 3 "50" }
+	{ event 6 5 }
 	{ event 5001 5 "50" }
-	{ event 6 9 }
+	{ event 4 7 }
+	{ event 5001 7 "50" }
+	{ event 5 9 }
 	{ event 5001 9 "50" }
+	{ event 6 11 }
+	{ event 5001 11 "50" }
 	{ event 4 13 }
 	{ event 5001 13 "50" }
-	{ event 5 17 }
+	{ event 5 15 }
+	{ event 5001 15 "50" }
+	{ event 6 17 }
 	{ event 5001 17 "50" }
-	{ event 6 21 }
+	{ event 4 19 }
+	{ event 5001 19 "50" }
+	{ event 5 21 }
 	{ event 5001 21 "50" }
+	{ event 6 23 }
+	{ event 5001 23 "50" }
 	{ event 4 25 }
 	{ event 5001 25 "50" }
-	{ event 5 29 }
+	{ event 5 27 }
+	{ event 5001 27 "50" }
+	{ event 6 29 }
 	{ event 5001 29 "50" }
-	{ event 6 33 }
+	{ event 4 31 }
+	{ event 5001 31 "50" }
+	{ event 5 33 }
 	{ event 5001 33 "50" }
-	{ event 4 37 }
-	{ event 5001 37 "50" }
+	{ event 6 35 }
+	{ event 5001 35 "50" }
+	{ event 4 39 }
+	{ event 5001 39 "50" }
 	{ event 5 41 }
 	{ event 5001 41 "50" }
-	{ event 6 45 }
+	{ event 6 43 }
+	{ event 5001 43 "50" }
+	{ event 4 45 }
 	{ event 5001 45 "50" }
+	{ event 5 47 }
+	{ event 5001 47 "50" }
+	{ event 6 49 }
+	{ event 5001 49 "50" }
+	{ event 4 51 }
+	{ event 5001 51 "50" }
+	{ event 5 53 }
+	{ event 5001 53 "50" }
 }
 $sequence "crouching_shotgun" {
 	"anims\UIRGrd_ATA"
@@ -392,12 +448,14 @@ $sequence "crouching_shotgun" {
 	ACT_RANGE_ATTACK1 1
 	{ event 4 1 }
 	{ event 5001 1 "51" }
-	{ event 4 13 }
-	{ event 5001 13 "51" }
-	{ event 4 25 }
-	{ event 5001 25 "51" }
-	{ event 4 37 }
-	{ event 5001 37 "51" }
+	{ event 4 12 }
+	{ event 5001 12 "51" }
+	{ event 4 23 }
+	{ event 5001 23 "51" }
+	{ event 4 34 }
+	{ event 5001 34 "51" }
+	{ event 4 45 }
+	{ event 5001 45 "51" }
 }
 $sequence "standing_shotgun" {
 	"anims\UIRGrd_ATA"
@@ -407,12 +465,14 @@ $sequence "standing_shotgun" {
 	ACT_RANGE_ATTACK1 1
 	{ event 4 1 }
 	{ event 5001 1 "51" }
-	{ event 4 13 }
-	{ event 5001 13 "51" }
-	{ event 4 25 }
-	{ event 5001 25 "51" }
-	{ event 4 37 }
-	{ event 5001 37 "51" }
+	{ event 4 12 }
+	{ event 5001 12 "51" }
+	{ event 4 23 }
+	{ event 5001 23 "51" }
+	{ event 4 34 }
+	{ event 5001 34 "51" }
+	{ event 4 45 }
+	{ event 5001 45 "51" }
 }
 $sequence "repel_shoot" {
 	"anims\UIRGrd_PHG"
