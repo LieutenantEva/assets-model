@@ -201,16 +201,19 @@ $sequence "PARACHUTING" {
 	fps 30
 	loop
 	rotate -90
+	ACT_GLIDE 1
 }
 $sequence "TRANS_Falling TRANS_Chute" {
 	"anims\UIRGrd_POP"
 	fps 30
 	rotate -90
+	ACT_HOVER 1
 }
 $sequence "TRANS_Chute TRANS_Stand" {
 	"anims\UIRGrd_PTD"
 	fps 30
 	rotate -90
+	ACT_LAND 1
 }
 
 
@@ -420,29 +423,10 @@ $sequence "standing_shotgun" {
 	{ event 4 49 }
 	{ event 5001 49 "51" }
 }
-$sequence "repel_jump" {
-	"anims\UIRGrd_POP"
-	fps 30
-	rotate -90
-	ACT_HOVER 1
-}
-$sequence "repel_repel" {
-	"anims\UIRGrd_PHG"
-	fps 30
-	loop
-	rotate -90
-	ACT_GLIDE 1
-}
 $sequence "repel_shoot" {
 	"anims\UIRGrd_PHG"
 	fps 30
 	loop
 	rotate -90
 	ACT_FLY 1
-}
-$sequence "repel_land" {
-	"anims\UIRGrd_PTD"
-	fps 30
-	rotate -90
-	ACT_LAND 1
 }
