@@ -14,7 +14,7 @@ $bodygroup "body" {
 
 $flags 0
 $eyeposition 0 0 73
-$hbox 3 "REPGRD" -5.50 -7.64 -2.89 4.70 6.95 12.45
+$hbox 3 "REPGRD" -6.780000 -8.880000 -2.890000 4.700000 8.710000 12.450000
 $hbox 2 "REPGRD SPINE1" 0.00 -6.33 -9.24 10.70 6.38 9.10
 $hbox 1 "REPGRD HEAD" 0.00 -4.36 -3.67 12.44 6.27 4.91
 $hbox 4 "REPGRD L UPPERA" 0.00 -4.34 -2.87 22.76 2.92 2.48
