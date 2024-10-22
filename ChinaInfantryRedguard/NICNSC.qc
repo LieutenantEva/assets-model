@@ -365,21 +365,21 @@ $sequence "crouching_idle" {
 	rotate -90
 }
 $sequence "crouching_wait" {
-	"anims\NICNSC_SA2AA"
+	"anims\NICNSC_AA2SA"
 	fps 30
 	rotate -90
 	ACT_CROUCH 0
 	frame 0 0
 }
 $sequence "throwgrenade" {
-	"anims\NICNSC_ATA"
+	"anims\NICNSC_ATA2"
 	fps 30
 	rotate -90
 	ACT_RANGE_ATTACK2 1
 	{ event 7 1 }
 }
 $sequence "launchgrenade" {
-	"anims\NICNSC_ATA"
+	"anims\NICNSC_ATA2"
 	fps 30
 	rotate -90
 	ACT_RANGE_ATTACK2 1
