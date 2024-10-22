@@ -70,7 +70,7 @@ $sequence "REALLYDAMAGED IDD" {
 	loop
 	rotate -90
 }
-$sequence "TRANS_Stand TRANS_StandInjured" {
+$sequence "TRANS_Standing TRANS_StandingHurt" {
 	"anims\UIRGRD_STA2STB"
 	fps 30
 	rotate -90
@@ -149,7 +149,7 @@ $sequence "SPECIAL_CHEERING REALLYDAMAGED" {
 
 
 // ---- firing
-$sequence "USING_WEAPON_A ATA" {
+$sequence "USING_WEAPON_A" {
 	"anims\UIRGrd_ATA"
 	fps 30
 	loop
@@ -161,7 +161,7 @@ $sequence "USING_WEAPON_A REALLYDAMAGED" {
 	loop
 	rotate -90
 }
-$sequence "TRANS_FiringA TRANS_FiringAInjured" {
+$sequence "TRANS_Firing TRANS_FiringHurt" {
 	"anims\UIRGRD_ATA2ATA2"
 	fps 30
 	rotate -90
