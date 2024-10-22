@@ -331,3 +331,159 @@ $sequence "unused SST" {
 	loop
 	rotate -90
 }
+
+
+// HGrunt/Massn specific anims
+$sequence "advance_signal" {
+	"anims\NICNSC_CHA"
+	fps 200
+	rotate -90
+	ACT_SIGNAL1 1
+	{ event 10 1 }
+}
+$sequence "victorydance" {
+	"anims\NICNSC_CHA"
+	fps 30
+	rotate -90
+	ACT_VICTORY_DANCE 1
+}
+$sequence "cower" {
+	"anims\NICNSC_AA2SA"
+	fps 30
+	rotate -90
+	ACT_COWER 1
+}
+$sequence "combatidle" {
+	"anims\NICNSC_SA2AA"
+	fps 30
+	rotate -90
+	ACT_IDLE_ANGRY 1
+}
+$sequence "crouching_idle" {
+	"anims\NICNSC_SA2AA"
+	fps 30
+	rotate -90
+}
+$sequence "crouching_wait" {
+	"anims\NICNSC_SA2AA"
+	fps 30
+	rotate -90
+	ACT_CROUCH 0
+	frame 0 0
+}
+$sequence "throwgrenade" {
+	"anims\NICNSC_ATA"
+	fps 30
+	rotate -90
+	ACT_RANGE_ATTACK2 1
+	{ event 7 1 }
+}
+$sequence "launchgrenade" {
+	"anims\NICNSC_ATA"
+	fps 30
+	rotate -90
+	ACT_RANGE_ATTACK2 1
+	{ event 8 1 }
+}
+$sequence "drop_grenade" {
+	"anims\NICNSC_FDP1"
+	fps 60
+	rotate -90
+	ACT_SPECIAL_ATTACK1 1
+	{ event 9 83 }
+}
+$sequence "crouching_mp5" {
+	"anims\NICNSC_ATA"
+	fps 30
+	loop
+	rotate -90
+	ACT_RANGE_ATTACK1 1
+	{ event 4 1 }
+	{ event 5001 1 "50" }
+	{ event 5 2 }
+	{ event 5001 2 "50" }
+	{ event 6 3 }
+	{ event 5001 3 "50" }
+	{ event 4 4 }
+	{ event 5001 4 "50" }
+	{ event 5 5 }
+	{ event 5001 5 "50" }
+	{ event 6 6 }
+	{ event 5001 6 "50" }
+	{ event 4 7 }
+	{ event 5001 7 "50" }
+	{ event 5 8 }
+	{ event 5001 8 "50" }
+	{ event 6 9 }
+	{ event 5001 9 "50" }
+	{ event 4 10 }
+	{ event 5001 10 "50" }
+	{ event 5 11 }
+	{ event 5001 11 "50" }
+	{ event 6 12 }
+	{ event 5001 12 "50" }
+}
+$sequence "standing_mp5" {
+	"anims\NICNSC_ATA"
+	fps 30
+	loop
+	rotate -90
+	ACT_RANGE_ATTACK1 1
+	{ event 4 1 }
+	{ event 5001 1 "50" }
+	{ event 5 2 }
+	{ event 5001 2 "50" }
+	{ event 6 3 }
+	{ event 5001 3 "50" }
+	{ event 4 4 }
+	{ event 5001 4 "50" }
+	{ event 5 5 }
+	{ event 5001 5 "50" }
+	{ event 6 6 }
+	{ event 5001 6 "50" }
+	{ event 4 7 }
+	{ event 5001 7 "50" }
+	{ event 5 8 }
+	{ event 5001 8 "50" }
+	{ event 6 9 }
+	{ event 5001 9 "50" }
+	{ event 4 10 }
+	{ event 5001 10 "50" }
+	{ event 5 11 }
+	{ event 5001 11 "50" }
+	{ event 6 12 }
+	{ event 5001 12 "50" }
+}
+$sequence "crouching_shotgun" {
+	"anims\NICNSC_ATA"
+	fps 30
+	loop
+	rotate -90
+	ACT_RANGE_ATTACK1 1
+	{ event 4 1 }
+	{ event 5001 1 "51" }
+	{ event 4 2 }
+	{ event 5001 2 "51" }
+	{ event 4 3 }
+	{ event 5001 3 "51" }
+}
+$sequence "standing_shotgun" {
+	"anims\NICNSC_ATA"
+	fps 30
+	loop
+	rotate -90
+	ACT_RANGE_ATTACK1 1
+	{ event 4 1 }
+	{ event 5001 1 "51" }
+	{ event 4 2 }
+	{ event 5001 2 "51" }
+	{ event 4 3 }
+	{ event 5001 3 "51" }
+}
+$sequence "repel_shoot" {
+	"anims\NICNSC_PHG"
+	fps 30
+	loop
+	rotate -90
+	ACT_FLY 1
+}
