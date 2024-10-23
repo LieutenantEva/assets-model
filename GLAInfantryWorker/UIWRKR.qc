@@ -41,6 +41,14 @@ $attachment 1 "UIWRKR R HAND" 0 0 0
 $attachment 2 "UIWRKR HEAD" 0 0 0
 
 
+$sequence "pose" {
+	"bodies/UIWRKR_SKN"
+	fps 30
+	loop
+	rotate -90
+}
+
+
 // Idle
 $sequence "DefaultConditionState STA" {
 	"anims/UIWRKR_STA"
