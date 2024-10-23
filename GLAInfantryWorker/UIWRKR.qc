@@ -61,7 +61,7 @@ $sequence "DefaultConditionState IDA" {
 // Running
 $sequence "MOVING" {
 	"anims/RNA"
-	fps 16
+	fps 30 //16
 	loop
 	rotate -90
 	ACT_RUN 1
