@@ -47,7 +47,7 @@ $sequence "DefaultConditionState STA" {
 	fps 9
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 10
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/UIWRKR_IDA"
@@ -60,12 +60,14 @@ $sequence "DefaultConditionState IDA" {
 
 // Running
 $sequence "MOVING" {
-	"anims/UIWRKR_RNA"
+	"anims/RNA"
 	fps 16
 	loop
 	rotate -90
 	ACT_RUN 1
 	LX
+	{ event 1004 0 "common/npc_step1.wav" }
+	{ event 1004 11 "common/npc_step3.wav" }
 }
 
 
@@ -181,8 +183,7 @@ $sequence "DYING" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 1 }
-	{ event 2001 42 }
+	{ event 2001 31 }
 	X
 }
 $sequence "TRANS_Dying TRANS_Flailing" {
@@ -223,6 +224,17 @@ $sequence "TRANS_Stand TRANS_Constructing" {
 	"anims/UIWRKR_TRA1"
 	fps 30
 	rotate -90
+	ACT_MELEE_ATTACK1 1
+	{ event 1 59 }
+	{ event 2 59 }
+	{ event 1 59 }
+	{ event 2 59 }
+	{ event 1 59 }
+	{ event 2 59 }
+	{ event 1 59 }
+	{ event 2 59 }
+	{ event 1 59 }
+	{ event 2 59 }
 }
 $sequence "TRANS_Constructing TRANS_Stand" {
 	"anims/UIWRKR_TRA2"
@@ -243,4 +255,55 @@ $sequence "unused SST" {
 	fps 30
 	loop
 	rotate -90
+}
+
+
+// Basic monster sequences
+$sequence "victorydance" {
+	"anims/UIWRKR_CHA"
+	fps 30
+	rotate -90
+	ACT_VICTORY_DANCE 1
+}
+$sequence "flinch" {
+	"anims/UIWRKR_STA"
+	fps 30
+	rotate -90
+	ACT_SMALL_FLINCH 1
+	frame 0 0
+}
+$sequence "bigflinch" {
+	"anims/UIWRKR_STA"
+	fps 30
+	rotate -90
+	ACT_BIG_FLINCH 1
+	frame 0 0
+}
+$sequence "laflinch" {
+	"anims/UIWRKR_STA"
+	fps 30
+	rotate -90
+	ACT_FLINCH_LEFTARM 1
+	frame 0 0
+}
+$sequence "raflinch" {
+	"anims/UIWRKR_STA"
+	fps 30
+	rotate -90
+	ACT_FLINCH_RIGHTARM 1
+	frame 0 0
+}
+$sequence "llflinch" {
+	"anims/UIWRKR_STA"
+	fps 30
+	rotate -90
+	ACT_FLINCH_LEFTLEG 1
+	frame 0 0
+}
+$sequence "rlflinch" {
+	"anims/UIWRKR_STA"
+	fps 30
+	rotate -90
+	ACT_FLINCH_RIGHTLEG 1
+	frame 0 0
 }
