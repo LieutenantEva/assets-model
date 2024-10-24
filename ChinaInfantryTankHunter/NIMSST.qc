@@ -9,7 +9,7 @@ $keepallbones
 $bodygroup "body" {
 	studio "bodies/NIMSST_SKN"
 }
-$bodygroup "nuclear_backpack" {
+$bodygroup "Nuclear Backpack" {
 	blank
 	studio "bodies/NIMSST_NuclearBackpack"
 }
