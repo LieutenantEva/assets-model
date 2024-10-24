@@ -6,7 +6,13 @@ $scale 5.0
 
 
 $keepallbones
-$body studio "bodies/AIRNGR_SKN"
+$bodygroup "body" {
+	studio "bodies/AIRNGR_Body"
+}
+$bodygroup "Weapon" {
+	studio "bodies/AIRNGR_AssaultRifle"
+	blank
+}
 
 
 $flags 0
