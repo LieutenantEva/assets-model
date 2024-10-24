@@ -8,7 +8,10 @@ $scale 5.0
 $keepallbones
 $bodygroup "body" {
 	studio "bodies/UIRGRD_F_SKN"
-	studio "bodies/UIRGRDTOXF_SKN"
+}
+$bodygroup "Toxin Tanks" {
+	blank
+	studio "bodies/UIRGRD_F_ToxinTanks"
 }
 
 
