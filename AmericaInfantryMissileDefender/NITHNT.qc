@@ -7,9 +7,13 @@ $scale 5.0
 
 $keepallbones
 $bodygroup "body" {
-	studio "bodies/NITHNT_SKN"
+	studio "bodies/NITHNT_Body"
 }
-$texturegroup "versions"
+$bodygroup "Weapon" {
+	studio "bodies/NITHNT_MissileLauncher"
+	blank
+}
+$texturegroup "Uniform"
 {
 	{ "Remap1_223_255_255.bmp" }
 	{ "Remap2_223_255_255.bmp" }
