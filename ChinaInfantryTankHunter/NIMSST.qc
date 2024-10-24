@@ -7,7 +7,11 @@ $scale 5.0
 
 $keepallbones
 $bodygroup "body" {
-	studio "bodies/NIMSST_SKN"
+	studio "bodies/NIMSST_Body"
+}
+$bodygroup "Weapon" {
+	studio "bodies/NIMSST_MissileLauncher"
+	blank
 }
 $bodygroup "Nuclear Backpack" {
 	blank
