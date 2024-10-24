@@ -99,6 +99,33 @@ $sequence "MOVING REALLYDAMAGED" {
 }
 
 
+// ------- Bldg-capture
+//$sequence "UNPACKING" {
+//	"anims\FDP1"
+//	fps 30
+//	loop
+//	rotate -90
+//}
+$sequence "RAISING_FLAG" {
+	"anims\FDP2"
+	fps 30
+	loop
+	rotate -90
+}
+//$sequence "PACKING" {
+//	"anims\FDP1-reversed"
+//	fps 30
+//	loop
+//	rotate -90
+//}
+$sequence "TRANS_Raising TRANS_Packing" {
+	"anims\FDP2-reversed"
+	fps 30
+	loop
+	rotate -90
+}
+
+
 // ---- dying 
 $sequence "DYING DTA" {
 	"anims\UIRGrd_DTA"
