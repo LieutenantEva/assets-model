@@ -7,7 +7,11 @@ $scale 5.0
 
 $keepallbones
 $bodygroup "body" {
-	studio "bodies/UIRGRD_SKN"
+	studio "bodies/UIRGRD_Body"
+}
+$bodygroup "Weapon" {
+	studio "bodies/UIRGRD_AssaultRifle"
+	blank
 }
 $bodygroup "Toxin Tanks" {
 	blank
