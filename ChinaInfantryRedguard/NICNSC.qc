@@ -7,8 +7,16 @@ $scale 5.0
 
 $keepallbones
 $bodygroup "body" {
-	studio "bodies/NICNSC_SKN"
-	studio "bodies/NICNSCI_SKN"
+	studio "bodies/NICNSC_Body"
+}
+$bodygroup "Weapon" {
+	studio "bodies/NICNSC_Rifle"
+	studio "bodies/NICNSC_Minigun"
+}
+$texturegroup "Uniform"
+{
+	{ "Remap1_223_255_255.bmp" }
+	{ "Remap2_223_255_255.bmp" }
 }
 
 
