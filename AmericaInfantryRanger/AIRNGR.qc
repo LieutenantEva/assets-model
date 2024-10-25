@@ -10,8 +10,8 @@ $bodygroup "body" {
 	studio "bodies/AIRNGR_Body"
 }
 $bodygroup "Weapon" {
-	studio "bodies/AIRNGR_AssaultRifle"
 	blank
+	studio "bodies/AIRNGR_AssaultRifle"
 }
 
 
