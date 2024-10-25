@@ -12,6 +12,15 @@ $body studio "bodies/UIRGRD_CaptureFlag"
 $flags 0
 
 
+$sequence "pose" {
+	"bodies/UIRGRD_CaptureFlag"
+	fps 1
+	loop
+	rotate -90
+	frame 0 0
+}
+
+
 $origin 8.035182 0 0
 
 

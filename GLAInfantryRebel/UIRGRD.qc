@@ -105,7 +105,7 @@ $sequence "MOVING REALLYDAMAGED" {
 
 // ------- Bldg-capture
 //$sequence "UNPACKING" {
-//	"anims\FDP1"
+//	"anims\FDPB1"
 //	fps 30
 //	loop
 //	rotate -90
