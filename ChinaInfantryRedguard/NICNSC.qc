@@ -10,9 +10,9 @@ $bodygroup "body" {
 	studio "bodies/NICNSC_Body"
 }
 $bodygroup "Weapon" {
-	blank
 	studio "bodies/NICNSC_Rifle"
 	studio "bodies/NICNSC_Minigun"
+	blank
 }
 $texturegroup "Uniform"
 {

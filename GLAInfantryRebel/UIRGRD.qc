@@ -10,8 +10,8 @@ $bodygroup "body" {
 	studio "bodies/UIRGRD_Body"
 }
 $bodygroup "Weapon" {
-	blank
 	studio "bodies/UIRGRD_AssaultRifle"
+	blank
 }
 $bodygroup "Toxin Tanks" {
 	blank
