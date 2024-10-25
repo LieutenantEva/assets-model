@@ -179,8 +179,14 @@ $sequence "TRANS_Chute TRANS_Stand" {
 
 
 // !!!UNUSED!!!
-$sequence "unused SWKLP" {
-	"anims\AIOFCR_SWKLP"
+$sequence "unused SST" {
+	"anims\AIOFCR_SST"
+	fps 30
+	loop
+	rotate -90
+}
+$sequence "unused SLP" {
+	"anims\AIOFCR_SLP"
 	fps 30
 	loop
 	rotate -90
@@ -191,8 +197,8 @@ $sequence "unused SWKST" {
 	loop
 	rotate -90
 }
-$sequence "unused SST" {
-	"anims\AIOFCR_SST"
+$sequence "unused SWKLP" {
+	"anims\AIOFCR_SWKLP"
 	fps 30
 	loop
 	rotate -90
