@@ -10,7 +10,7 @@ $bodygroup "body" {
 	studio "bodies/AIOFCR_Body"
 }
 // Barney buggy weapon moment
-$bodygroup "gun" {
+$bodygroup "Weapon" {
 	blank
 	studio "bodies/AIOFCR_Pistol"
 	studio "bodies/AIOFCR_Pistol"
