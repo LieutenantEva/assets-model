@@ -350,10 +350,13 @@ $sequence "shoot" {
 	ACT_RANGE_ATTACK1 1
 	{ event 1 1 }
 	{ event 1 1 }
+	{ event 1 1 }
 	{ event 5001 1 "31" }
 	{ event 1 2 }
 	{ event 1 2 }
+	{ event 1 2 }
 	{ event 5001 2 "31" }
+	{ event 1 3 }
 	{ event 1 3 }
 	{ event 1 3 }
 	{ event 5001 3 "31" }
