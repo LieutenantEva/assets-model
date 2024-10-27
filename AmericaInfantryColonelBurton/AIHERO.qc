@@ -348,12 +348,12 @@ $sequence "shoot" {
 	loop
 	rotate -90
 	ACT_RANGE_ATTACK1 1
+	{ event 1 1 }
 	{ event 1 2 }
 	{ event 1 3 }
-	{ event 1 4 }
+	{ event 5001 1 "31" }
 	{ event 5001 2 "31" }
 	{ event 5001 3 "31" }
-	{ event 5001 4 "31" }
 }
 $sequence "grenadethrow" {
 	"anims/AIHERO_ATB1"
