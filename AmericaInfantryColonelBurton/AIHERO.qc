@@ -248,7 +248,7 @@ $sequence "DYING IDTA" {
 	rotate -90
 	ACT_DIESIMPLE 1
 	{ event 11 1 }
-	{ event 2001 180 }
+	{ event 2001 60 }
 	X
 }
 $sequence "DYING IDTB" {
@@ -257,7 +257,7 @@ $sequence "DYING IDTB" {
 	rotate -90
 	ACT_DIESIMPLE 1
 	{ event 11 1 }
-	{ event 2001 66 }
+	{ event 2001 40 }
 	X
 }
 $sequence "TRANS_Dying TRANS_Flailing" {
