@@ -256,6 +256,13 @@ $sequence "unused ISST" {
 
 
 // Female Assassin sequences
+$sequence "reload" {
+	"anims/UIHERO_IATA1"
+	fps 30
+	rotate -90
+	ACT_RELOAD 1
+	{ event 2 1 }
+}
 $sequence "victorydance" {
 	"anims/UIHERO_CHA"
 	fps 30
@@ -265,40 +272,38 @@ $sequence "victorydance" {
 $sequence "shoot" {
 	"anims/UIHERO_ATA"
 	fps 30
-	loop
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 5001 2 "31" }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 5001 0 "31" }
 }
-$sequence "grenadethrow" {
-	"anims/UIHERO_ATA"
-	fps 30
-	loop
-	rotate -90
-	ACT_RANGE_ATTACK2 1
-	{ event 2 2 }
-}
+//$sequence "grenadethrow" {
+//	"anims/UIHERO_ATA"
+//	fps 30
+//	rotate -90
+//	ACT_RANGE_ATTACK2 1
+//	{ event 2 0 }
+//}
 //$sequence "kick" {
 //	"anims/UIHERO_ATC"
 //	fps 30
@@ -333,7 +338,6 @@ $sequence "fly_down" {
 $sequence "fly_attack" {
 	"anims/UIHERO_ADTG22"
 	fps 30
-	loop
 	rotate -90
 }
 $sequence "landfromjump" {
