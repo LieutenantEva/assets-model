@@ -425,7 +425,7 @@ $sequence "launchgrenade" {
 	fps 30
 	rotate -90
 	ACT_RANGE_ATTACK2 1
-	{ event 8 1 }
+	{ event 8 0 }
 }
 $sequence "drop_grenade" {
 	"anims\AIRNGR_FDP1"
@@ -437,43 +437,42 @@ $sequence "drop_grenade" {
 $sequence "crouching_mp5" {
 	"anims\AIRngr_ATA"
 	fps 30
-	loop
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 4 1 }
-	{ event 5001 1 "50" }
+	{ event 4 0 }
+	{ event 5001 0 "50" }
+	{ event 5 4 }
+	{ event 5001 4 "50" }
 }
 $sequence "standing_mp5" {
 	"anims\AIRngr_ATA"
 	fps 30
-	loop
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 4 1 }
-	{ event 5001 1 "50" }
+	{ event 4 0 }
+	{ event 5001 0 "50" }
+	{ event 5 4 }
+	{ event 5001 4 "50" }
 }
 $sequence "crouching_shotgun" {
 	"anims\AIRngr_ATA"
 	fps 13
-	loop
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 4 1 }
-	{ event 5001 1 "51" }
+	{ event 4 0 }
+	{ event 5001 0 "51" }
 }
 $sequence "standing_shotgun" {
 	"anims\AIRngr_ATA"
 	fps 13
-	loop
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 4 1 }
-	{ event 5001 1 "51" }
+	{ event 4 0 }
+	{ event 5001 0 "51" }
 }
 $sequence "repel_shoot" {
 	"anims\AIRNGR_RPL1"
 	fps 30
-	loop
 	rotate -90
 	ACT_FLY 1
 }
