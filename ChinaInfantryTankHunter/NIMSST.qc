@@ -178,7 +178,7 @@ $sequence "unused SST" {
 // Basic monster sequences
 $sequence "shoot1" {
 	"anims\NIMSST_ATA"
-	fps 120
+	fps 116
 	rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 1 0 }
