@@ -385,14 +385,14 @@ $sequence "throwgrenade" {
 	fps 30
 	rotate -90
 	ACT_RANGE_ATTACK2 1
-	{ event 7 1 }
+	{ event 7 0 }
 }
 $sequence "launchgrenade" {
 	"anims\NICNSC_ATA2"
 	fps 30
 	rotate -90
 	ACT_RANGE_ATTACK2 1
-	{ event 8 1 }
+	{ event 8 0 }
 }
 $sequence "drop_grenade" {
 	"anims\NICNSC_FDP1"
@@ -404,61 +404,56 @@ $sequence "drop_grenade" {
 $sequence "crouching_mp5" {
 	"anims\NICNSC_ATA"
 	fps 30
-	loop
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 4 1 }
-	{ event 5 1 }
-	{ event 6 1 }
-	{ event 4 1 }
-	{ event 5 1 }
-	{ event 6 1 }
-	{ event 4 1 }
-	{ event 5 1 }
-	{ event 6 1 }
-	{ event 5001 1 "50" }
+	{ event 4 0 }
+	{ event 5 0 }
+	{ event 6 0 }
+	{ event 4 0 }
+	{ event 5 0 }
+	{ event 6 0 }
+	{ event 4 0 }
+	{ event 5 0 }
+	{ event 6 0 }
+	{ event 5001 0 "50" }
 }
 $sequence "standing_mp5" {
 	"anims\NICNSC_ATA"
 	fps 30
-	loop
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 4 1 }
-	{ event 5 1 }
-	{ event 6 1 }
-	{ event 4 1 }
-	{ event 5 1 }
-	{ event 6 1 }
-	{ event 4 1 }
-	{ event 5 1 }
-	{ event 6 1 }
-	{ event 5001 1 "50" }
+	{ event 4 0 }
+	{ event 5 0 }
+	{ event 6 0 }
+	{ event 4 0 }
+	{ event 5 0 }
+	{ event 6 0 }
+	{ event 4 0 }
+	{ event 5 0 }
+	{ event 6 0 }
+	{ event 5001 0 "50" }
 }
 $sequence "crouching_shotgun" {
 	"anims\NICNSC_ATA"
 	fps 30
-	loop
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 4 1 }
-	{ event 4 1 }
-	{ event 5001 1 "51" }
+	{ event 4 0 }
+	{ event 4 0 }
+	{ event 5001 0 "51" }
 }
 $sequence "standing_shotgun" {
 	"anims\NICNSC_ATA"
 	fps 30
-	loop
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 4 1 }
-	{ event 4 1 }
-	{ event 5001 1 "51" }
+	{ event 4 0 }
+	{ event 4 0 }
+	{ event 5001 0 "51" }
 }
 $sequence "repel_shoot" {
 	"anims\NICNSC_PHG"
 	fps 30
-	loop
 	rotate -90
 	ACT_FLY 1
 }
