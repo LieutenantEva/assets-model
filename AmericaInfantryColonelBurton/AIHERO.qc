@@ -336,6 +336,13 @@ $sequence "unused ISST" {
 
 
 // Female Assassin sequences
+$sequence "reload" {
+	"anims/AIHERO_IATAHIT"
+	fps 60
+	rotate -90
+	ACT_RELOAD 1
+	{ event 2 1 }
+}
 $sequence "victorydance" {
 	"anims/AIHERO_CHA"
 	fps 30
@@ -345,26 +352,24 @@ $sequence "victorydance" {
 $sequence "shoot" {
 	"anims/AIHERO_ATA"
 	fps 45
-	loop
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 1 1 }
-	{ event 1 1 }
-	{ event 1 1 }
-	{ event 5001 1 "31" }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 1 2 }
-	{ event 5001 2 "31" }
-	{ event 1 3 }
-	{ event 1 3 }
-	{ event 1 3 }
-	{ event 5001 3 "31" }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 1 0 }
+	{ event 5001 0 "31" }
+	{ event 1 5 }
+	{ event 1 5 }
+	{ event 1 5 }
+	{ event 5001 5 "31" }
+	{ event 1 10 }
+	{ event 1 10 }
+	{ event 1 10 }
+	{ event 5001 10 "31" }
 }
 $sequence "grenadethrow" {
 	"anims/AIHERO_ATB1"
 	fps 60
-	loop
 	rotate -90
 	ACT_RANGE_ATTACK2 1
 	{ event 2 42 }
@@ -403,7 +408,6 @@ $sequence "fly_down" {
 $sequence "fly_attack" {
 	"anims/AIHERO_ADTG22"
 	fps 30
-	loop
 	rotate -90
 }
 $sequence "landfromjump" {
