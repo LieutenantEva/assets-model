@@ -268,22 +268,28 @@ $sequence "shoot" {
 	loop
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 1 1 }
-	{ event 1 1 }
-	{ event 1 1 }
-	{ event 1 1 }
-	{ event 1 1 }
-	{ event 1 1 }
-	{ event 1 1 }
-	{ event 1 1 }
-	{ event 1 1 }
-	{ event 1 1 }
-	{ event 1 1 }
-	{ event 1 1 }
-	{ event 1 1 }
-	{ event 1 1 }
-	{ event 1 1 }
-	{ event 5001 1 "31" }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 1 2 }
+	{ event 5001 2 "31" }
 }
 $sequence "grenadethrow" {
 	"anims/UIHERO_ATA"
