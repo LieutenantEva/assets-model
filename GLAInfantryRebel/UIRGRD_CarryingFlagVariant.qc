@@ -44,25 +44,25 @@ $sequence "pose" {
 
 // ------- Bldg-capture
 $sequence "UNPACKING" {
-	"anims\UIRGRD_F_FDP1"
+	"anims/UIRGRD_F_FDP1"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "RAISING_FLAG" {
-	"anims\UIRGRD_F_FDP2"
+	"anims/UIRGRD_F_FDP2"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "PACKING" {
-	"anims\UIRGRD_F_FDPB1-reversed"
+	"anims/UIRGRD_F_FDPB1-reversed"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "TRANS_Raising TRANS_Packing" {
-	"anims\UIRGRD_F_FDPB2-reversed"
+	"anims/UIRGRD_F_FDPB2-reversed"
 	fps 30
 	loop
 	rotate -90

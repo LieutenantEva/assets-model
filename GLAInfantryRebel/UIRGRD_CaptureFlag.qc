@@ -25,7 +25,7 @@ $origin 8.035182 0 0
 
 
 $sequence "idle_raise" {
-	"anims\FDP2"
+	"anims/FDP2"
 	fps 1
 	loop
 	rotate -90
@@ -34,14 +34,14 @@ $sequence "idle_raise" {
 
 
 $sequence "raise" {
-	"anims\FDP2"
+	"anims/FDP2"
 	fps 30
 	rotate -90
 }
 
 
 $sequence "idle_lower" {
-	"anims\FDP2-reversed"
+	"anims/FDP2-reversed"
 	fps 1
 	loop
 	rotate -90
@@ -51,7 +51,7 @@ $sequence "idle_lower" {
 
 
 $sequence "lower" {
-	"anims\FDP2-reversed"
+	"anims/FDP2-reversed"
 	fps 30
 	rotate -90
 }
@@ -61,7 +61,7 @@ $origin 0 0 0
 
 
 $sequence "positioned_idle_raise" {
-	"anims\FDP2"
+	"anims/FDP2"
 	fps 1
 	loop
 	rotate -90
@@ -70,14 +70,14 @@ $sequence "positioned_idle_raise" {
 
 
 $sequence "positioned_raise" {
-	"anims\FDP2"
+	"anims/FDP2"
 	fps 30
 	rotate -90
 }
 
 
 $sequence "positioned_idle_lower" {
-	"anims\FDP2-reversed"
+	"anims/FDP2-reversed"
 	fps 1
 	loop
 	rotate -90
@@ -86,7 +86,7 @@ $sequence "positioned_idle_lower" {
 
 
 $sequence "positioned_lower" {
-	"anims\FDP2-reversed"
+	"anims/FDP2-reversed"
 	fps 30
 	rotate -90
 }

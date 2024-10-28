@@ -64,7 +64,7 @@ $sequence "DefaultConditionState IDB" {
 
 // Firing
 $sequence "FIRING_A" {
-	"anims\NIMSST_ATA"
+	"anims/NIMSST_ATA"
 	fps 30
 	loop
 	rotate -90
@@ -73,7 +73,7 @@ $sequence "FIRING_A" {
 
 // Running
 $sequence "MOVING" {
-	"anims\RNA"
+	"anims/RNA"
 	fps 20
 	loop
 	rotate -90
@@ -84,7 +84,7 @@ $sequence "MOVING" {
 
 // Death
 $sequence "DYING DTA" {
-	"anims\NIMSST_DTA"
+	"anims/NIMSST_DTA"
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
@@ -92,7 +92,7 @@ $sequence "DYING DTA" {
 	X
 }
 $sequence "DYING DTB" {
-	"anims\NIMSST_DTB"
+	"anims/NIMSST_DTB"
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
@@ -100,18 +100,18 @@ $sequence "DYING DTB" {
 	X
 }
 $sequence "TRANS_Dying TRANS_Flailing" {
-	"anims\NIMSST_ADTD1"
+	"anims/NIMSST_ADTD1"
 	fps 30
 	rotate -90
 }
 $sequence "DYING EXPLODED_FLAILING" {
-	"anims\NIMSST_ADTD2"
+	"anims/NIMSST_ADTD2"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "DYING EXPLODED_BOUNCING" {
-	"anims\NIMSST_ADTD3"
+	"anims/NIMSST_ADTD3"
 	fps 30
 	rotate -90
 }
@@ -119,25 +119,25 @@ $sequence "DYING EXPLODED_BOUNCING" {
 
 // PARACHUTING ANIMATIONS
 //$sequence "FREEFALL" {
-//	"anims\NIMSST_PFL"
+//	"anims/NIMSST_PFL"
 //	fps 30
 //	rotate -90
 //}
 $sequence "PARACHUTING" {
-	"anims\NIMSST_PHG"
+	"anims/NIMSST_PHG"
 	fps 30
 	loop
 	rotate -90
 	ACT_GLIDE 1
 }
 $sequence "TRANS_Falling TRANS_Chute" {
-	"anims\NIMSST_POP"
+	"anims/NIMSST_POP"
 	fps 30
 	rotate -90
 	ACT_HOVER 1
 }
 $sequence "TRANS_Chute TRANS_Stand" {
-	"anims\NIMSST_PDN"
+	"anims/NIMSST_PDN"
 	fps 30
 	rotate -90
 	ACT_LAND 1
@@ -146,7 +146,7 @@ $sequence "TRANS_Chute TRANS_Stand" {
 
 // Cheering
 $sequence "SPECIAL_CHEERING" {
-	"anims\NIMSST_CHA"
+	"anims/NIMSST_CHA"
 	fps 30
 	loop
 	rotate -90
@@ -155,13 +155,13 @@ $sequence "SPECIAL_CHEERING" {
 
 // !!!UNUSED!!!
 $sequence "unused SUR" {
-	"anims\NIMSST_SUR"
+	"anims/NIMSST_SUR"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused SST" {
-	"anims\NIMSST_SST"
+	"anims/NIMSST_SST"
 	fps 30
 	loop
 	rotate -90
@@ -170,13 +170,13 @@ $sequence "unused SST" {
 
 // Basic monster sequences
 $sequence "reload" {
-	"anims\NIMSST_IDA"
+	"anims/NIMSST_IDA"
 	fps 294
 	rotate -90
 	ACT_RELOAD 1
 }
 $sequence "shoot1" {
-	"anims\NIMSST_ATA"
+	"anims/NIMSST_ATA"
 	fps 116
 	rotate -90
 	ACT_RANGE_ATTACK1 1

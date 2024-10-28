@@ -15,7 +15,7 @@ $flags 768
 
 // Carrying a full wobbly net of stuff
 $sequence "CARRYING" {
-	"anims\A"
+	"anims/A"
 	fps 30
 	loop
 	rotate -90

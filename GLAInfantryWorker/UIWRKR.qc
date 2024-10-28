@@ -253,13 +253,13 @@ $sequence "TRANS_Constructing TRANS_Stand" {
 
 // !!!UNUSED!!!
 $sequence "unused SUR" {
-	"anims\UIWRKR_SUR"
+	"anims/UIWRKR_SUR"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused SST" {
-	"anims\UIWRKR_SST"
+	"anims/UIWRKR_SST"
 	fps 30
 	loop
 	rotate -90

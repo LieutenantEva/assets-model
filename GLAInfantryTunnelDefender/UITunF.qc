@@ -71,7 +71,7 @@ $sequence "DefaultConditionState IDC" {
 
 // Running
 $sequence "MOVING RNA" {
-	"anims\RNA"
+	"anims/RNA"
 	fps 15
 	loop
 	rotate -90
@@ -79,7 +79,7 @@ $sequence "MOVING RNA" {
 	LX
 }
 $sequence "MOVING RNB" {
-	"anims\RNB"
+	"anims/RNB"
 	fps 25
 	loop
 	rotate -90
@@ -90,7 +90,7 @@ $sequence "MOVING RNB" {
 
 // Walking
 $sequence "MOVING WKA" {
-	"anims\WKA"
+	"anims/WKA"
 	fps 16
 	loop
 	rotate -90
@@ -98,7 +98,7 @@ $sequence "MOVING WKA" {
 	LX
 }
 $sequence "MOVING WKB" {
-	"anims\WKB"
+	"anims/WKB"
 	fps 30
 	loop
 	rotate -90
@@ -106,7 +106,7 @@ $sequence "MOVING WKB" {
 	LX
 }
 $sequence "MOVING WKC" {
-	"anims\WKC"
+	"anims/WKC"
 	fps 30
 	loop
 	rotate -90
@@ -117,7 +117,7 @@ $sequence "MOVING WKC" {
 
 // Death
 $sequence "DYING DTA" {
-	"anims\UITunF_DTA"
+	"anims/UITunF_DTA"
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
@@ -125,7 +125,7 @@ $sequence "DYING DTA" {
 	X
 }
 $sequence "DYING DTB" {
-	"anims\UITunF_DTB"
+	"anims/UITunF_DTB"
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
@@ -133,50 +133,50 @@ $sequence "DYING DTB" {
 	X
 }
 $sequence "TRANS_Dying TRANS_Flailing ADTA1" {
-	"anims\UITunF_ADTA1"
+	"anims/UITunF_ADTA1"
 	fps 30
 	rotate -90
 }
 $sequence "DYING EXPLODED_FLAILING ADTA2" {
-	"anims\UITunF_ADTA2"
+	"anims/UITunF_ADTA2"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "DYING EXPLODED_BOUNCING ADTA3" {
-	"anims\UITunF_ADTA3"
+	"anims/UITunF_ADTA3"
 	fps 30
 	rotate -90
 }
 $sequence "TRANS_Dying TRANS_Flailing ADTE1" {
-	"anims\UITunF_ADTE1"
+	"anims/UITunF_ADTE1"
 	fps 30
 	rotate -90
 }
 $sequence "DYING EXPLODED_FLAILING ADTE2" {
-	"anims\UITunF_ADTE2"
+	"anims/UITunF_ADTE2"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "DYING EXPLODED_BOUNCING ADTE3" {
-	"anims\UITunF_ADTE3"
+	"anims/UITunF_ADTE3"
 	fps 30
 	rotate -90
 }
 $sequence "TRANS_Dying TRANS_Flailing ADTF1" {
-	"anims\UITunF_ADTF1"
+	"anims/UITunF_ADTF1"
 	fps 30
 	rotate -90
 }
 $sequence "DYING EXPLODED_FLAILING ADTF2" {
-	"anims\UITunF_ADTF2"
+	"anims/UITunF_ADTF2"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "DYING EXPLODED_BOUNCING ADTF3" {
-	"anims\UITunF_ADTF3"
+	"anims/UITunF_ADTF3"
 	fps 30
 	rotate -90
 }
@@ -184,7 +184,7 @@ $sequence "DYING EXPLODED_BOUNCING ADTF3" {
 
 // Firing
 $sequence "FIRING_A" {
-	"anims\UITunF_ATA"
+	"anims/UITunF_ATA"
 	fps 30
 	loop
 	rotate -90
@@ -193,7 +193,7 @@ $sequence "FIRING_A" {
 
 // Cheering
 $sequence "SPECIAL_CHEERING" {
-	"anims\UITunF_CHA"
+	"anims/UITunF_CHA"
 	fps 30
 	loop
 	rotate -90
@@ -202,19 +202,19 @@ $sequence "SPECIAL_CHEERING" {
 
 // !!!UNUSED!!!
 $sequence "unused SWK" {
-	"anims\UITunF_SWK"
+	"anims/UITunF_SWK"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused SUR" {
-	"anims\UITunF_SUR"
+	"anims/UITunF_SUR"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused SST" {
-	"anims\UITunF_SST"
+	"anims/UITunF_SST"
 	fps 30
 	loop
 	rotate -90
@@ -223,13 +223,13 @@ $sequence "unused SST" {
 
 // Basic monster sequences
 $sequence "reload" {
-	"anims\UITunF_IDC"
+	"anims/UITunF_IDC"
 	fps 534
 	rotate -90
 	ACT_RELOAD 1
 }
 $sequence "shoot1" {
-	"anims\UITunF_ATA"
+	"anims/UITunF_ATA"
 	fps 51
 	rotate -90
 	ACT_RANGE_ATTACK1 1

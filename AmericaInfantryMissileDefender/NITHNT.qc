@@ -65,7 +65,7 @@ $sequence "DefaultConditionState IDB" {
 
 // Firing
 $sequence "FIRING_A" {
-	"anims\NITHNT_ATA"
+	"anims/NITHNT_ATA"
 	fps 30
 	loop
 	rotate -90
@@ -74,7 +74,7 @@ $sequence "FIRING_A" {
 
 // Running
 $sequence "MOVING" {
-	"anims\RNA"
+	"anims/RNA"
 	fps 20
 	loop
 	rotate -90
@@ -85,7 +85,7 @@ $sequence "MOVING" {
 
 // Death
 $sequence "DYING DTA" {
-	"anims\NITHNT_DTA"
+	"anims/NITHNT_DTA"
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
@@ -93,7 +93,7 @@ $sequence "DYING DTA" {
 	X
 }
 $sequence "DYING DTB" {
-	"anims\NITHNT_DTB"
+	"anims/NITHNT_DTB"
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
@@ -101,18 +101,18 @@ $sequence "DYING DTB" {
 	X
 }
 $sequence "TRANS_Dying TRANS_Flailing" {
-	"anims\NITHNT_ADTA1"
+	"anims/NITHNT_ADTA1"
 	fps 30
 	rotate -90
 }
 $sequence "DYING EXPLODED_FLAILING" {
-	"anims\NITHNT_ADTA2"
+	"anims/NITHNT_ADTA2"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "DYING EXPLODED_BOUNCING" {
-	"anims\NITHNT_ADTA3"
+	"anims/NITHNT_ADTA3"
 	fps 30
 	rotate -90
 }
@@ -120,25 +120,25 @@ $sequence "DYING EXPLODED_BOUNCING" {
 
 // PARACHUTING ANIMATIONS
 $sequence "FREEFALL" {
-	"anims\NITHNT_PFL"
+	"anims/NITHNT_PFL"
 	fps 30
 	rotate -90
 }
 $sequence "PARACHUTING" {
-	"anims\NITHNT_PHG"
+	"anims/NITHNT_PHG"
 	fps 30
 	loop
 	rotate -90
 	ACT_GLIDE 1
 }
 $sequence "TRANS_Falling TRANS_Chute" {
-	"anims\NITHNT_POP"
+	"anims/NITHNT_POP"
 	fps 30
 	rotate -90
 	ACT_HOVER 1
 }
 $sequence "TRANS_Chute TRANS_Stand" {
-	"anims\NITHNT_PTD"
+	"anims/NITHNT_PTD"
 	fps 30
 	rotate -90
 	ACT_LAND 1
@@ -147,7 +147,7 @@ $sequence "TRANS_Chute TRANS_Stand" {
 
 // Cheering
 $sequence "SPECIAL_CHEERING" {
-	"anims\NITHNT_CHA"
+	"anims/NITHNT_CHA"
 	fps 30
 	loop
 	rotate -90
@@ -156,13 +156,13 @@ $sequence "SPECIAL_CHEERING" {
 
 // !!!UNUSED!!!
 $sequence "unused SUR" {
-	"anims\NITHNT_SUR"
+	"anims/NITHNT_SUR"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused SST" {
-	"anims\NITHNT_SST"
+	"anims/NITHNT_SST"
 	fps 30
 	loop
 	rotate -90
@@ -171,13 +171,13 @@ $sequence "unused SST" {
 
 // Basic monster sequences
 $sequence "reload" {
-	"anims\NITHNT_STA"
+	"anims/NITHNT_STA"
 	fps 381
 	rotate -90
 	ACT_RELOAD 1
 }
 $sequence "shoot1" {
-	"anims\NITHNT_ATA"
+	"anims/NITHNT_ATA"
 	fps 116
 	rotate -90
 	ACT_RANGE_ATTACK1 1

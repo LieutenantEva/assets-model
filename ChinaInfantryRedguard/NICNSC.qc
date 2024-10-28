@@ -71,25 +71,25 @@ $sequence "REALLYDAMAGED" {
 
 // ------- Machine Gun Animations
 $sequence "USING_WEAPON_A" {
-	"anims\NICNSC_ATA"
+	"anims/NICNSC_ATA"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "USING_WEAPON_A REALLYDAMAGED" {
-	"anims\NICNSC_ATC"
+	"anims/NICNSC_ATC"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "USING_WEAPON_B" {
-	"anims\NICNSC_ATA2"
+	"anims/NICNSC_ATA2"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "USING_WEAPON_B REALLYDAMAGED" {
-	"anims\NICNSC_ATC2"
+	"anims/NICNSC_ATC2"
 	fps 30
 	loop
 	rotate -90
@@ -98,29 +98,29 @@ $sequence "USING_WEAPON_B REALLYDAMAGED" {
 
 // ------- Firing-related Transitions
 $sequence "TRANS_Firing TRANS_FiringDamaged" {
-	"anims\NICNSC_AA2AC"
+	"anims/NICNSC_AA2AC"
 	fps 30
 	rotate -90
 }
 $sequence "TRANS_Stand TRANS_Firing" {
-	"anims\NICNSC_SA2AA"
+	"anims/NICNSC_SA2AA"
 	fps 30
 	rotate -90
 	ACT_RELOAD 1
 	{ event 2 1 }
 }
 $sequence "TRANS_Firing TRANS_Stand" {
-	"anims\NICNSC_AA2SA"
+	"anims/NICNSC_AA2SA"
 	fps 30
 	rotate -90
 }
 $sequence "TRANS_StandDamaged TRANS_FiringDamaged" {
-	"anims\NICNSC_ATCST"
+	"anims/NICNSC_ATCST"
 	fps 30
 	rotate -90
 }
 $sequence "TRANS_FiringDamaged TRANS_StandDamaged" {
-	"anims\NICNSC_ATCED"
+	"anims/NICNSC_ATCED"
 	fps 30
 	rotate -90
 }
@@ -128,17 +128,17 @@ $sequence "TRANS_FiringDamaged TRANS_StandDamaged" {
 
 // ------------- Damage Transitions --------------------
 $sequence "TRANS_StandDamaged TRANS_RunDamaged" {
-	"anims\NICNSC_STB2RNB"
+	"anims/NICNSC_STB2RNB"
 	fps 30
 	rotate -90
 }
 $sequence "TRANS_RunDamaged TRANS_StandDamaged" {
-	"anims\NICNSC_RNB2STB"
+	"anims/NICNSC_RNB2STB"
 	fps 30
 	rotate -90
 }
 $sequence "TRANS_Stand TRANS_StandDamaged" {
-	"anims\NICNSC_STA2STB"
+	"anims/NICNSC_STA2STB"
 	fps 30
 	rotate -90
 }
@@ -146,7 +146,7 @@ $sequence "TRANS_Stand TRANS_StandDamaged" {
 
 // ------- Bayonet Animations
 $sequence "PREATTACK_C" {
-	"anims\NICNSC_ATB1"
+	"anims/NICNSC_ATB1"
 	fps 30
 	rotate -90
 	ACT_MELEE_ATTACK1 1
@@ -154,17 +154,17 @@ $sequence "PREATTACK_C" {
 	{ event 2010 16 }
 }
 $sequence "FIRING_C" {
-	"anims\NICNSC_ATB2"
+	"anims/NICNSC_ATB2"
 	fps 30
 	rotate -90
 }
 $sequence "PREATTACK_C REALLYDAMAGED" {
-	"anims\NICNSC_ATD1"
+	"anims/NICNSC_ATD1"
 	fps 30
 	rotate -90
 }
 $sequence "FIRING_C REALLYDAMAGED" {
-	"anims\NICNSC_ATD2"
+	"anims/NICNSC_ATD2"
 	fps 30
 	rotate -90
 }
@@ -172,25 +172,25 @@ $sequence "FIRING_C REALLYDAMAGED" {
 
 // ------- Parachuting Animations
 //$sequence "FREEFALL" {
-//	"anims\NICNSC_POP"
+//	"anims/NICNSC_POP"
 //	fps 30
 //	rotate -90
 //}
 $sequence "PARACHUTING" {
-	"anims\NICNSC_PHG"
+	"anims/NICNSC_PHG"
 	fps 30
 	loop
 	rotate -90
 	ACT_GLIDE 1
 }
 $sequence "TRANS_Falling TRANS_Chute" {
-	"anims\NICNSC_POP"
+	"anims/NICNSC_POP"
 	fps 30
 	rotate -90
 	ACT_HOVER 1
 }
 $sequence "TRANS_Chute TRANS_Stand" {
-	"anims\NICNSC_PTD"
+	"anims/NICNSC_PTD"
 	fps 30
 	rotate -90
 	ACT_LAND 1
@@ -199,7 +199,7 @@ $sequence "TRANS_Chute TRANS_Stand" {
 
 // ------- Movement Animations
 $sequence "MOVING" {
-	"anims\RNA"
+	"anims/RNA"
 	fps 26
 	loop
 	rotate -90
@@ -207,7 +207,7 @@ $sequence "MOVING" {
 	LX
 }
 $sequence "MOVING REALLYDAMAGED" {
-	"anims\RNB"
+	"anims/RNB"
 	fps 30
 	loop
 	rotate -90
@@ -218,22 +218,22 @@ $sequence "MOVING REALLYDAMAGED" {
 
 // ------- Bldg-capture
 $sequence "UNPACKING" {
-	"anims\NICNSC_FDP1"
+	"anims/NICNSC_FDP1"
 	fps 30
 	rotate -90
 }
 $sequence "RAISING_FLAG" {
-	"anims\NICNSC_FDP2"
+	"anims/NICNSC_FDP2"
 	fps 30
 	rotate -90
 }
 $sequence "PACKING" {
-	"anims\NICNSC_FDP1-reversed"
+	"anims/NICNSC_FDP1-reversed"
 	fps 30
 	rotate -90
 }
 $sequence "TRANS_Raising TRANS_Packing" {
-	"anims\NICNSC_FDP2-reversed"
+	"anims/NICNSC_FDP2-reversed"
 	fps 30
 	rotate -90
 }
@@ -241,7 +241,7 @@ $sequence "TRANS_Raising TRANS_Packing" {
 
 // ------- Dying Animations
 $sequence "DYING DTA" {
-	"anims\NICNSC_DTA"
+	"anims/NICNSC_DTA"
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
@@ -250,7 +250,7 @@ $sequence "DYING DTA" {
 	X
 }
 $sequence "DYING DTB" {
-	"anims\NICNSC_DTB"
+	"anims/NICNSC_DTB"
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
@@ -259,18 +259,18 @@ $sequence "DYING DTB" {
 	X
 }
 $sequence "TRANS_Dying TRANS_Flailing" {
-	"anims\NICNSC_ATDE1"
+	"anims/NICNSC_ATDE1"
 	fps 30
 	rotate -90
 }
 $sequence "DYING EXPLODED_FLAILING" {
-	"anims\NICNSC_ATDE2"
+	"anims/NICNSC_ATDE2"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "DYING EXPLODED_BOUNCING" {
-	"anims\NICNSC_ATDE3"
+	"anims/NICNSC_ATDE3"
 	fps 30
 	rotate -90
 }
@@ -278,13 +278,13 @@ $sequence "DYING EXPLODED_BOUNCING" {
 
 // --- cheering
 $sequence "SPECIAL_CHEERING" {
-	"anims\NICNSC_CHA"
+	"anims/NICNSC_CHA"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "SPECIAL_CHEERING REALLYDAMAGED" {
-	"anims\NICNSC_CHB"
+	"anims/NICNSC_CHB"
 	fps 30
 	loop
 	rotate -90
@@ -293,49 +293,49 @@ $sequence "SPECIAL_CHEERING REALLYDAMAGED" {
 
 // !!!UNUSED!!!
 $sequence "unused MAR" {
-	"anims\NICNSC_MAR"
+	"anims/NICNSC_MAR"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused MARN" {
-	"anims\NICNSC_MARN"
+	"anims/NICNSC_MARN"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused CAPED" {
-	"anims\NICNSC_CAPED"
+	"anims/NICNSC_CAPED"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused CAPST" {
-	"anims\NICNSC_CAPST"
+	"anims/NICNSC_CAPST"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused CAP" {
-	"anims\NICNSC_CAP"
+	"anims/NICNSC_CAP"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused CAPB" {
-	"anims\NICNSC_CAPB"
+	"anims/NICNSC_CAPB"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused SUR" {
-	"anims\NICNSC_SUR"
+	"anims/NICNSC_SUR"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused SST" {
-	"anims\NICNSC_SST"
+	"anims/NICNSC_SST"
 	fps 30
 	loop
 	rotate -90
@@ -344,65 +344,65 @@ $sequence "unused SST" {
 
 // HGrunt/Massn specific anims
 $sequence "advance_signal" {
-	"anims\NICNSC_CHA"
+	"anims/NICNSC_CHA"
 	fps 200
 	rotate -90
 	ACT_SIGNAL1 1
 	{ event 10 1 }
 }
 $sequence "victorydance" {
-	"anims\NICNSC_CHA"
+	"anims/NICNSC_CHA"
 	fps 30
 	rotate -90
 	ACT_VICTORY_DANCE 1
 }
 $sequence "cower" {
-	"anims\NICNSC_AA2SA"
+	"anims/NICNSC_AA2SA"
 	fps 30
 	rotate -90
 	ACT_COWER 1
 }
 $sequence "combatidle" {
-	"anims\NICNSC_SA2AA"
+	"anims/NICNSC_SA2AA"
 	fps 30
 	rotate -90
 	ACT_IDLE_ANGRY 1
 }
 $sequence "crouching_idle" {
-	"anims\NICNSC_SA2AA"
+	"anims/NICNSC_SA2AA"
 	fps 30
 	rotate -90
 }
 $sequence "crouching_wait" {
-	"anims\NICNSC_AA2SA"
+	"anims/NICNSC_AA2SA"
 	fps 30
 	rotate -90
 	ACT_CROUCH 0
 	frame 0 0
 }
 $sequence "throwgrenade" {
-	"anims\NICNSC_ATA2"
+	"anims/NICNSC_ATA2"
 	fps 30
 	rotate -90
 	ACT_RANGE_ATTACK2 1
 	{ event 7 0 }
 }
 $sequence "launchgrenade" {
-	"anims\NICNSC_ATA2"
+	"anims/NICNSC_ATA2"
 	fps 30
 	rotate -90
 	ACT_RANGE_ATTACK2 1
 	{ event 8 0 }
 }
 $sequence "drop_grenade" {
-	"anims\NICNSC_FDP1"
+	"anims/NICNSC_FDP1"
 	fps 60
 	rotate -90
 	ACT_SPECIAL_ATTACK1 1
 	{ event 9 83 }
 }
 $sequence "crouching_mp5" {
-	"anims\NICNSC_ATA"
+	"anims/NICNSC_ATA"
 	fps 30
 	rotate -90
 	ACT_RANGE_ATTACK1 1
@@ -418,7 +418,7 @@ $sequence "crouching_mp5" {
 	{ event 5001 0 "50" }
 }
 $sequence "standing_mp5" {
-	"anims\NICNSC_ATA"
+	"anims/NICNSC_ATA"
 	fps 30
 	rotate -90
 	ACT_RANGE_ATTACK1 1
@@ -434,7 +434,7 @@ $sequence "standing_mp5" {
 	{ event 5001 0 "50" }
 }
 $sequence "crouching_shotgun" {
-	"anims\NICNSC_ATA"
+	"anims/NICNSC_ATA"
 	fps 30
 	rotate -90
 	ACT_RANGE_ATTACK1 1
@@ -443,7 +443,7 @@ $sequence "crouching_shotgun" {
 	{ event 5001 0 "51" }
 }
 $sequence "standing_shotgun" {
-	"anims\NICNSC_ATA"
+	"anims/NICNSC_ATA"
 	fps 30
 	rotate -90
 	ACT_RANGE_ATTACK1 1
@@ -452,7 +452,7 @@ $sequence "standing_shotgun" {
 	{ event 5001 0 "51" }
 }
 $sequence "repel_shoot" {
-	"anims\NICNSC_PHG"
+	"anims/NICNSC_PHG"
 	fps 30
 	rotate -90
 	ACT_FLY 1

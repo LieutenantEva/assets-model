@@ -78,7 +78,7 @@ $sequence "REALLYDAMAGED IDD" {
 	rotate -90
 }
 $sequence "TRANS_Standing TRANS_StandingHurt" {
-	"anims\UIRGRD_STA2STB"
+	"anims/UIRGRD_STA2STB"
 	fps 30
 	rotate -90
 }
@@ -86,7 +86,7 @@ $sequence "TRANS_Standing TRANS_StandingHurt" {
 
 // ---- moving
 $sequence "MOVING" {
-	"anims\RNA"
+	"anims/RNA"
 	fps 15
 	loop
 	rotate -90
@@ -94,7 +94,7 @@ $sequence "MOVING" {
 	LX
 }
 $sequence "MOVING REALLYDAMAGED" {
-	"anims\RNB"
+	"anims/RNB"
 	fps 30
 	loop
 	rotate -90
@@ -105,25 +105,25 @@ $sequence "MOVING REALLYDAMAGED" {
 
 // ------- Bldg-capture
 //$sequence "UNPACKING" {
-//	"anims\FDPB1"
+//	"anims/FDPB1"
 //	fps 30
 //	loop
 //	rotate -90
 //}
 $sequence "RAISING_FLAG" {
-	"anims\FDP2"
+	"anims/FDP2"
 	fps 30
 	loop
 	rotate -90
 }
 //$sequence "PACKING" {
-//	"anims\FDP1-reversed"
+//	"anims/FDP1-reversed"
 //	fps 30
 //	loop
 //	rotate -90
 //}
 $sequence "TRANS_Raising TRANS_Packing" {
-	"anims\FDP2-reversed"
+	"anims/FDP2-reversed"
 	fps 30
 	loop
 	rotate -90
@@ -132,7 +132,7 @@ $sequence "TRANS_Raising TRANS_Packing" {
 
 // ---- dying 
 $sequence "DYING DTA" {
-	"anims\UIRGrd_DTA"
+	"anims/UIRGrd_DTA"
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
@@ -141,7 +141,7 @@ $sequence "DYING DTA" {
 	X
 }
 $sequence "DYING DTB" {
-	"anims\UIRGrd_DTB"
+	"anims/UIRGrd_DTB"
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
@@ -150,18 +150,18 @@ $sequence "DYING DTB" {
 	X
 }
 $sequence "TRANS_Dying TRANS_Flailing" {
-	"anims\UIRGrd_ADTE1"
+	"anims/UIRGrd_ADTE1"
 	fps 30
 	rotate -90
 }
 $sequence "DYING EXPLODED_FLAILING" {
-	"anims\UIRGrd_ADTE2"
+	"anims/UIRGrd_ADTE2"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "DYING EXPLODED_BOUNCING" {
-	"anims\UIRGrd_ADTE3"
+	"anims/UIRGrd_ADTE3"
 	fps 30
 	rotate -90
 }
@@ -169,13 +169,13 @@ $sequence "DYING EXPLODED_BOUNCING" {
 
 // --- cheering
 $sequence "SPECIAL_CHEERING" {
-	"anims\UIRGrd_CHA"
+	"anims/UIRGrd_CHA"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "SPECIAL_CHEERING REALLYDAMAGED" {
-	"anims\UIRGrd_CHB"
+	"anims/UIRGrd_CHB"
 	fps 30
 	loop
 	rotate -90
@@ -184,47 +184,47 @@ $sequence "SPECIAL_CHEERING REALLYDAMAGED" {
 
 // ---- firing
 $sequence "USING_WEAPON_A ATA" {
-	"anims\UIRGrd_ATA"
+	"anims/UIRGrd_ATA"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "USING_WEAPON_A ATA3" {
-	"anims\UIRGrd_ATA3"
+	"anims/UIRGrd_ATA3"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "USING_WEAPON_A REALLYDAMAGED" {
-	"anims\UIRGrd_ATA2"
+	"anims/UIRGrd_ATA2"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "TRANS_Firing TRANS_FiringHurt" {
-	"anims\UIRGRD_ATA2ATA2"
+	"anims/UIRGRD_ATA2ATA2"
 	fps 30
 	rotate -90
 }
 $sequence "TRANS_Standing TRANS_Firing" {
-	"anims\UIRGrd_ATAST"
+	"anims/UIRGrd_ATAST"
 	fps 30
 	rotate -90
 	ACT_RELOAD 1
 	{ event 2 1 }
 }
 $sequence "TRANS_Firing TRANS_Standing" {
-	"anims\UIRGrd_ATAED"
+	"anims/UIRGrd_ATAED"
 	fps 30
 	rotate -90
 }
 $sequence "TRANS_StandingHurt TRANS_FiringHurt" {
-	"anims\UIRGrd_ATA2ED-reversed"
+	"anims/UIRGrd_ATA2ED-reversed"
 	fps 30
 	rotate -90
 }
 $sequence "TRANS_FiringHurt TRANS_StandingHurt" {
-	"anims\UIRGrd_ATA2ED"
+	"anims/UIRGrd_ATA2ED"
 	fps 30
 	rotate -90
 }
@@ -232,25 +232,25 @@ $sequence "TRANS_FiringHurt TRANS_StandingHurt" {
 
 // ----- PARACHUTING ANIMATIONS
 //$sequence "FREEFALL" {
-//	"anims\UIRGrd_PFL"
+//	"anims/UIRGrd_PFL"
 //	fps 30
 //	rotate -90
 //}
 $sequence "PARACHUTING" {
-	"anims\UIRGrd_PHG"
+	"anims/UIRGrd_PHG"
 	fps 30
 	loop
 	rotate -90
 	ACT_GLIDE 1
 }
 $sequence "TRANS_Falling TRANS_Chute" {
-	"anims\UIRGrd_POP"
+	"anims/UIRGrd_POP"
 	fps 30
 	rotate -90
 	ACT_HOVER 1
 }
 $sequence "TRANS_Chute TRANS_Stand" {
-	"anims\UIRGrd_PTD"
+	"anims/UIRGrd_PTD"
 	fps 30
 	rotate -90
 	ACT_LAND 1
@@ -259,37 +259,37 @@ $sequence "TRANS_Chute TRANS_Stand" {
 
 // !!!UNUSED!!!
 $sequence "unused CAP" {
-	"anims\UIRGRD_CAP"
+	"anims/UIRGRD_CAP"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused CAPB" {
-	"anims\UIRGRD_CAPB"
+	"anims/UIRGRD_CAPB"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused SUR" {
-	"anims\UIRGRD_SUR"
+	"anims/UIRGRD_SUR"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused SURB" {
-	"anims\UIRGRD_SURB"
+	"anims/UIRGRD_SURB"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused SST" {
-	"anims\UIRGRD_SST"
+	"anims/UIRGRD_SST"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused SSTB" {
-	"anims\UIRGRD_SSTB"
+	"anims/UIRGRD_SSTB"
 	fps 30
 	loop
 	rotate -90
@@ -298,37 +298,37 @@ $sequence "unused SSTB" {
 
 // HGrunt/Massn specific anims
 $sequence "advance_signal" {
-	"anims\UIRGrd_CHB"
+	"anims/UIRGrd_CHB"
 	fps 200
 	rotate -90
 	ACT_SIGNAL1 1
 	{ event 10 1 }
 }
 $sequence "victorydance" {
-	"anims\UIRGrd_CHA"
+	"anims/UIRGrd_CHA"
 	fps 30
 	rotate -90
 	ACT_VICTORY_DANCE 1
 }
 $sequence "cower" {
-	"anims\UIRGrd_ATAED"
+	"anims/UIRGrd_ATAED"
 	fps 30
 	rotate -90
 	ACT_COWER 1
 }
 $sequence "combatidle" {
-	"anims\UIRGrd_ATAST"
+	"anims/UIRGrd_ATAST"
 	fps 30
 	rotate -90
 	ACT_IDLE_ANGRY 1
 }
 $sequence "crouching_idle" {
-	"anims\UIRGrd_ATAST"
+	"anims/UIRGrd_ATAST"
 	fps 30
 	rotate -90
 }
 $sequence "crouching_wait" {
-	"anims\UIRGrd_ATAED"
+	"anims/UIRGrd_ATAED"
 	fps 30
 	loop
 	rotate -90
@@ -336,28 +336,28 @@ $sequence "crouching_wait" {
 	frame 0 0
 }
 $sequence "throwgrenade" {
-	"anims\UIRGrd_ATA3"
+	"anims/UIRGrd_ATA3"
 	fps 90
 	rotate -90
 	ACT_RANGE_ATTACK2 1
 	{ event 7 0 }
 }
 $sequence "launchgrenade" {
-	"anims\UIRGrd_ATA3"
+	"anims/UIRGrd_ATA3"
 	fps 90
 	rotate -90
 	ACT_RANGE_ATTACK2 1
 	{ event 8 0 }
 }
 $sequence "drop_grenade" {
-	"anims\UIRGRD_SUR"
+	"anims/UIRGRD_SUR"
 	fps 300
 	rotate -90
 	ACT_SPECIAL_ATTACK1 1
 	{ event 9 128 }
 }
 $sequence "crouching_mp5" {
-	"anims\UIRGrd_ATA"
+	"anims/UIRGrd_ATA"
 	fps 30
 	rotate -90
 	ACT_RANGE_ATTACK1 1
@@ -417,7 +417,7 @@ $sequence "crouching_mp5" {
 	{ event 5001 52 "50" }
 }
 $sequence "standing_mp5" {
-	"anims\UIRGrd_ATA"
+	"anims/UIRGrd_ATA"
 	fps 30
 	rotate -90
 	ACT_RANGE_ATTACK1 1
@@ -477,7 +477,7 @@ $sequence "standing_mp5" {
 	{ event 5001 52 "50" }
 }
 $sequence "crouching_shotgun" {
-	"anims\UIRGrd_ATA"
+	"anims/UIRGrd_ATA"
 	fps 30
 	rotate -90
 	ACT_RANGE_ATTACK1 1
@@ -493,7 +493,7 @@ $sequence "crouching_shotgun" {
 	{ event 5001 44 "51" }
 }
 $sequence "standing_shotgun" {
-	"anims\UIRGrd_ATA"
+	"anims/UIRGrd_ATA"
 	fps 30
 	rotate -90
 	ACT_RANGE_ATTACK1 1
@@ -509,7 +509,7 @@ $sequence "standing_shotgun" {
 	{ event 5001 44 "51" }
 }
 $sequence "repel_shoot" {
-	"anims\UIRGrd_PHG"
+	"anims/UIRGrd_PHG"
 	fps 30
 	rotate -90
 	ACT_FLY 1

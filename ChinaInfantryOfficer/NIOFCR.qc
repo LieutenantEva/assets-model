@@ -62,7 +62,7 @@ $sequence "DefaultConditionState IDB" {
 
 // Running
 $sequence "MOVING" {
-	"anims\RNA"
+	"anims/RNA"
 	fps 30
 	loop
 	rotate -90
@@ -77,21 +77,21 @@ $sequence "MOVING" {
 
 // NORMAL ATTACK
 $sequence "PREATTACK_A" {
-	"anims\NIOFCR_ATAST"
+	"anims/NIOFCR_ATAST"
 	fps 30
 	rotate -90
 	ACT_ARM 1
 	{ event 2 8 }
 }
 $sequence "FIRING_A" {
-	"anims\NIOFCR_ATALP"
+	"anims/NIOFCR_ATALP"
 	fps 30
 	loop
 	rotate -90
 }
 //This transition allows him to put his gun away when he's finished attacking.
 $sequence "TRANS_FIRING_A TRANS_STAND" {
-	"anims\NIOFCR_ATAED"
+	"anims/NIOFCR_ATAED"
 	fps 30
 	rotate -90
 	ACT_DISARM 1
@@ -101,7 +101,7 @@ $sequence "TRANS_FIRING_A TRANS_STAND" {
 
 // Death
 $sequence "DYING DTA" {
-	"anims\NIOFCR_DTA"
+	"anims/NIOFCR_DTA"
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
@@ -109,7 +109,7 @@ $sequence "DYING DTA" {
 	X
 }
 $sequence "DYING DTB" {
-	"anims\NIOFCR_DTB"
+	"anims/NIOFCR_DTB"
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
@@ -117,18 +117,18 @@ $sequence "DYING DTB" {
 	X
 }
 $sequence "TRANS_Dying TRANS_Flailing" {
-	"anims\NIOFCR_ADTE1"
+	"anims/NIOFCR_ADTE1"
 	fps 30
 	rotate -90
 }
 $sequence "DYING EXPLODED_FLAILING" {
-	"anims\NIOFCR_ADTE2"
+	"anims/NIOFCR_ADTE2"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "DYING EXPLODED_BOUNCING" {
-	"anims\NIOFCR_ADTE3"
+	"anims/NIOFCR_ADTE3"
 	fps 30
 	rotate -90
 }
@@ -136,7 +136,7 @@ $sequence "DYING EXPLODED_BOUNCING" {
 
 // Cheering
 $sequence "SPECIAL_CHEERING" {
-	"anims\NIOFCR_CHA"
+	"anims/NIOFCR_CHA"
 	fps 30
 	loop
 	rotate -90
@@ -146,25 +146,25 @@ $sequence "SPECIAL_CHEERING" {
 // PARACHUTING ANIMATIONS
 //@TODO - MISSING ANIMATION FILE
 //$sequence "FREEFALL" {
-//	"anims\NIOFCR_PFL"
+//	"anims/NIOFCR_PFL"
 //	fps 30
 //	rotate -90
 //}
 $sequence "PARACHUTING" {
-	"anims\NIOFCR_PHG"
+	"anims/NIOFCR_PHG"
 	fps 30
 	loop
 	rotate -90
 	ACT_GLIDE 1
 }
 $sequence "TRANS_Falling TRANS_Chute" {
-	"anims\NIOFCR_POP"
+	"anims/NIOFCR_POP"
 	fps 30
 	rotate -90
 	ACT_HOVER 1
 }
 $sequence "TRANS_Chute TRANS_Stand" {
-	"anims\NIOFCR_PTD"
+	"anims/NIOFCR_PTD"
 	fps 30
 	rotate -90
 	ACT_LAND 1
@@ -173,25 +173,25 @@ $sequence "TRANS_Chute TRANS_Stand" {
 
 // !!!UNUSED!!!
 $sequence "unused SST" {
-	"anims\NIOFCR_SST"
+	"anims/NIOFCR_SST"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused SLP" {
-	"anims\NIOFCR_SLP"
+	"anims/NIOFCR_SLP"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused SWKST" {
-	"anims\NIOFCR_SWKST"
+	"anims/NIOFCR_SWKST"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "unused SWKLP" {
-	"anims\NIOFCR_SWKLP"
+	"anims/NIOFCR_SWKLP"
 	fps 30
 	loop
 	rotate -90
@@ -200,7 +200,7 @@ $sequence "unused SWKLP" {
 
 // Basic monster sequences
 $sequence "walk" {
-	"anims\RNA"
+	"anims/RNA"
 	fps 30
 	loop
 	rotate -90
@@ -212,7 +212,7 @@ $sequence "walk" {
 	{ event 1004 36 "common/npc_step4.wav" }
 }
 $sequence "reload" {
-	"anims\NIOFCR_ATAST"
+	"anims/NIOFCR_ATAST"
 	fps 30
 	rotate -90
 	ACT_RELOAD 1
@@ -224,7 +224,7 @@ $sequence "victorydance" {
 	ACT_VICTORY_DANCE 1
 }
 $sequence "shoot" {
-	"anims\NIOFCR_ATALP"
+	"anims/NIOFCR_ATALP"
 	fps 30
 	rotate -90
 	ACT_RANGE_ATTACK1 1
