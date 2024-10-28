@@ -341,7 +341,6 @@ $sequence "reload" {
 	fps 60
 	rotate -90
 	ACT_RELOAD 1
-	{ event 2 1 }
 }
 $sequence "victorydance" {
 	"anims/AIHERO_CHA"
