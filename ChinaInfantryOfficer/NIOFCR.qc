@@ -88,13 +88,6 @@ $sequence "FIRING_A" {
 	fps 30
 	loop
 	rotate -90
-	ACT_RANGE_ATTACK1 1
-	{ event 3 1 }
-	{ event 5001 1 "21" }
-	{ event 3 22 }
-	{ event 5001 22 "21" }
-	{ event 3 39 }
-	{ event 5001 39 "21" }
 }
 //This transition allows him to put his gun away when he's finished attacking.
 $sequence "TRANS_FIRING_A TRANS_STAND" {
@@ -229,6 +222,18 @@ $sequence "victorydance" {
 	fps 30
 	rotate -90
 	ACT_VICTORY_DANCE 1
+}
+$sequence "shoot" {
+	"anims\NIOFCR_ATALP"
+	fps 30
+	rotate -90
+	ACT_RANGE_ATTACK1 1
+	{ event 3 5 }
+	{ event 5001 5 "21" }
+	{ event 3 22 }
+	{ event 5001 22 "21" }
+	{ event 3 39 }
+	{ event 5001 39 "21" }
 }
 $sequence "flinch" {
 	"anims/NIOFCR_STA"
