@@ -222,6 +222,12 @@ $sequence "unused SST" {
 
 
 // Basic monster sequences
+$sequence "reload" {
+	"anims\UITunF_IDC"
+	fps 534
+	rotate -90
+	ACT_RELOAD 1
+}
 $sequence "shoot1" {
 	"anims\UITunF_ATA"
 	fps 51

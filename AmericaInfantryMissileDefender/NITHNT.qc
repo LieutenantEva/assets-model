@@ -70,13 +70,6 @@ $sequence "FIRING_A" {
 	loop
 	rotate -90
 }
-$sequence "RELOADING_A" {
-	"anims\NITHNT_ATA"
-	fps 10
-	rotate -90
-	ACT_RELOAD 1
-	{ event 2 1 }
-}
 
 
 // Running
@@ -177,6 +170,12 @@ $sequence "unused SST" {
 
 
 // Basic monster sequences
+$sequence "reload" {
+	"anims\NITHNT_STA"
+	fps 381
+	rotate -90
+	ACT_RELOAD 1
+}
 $sequence "shoot1" {
 	"anims\NITHNT_ATA"
 	fps 116
