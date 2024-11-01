@@ -21,7 +21,19 @@ $texrendermode Remap2_223_255_255.bmp masked
 
 $flags 0
 $eyeposition 0 0 73
-
+$hbox 3 "AIPFDR SPINE" -4.09 -6.55 -7.81 7.18 5.21 6.81
+$hbox 2 "AIPFDR SPINE1" -1.00 -9.01 -9.19 10.30 6.34 9.15
+$hbox 1 "AIPFDR HEAD" 0.00 -7.00 -6.00 15.00 7.00 5.00
+$hbox 4 "AIPFDR L UPPERA" 0.00 -4.00 -3.00 12.00 3.00 4.00
+$hbox 4 "AIPFDR L FOREAR" 0.00 -3.00 -3.00 12.00 3.00 3.00
+$hbox 4 "AIPFDR L HAND" 0.00 -1.94 -3.35 7.64 1.78 3.42
+$hbox 5 "AIPFDR R UPPERA" 0.00 -4.00 -3.00 12.00 3.00 4.00
+$hbox 5 "AIPFDR R FOREAR" 0 -3.00 -3.00 12.00 3.00 3.00
+$hbox 5 "AIPFDR R HAND" 0.00 -2.00 -3.27 7.51 1.86 3.26
+$hbox 6 "AIPFDR L THIGH" 0.00 -4.00 -3.00 33.00 6.00 4.00
+$hbox 6 "AIPFDR L FOOT" -1.00 -2.00 -4.00 4.00 11.00 4.00
+$hbox 7 "AIPFDR R THIGH" 0.00 -4.00 -3.00 33.00 6.00 4.00
+$hbox 7 "AIPFDR R FOOT" -1.00 -2.00 -3.00 4.00 11.00 4.00
 $attachment 0 "MUZZLE01" 0 0 0
 $attachment 1 "AIPFDR R HAND" 0 0 0
 $attachment 2 "AIPFDR HEAD" 0 0 0
