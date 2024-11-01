@@ -303,7 +303,7 @@ $sequence "fly_attack" {
 	{ event 1 17 }
 	{ event 1 17 }
 	{ event 1 17 }
-	{ event 5001 0 "31" }
+	{ event 5001 17 "31" }
 }
 $sequence "landfromjump" {
 	"anims/AIPFDR_ADTA3"
