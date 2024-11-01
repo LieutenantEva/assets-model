@@ -202,7 +202,7 @@ $sequence "victorydance" {
 }
 $sequence "shoot" {
 	"anims/AIPFDR_ATB"
-	fps 30
+	fps 15
 	rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 1 0 }
@@ -228,13 +228,13 @@ $sequence "shoot" {
 	{ event 1 0 }
 	{ event 5001 0 "31" }
 }
-//$sequence "grenadethrow" {
-//	"anims/AIPFDR_ATB"
-//	fps 30
-//	rotate -90
-//	ACT_RANGE_ATTACK2 1
-//	{ event 2 0 }
-//}
+$sequence "grenadethrow" {
+	"anims/AIPFDR_ATBTR"
+	fps 30
+	rotate -90
+	ACT_RANGE_ATTACK2 1
+	{ event 2 0 }
+}
 //$sequence "kick" {
 //	"anims/AIPFDR_ATC"
 //	fps 30
@@ -248,28 +248,50 @@ $sequence "shoot" {
 //	ACT_MELEE_ATTACK2 1
 //}
 $sequence "jump" {
-	"anims/AIPFDR_ADTA1"
+	"anims/AIPFDR_DVA"
 	fps 30
 	rotate -90
 	ACT_HOP 1
-	{ event 3 4 }
+	{ event 3 0 }
 }
 $sequence "fly_up" {
-	"anims/AIPFDR_ADTA2"
+	"anims/AIPFDR_STB"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "fly_down" {
-	"anims/AIPFDR_ADTA2"
+	"anims/AIPFDR_STB"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "fly_attack" {
-	"anims/AIPFDR_ADTA2"
-	fps 30
+	"anims/AIPFDR_ATA"
+	fps 23
 	rotate -90
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 1 17 }
+	{ event 5001 0 "31" }
 }
 $sequence "landfromjump" {
 	"anims/AIPFDR_ADTA3"
