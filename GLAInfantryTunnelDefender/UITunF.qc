@@ -9,7 +9,7 @@ $keepallbones
 $bodygroup "body" {
 	studio "bodies/UITunF_Body"
 }
-$bodygroup "Weapon" {
+$bodygroup "Primary Weapon" {
 	studio "bodies/UITunF_MissileLauncher"
 	blank
 }
@@ -71,47 +71,37 @@ $sequence "DefaultConditionState IDC" {
 
 // Running
 $sequence "MOVING RNA" {
-	"anims/RNA"
+	"anims/UITunF_RNA"
 	fps 15
 	loop
 	rotate -90
-	ACT_RUN 1
-	LX
 }
 $sequence "MOVING RNB" {
-	"anims/RNB"
+	"anims/UITunF_RNB"
 	fps 25
 	loop
 	rotate -90
-	ACT_RUN 1
-	LX
 }
 
 
 // Walking
 $sequence "MOVING WKA" {
-	"anims/WKA"
+	"anims/UITunF_WKA"
 	fps 16
 	loop
 	rotate -90
-	ACT_WALK 1
-	LX
 }
 $sequence "MOVING WKB" {
-	"anims/WKB"
+	"anims/UITunF_WKB"
 	fps 30
 	loop
 	rotate -90
-	ACT_WALK 1
-	LX
 }
 $sequence "MOVING WKC" {
-	"anims/WKC"
+	"anims/UITunF_WKC"
 	fps 30
 	loop
 	rotate -90
-	ACT_WALK 1
-	LX
 }
 
 
@@ -222,6 +212,66 @@ $sequence "unused SST" {
 
 
 // Basic monster sequences
+$sequence "run" {
+	"anims/_run"
+	fps 30
+	loop
+	rotate -90
+	ACT_RUN 1
+	LX
+	{ event 1004 4 "common/npc_step2.wav" }
+	{ event 1004 14 "common/npc_step4.wav" }
+}
+$sequence "run2" {
+	"anims/_run2"
+	fps 30
+	loop
+	rotate -90
+	ACT_RUN 1
+	LX
+	{ event 1004 10 "common/npc_step2.wav" }
+	{ event 1004 21 "common/npc_step4.wav" }
+	{ event 1004 34 "common/npc_step2.wav" }
+	{ event 1004 46 "common/npc_step4.wav" }
+}
+$sequence "walk" {
+	"anims/_walk"
+	fps 30
+	loop
+	rotate -90
+	ACT_WALK 1
+	LX
+	{ event 1004 4 "common/npc_step2.wav" }
+	{ event 1004 19 "common/npc_step3.wav" }
+}
+$sequence "walk2" {
+	"anims/_walk2"
+	fps 30
+	loop
+	rotate -90
+	ACT_WALK 1
+	LX
+	{ event 1004 10 "common/npc_step2.wav" }
+	{ event 1004 27 "common/npc_step3.wav" }
+	{ event 1004 48 "common/npc_step2.wav" }
+	{ event 1004 72 "common/npc_step3.wav" }
+	{ event 1004 98 "common/npc_step2.wav" }
+	{ event 1004 121 "common/npc_step3.wav" }
+}
+$sequence "walk3" {
+	"anims/_walk3"
+	fps 30
+	loop
+	rotate -90
+	ACT_WALK 1
+	LX
+	{ event 1004 16 "common/npc_step3.wav" }
+	{ event 1004 31 "common/npc_step2.wav" }
+	{ event 1004 46 "common/npc_step3.wav" }
+	{ event 1004 59 "common/npc_step2.wav" }
+	{ event 1004 77 "common/npc_step3.wav" }
+	{ event 1004 91 "common/npc_step2.wav" }
+}
 $sequence "reload" {
 	"anims/UITunF_IDC"
 	fps 534
