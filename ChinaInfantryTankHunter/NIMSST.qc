@@ -9,7 +9,7 @@ $keepallbones
 $bodygroup "body" {
 	studio "bodies/NIMSST_Body"
 }
-$bodygroup "Weapon" {
+$bodygroup "Primary Weapon" {
 	studio "bodies/NIMSST_MissileLauncher"
 	blank
 }
@@ -73,12 +73,10 @@ $sequence "FIRING_A" {
 
 // Running
 $sequence "MOVING" {
-	"anims/RNA"
+	"anims/NIMSST_RNA"
 	fps 20
 	loop
 	rotate -90
-	ACT_RUN 1
-	LX
 }
 
 
@@ -169,6 +167,26 @@ $sequence "unused SST" {
 
 
 // Basic monster sequences
+$sequence "run" {
+	"anims/_run"
+	fps 30
+	loop
+	rotate -90
+	ACT_RUN 1
+	LX
+	{ event 1004 3 "common/npc_step2.wav" }
+	{ event 1004 14 "common/npc_step4.wav" }
+}
+$sequence "walk" {
+	"anims/_run"
+	fps 30
+	loop
+	rotate -90
+	ACT_WALK 1
+	LX
+	{ event 1004 3 "common/npc_step2.wav" }
+	{ event 1004 14 "common/npc_step4.wav" }
+}
 $sequence "reload" {
 	"anims/NIMSST_IDA"
 	fps 294
