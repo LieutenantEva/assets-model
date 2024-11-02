@@ -6,7 +6,7 @@ $scale 5.0
 
 
 $keepallbones
-$body studio "AVCHINOOK_CargoNet"
+$body studio "bodies/AVCHINOOK_CargoNet"
 $texrendermode avchinooknet01.bmp masked
 
 
@@ -15,7 +15,7 @@ $flags 768
 
 // Carrying a full wobbly net of stuff
 $sequence "CARRYING" {
-	"anims/A"
+	"anims/cargonet_idle"
 	fps 30
 	loop
 	rotate -90

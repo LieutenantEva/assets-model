@@ -6,7 +6,7 @@ $scale 5.0
 
 
 $keepallbones
-$body studio "AVCHINOOK"
+$body studio "bodies/AVCHINOOK"
 $texturegroup ConditionState
 {
   { "avchinook.bmp" }
