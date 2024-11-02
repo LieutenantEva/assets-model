@@ -82,7 +82,6 @@ $sequence "MOVING FIRING_A" {
 	fps 15
 	loop
 	rotate -90
-	LX
 }
 
 
@@ -180,7 +179,7 @@ $sequence "unused SWK" {
 
 // Basic monster sequences
 $sequence "run" {
-	"anims/WKA"
+	"anims/_walk"
 	fps 30
 	loop
 	rotate -90
@@ -190,7 +189,7 @@ $sequence "run" {
 	{ event 1004 33 "common/npc_step3.wav" }
 }
 $sequence "walk" {
-	"anims/WKA"
+	"anims/_walk"
 	fps 30
 	loop
 	rotate -90
