@@ -58,16 +58,10 @@ $sequence "DefaultConditionState IDB" {
 
 // Running
 $sequence "MOVING" {
-	"anims/RNA"
+	"anims/AIRPLT_RNA"
 	fps 30
 	loop
 	rotate -90
-	ACT_RUN 1
-	LX
-	{ event 1004 7 "common/npc_step2.wav" }
-	{ event 1004 20 "common/npc_step4.wav" }
-	{ event 1004 30 "common/npc_step2.wav" }
-	{ event 1004 41 "common/npc_step4.wav" }
 }
 
 
@@ -165,8 +159,20 @@ $sequence "unused SURX" {
 
 
 // Basic monster sequences
+$sequence "run" {
+	"anims/_run"
+	fps 30
+	loop
+	rotate -90
+	ACT_RUN 1
+	LX
+	{ event 1004 7 "common/npc_step2.wav" }
+	{ event 1004 20 "common/npc_step4.wav" }
+	{ event 1004 30 "common/npc_step2.wav" }
+	{ event 1004 41 "common/npc_step4.wav" }
+}
 $sequence "walk" {
-	"anims/RNA"
+	"anims/_run"
 	fps 30
 	loop
 	rotate -90
