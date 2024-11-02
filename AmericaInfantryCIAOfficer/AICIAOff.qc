@@ -208,7 +208,7 @@ $sequence "run" {
 	rotate -90
 	ACT_RUN 1
 	LX
-	{ event 1004 1 "common/npc_step2.wav" }
+	{ event 1004 2 "common/npc_step2.wav" }
 	{ event 1004 14 "common/npc_step4.wav" }
 	{ event 1004 23 "common/npc_step2.wav" }
 	{ event 1004 37 "common/npc_step4.wav" }
@@ -220,7 +220,7 @@ $sequence "walk" {
 	rotate -90
 	ACT_WALK 1
 	LX
-	{ event 1004 1 "common/npc_step2.wav" }
+	{ event 1004 2 "common/npc_step2.wav" }
 	{ event 1004 14 "common/npc_step4.wav" }
 	{ event 1004 23 "common/npc_step2.wav" }
 	{ event 1004 37 "common/npc_step4.wav" }

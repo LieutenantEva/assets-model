@@ -350,7 +350,7 @@ $sequence "limprun" {
 	ACT_RUN_HURT 1
 	LX
 	{ event 1004 10 "common/npc_step2.wav" }
-	{ event 1004 21 "common/npc_step4.wav" }
+	{ event 1004 21 "common/npc_step3.wav" }
 }
 $sequence "reload" {
 	"anims/AIHERO_IATAHIT"
