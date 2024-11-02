@@ -9,7 +9,7 @@ $keepallbones
 $bodygroup "body" {
 	studio "bodies/NICNSC_Body"
 }
-$bodygroup "Weapon" {
+$bodygroup "Primary Weapon" {
 	studio "bodies/NICNSC_Rifle"
 	studio "bodies/NICNSC_Minigun"
 	blank
@@ -106,8 +106,6 @@ $sequence "TRANS_Stand TRANS_Firing" {
 	"anims/NICNSC_SA2AA"
 	fps 30
 	rotate -90
-	ACT_RELOAD 1
-	{ event 2 1 }
 }
 $sequence "TRANS_Firing TRANS_Stand" {
 	"anims/NICNSC_AA2SA"
@@ -149,9 +147,6 @@ $sequence "PREATTACK_C" {
 	"anims/NICNSC_ATB1"
 	fps 30
 	rotate -90
-	ACT_MELEE_ATTACK1 1
-	{ event 3 16 }
-	{ event 2010 16 }
 }
 $sequence "FIRING_C" {
 	"anims/NICNSC_ATB2"
@@ -199,20 +194,16 @@ $sequence "TRANS_Chute TRANS_Stand" {
 
 // ------- Movement Animations
 $sequence "MOVING" {
-	"anims/RNA"
+	"anims/NICNSC_RNA"
 	fps 26
 	loop
 	rotate -90
-	ACT_RUN 1
-	LX
 }
 $sequence "MOVING REALLYDAMAGED" {
-	"anims/RNB"
-	fps 30
+	"anims/NICNSC_RNB"
+	fps 28
 	loop
 	rotate -90
-	ACT_RUN_HURT 1
-	LX
 }
 
 
@@ -343,6 +334,47 @@ $sequence "unused SST" {
 
 
 // HGrunt/Massn specific anims
+$sequence "run" {
+	"anims/_run"
+	fps 30
+	loop
+	rotate -90
+	ACT_RUN 1
+	LX
+	{ event 1004 1 "common/npc_step2.wav" }
+	{ event 1004 11 "common/npc_step4.wav" }
+	{ event 1004 22 "common/npc_step2.wav" }
+	{ event 1004 32 "common/npc_step4.wav" }
+}
+$sequence "limprun" {
+	"anims/_limprun"
+	fps 30
+	loop
+	rotate -90
+	ACT_RUN_HURT 1
+	LX
+	{ event 1004 3 "common/npc_step2.wav" }
+	{ event 1004 16 "common/npc_step3.wav" }
+	{ event 1004 28 "common/npc_step2.wav" }
+	{ event 1004 40 "common/npc_step3.wav" }
+	{ event 1004 53 "common/npc_step2.wav" }
+	{ event 1004 64 "common/npc_step3.wav" }
+}
+$sequence "reload" {
+	"anims/NICNSC_SA2AA"
+	fps 30
+	rotate -90
+	ACT_RELOAD 1
+	{ event 2 0 }
+}
+$sequence "kick" {
+	"anims/NICNSC_ATB1"
+	fps 30
+	rotate -90
+	ACT_MELEE_ATTACK1 1
+	{ event 3 16 }
+	{ event 2010 16 }
+}
 $sequence "advance_signal" {
 	"anims/NICNSC_CHA"
 	fps 200
