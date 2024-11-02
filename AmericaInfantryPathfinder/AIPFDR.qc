@@ -58,12 +58,10 @@ $sequence "DefaultConditionState IDA" {
 
 // Running
 $sequence "MOVING" {
-	"anims/RNA"
+	"anims/AIPFDR_RNA"
 	fps 25
 	loop
 	rotate -90
-	ACT_RUN 1
-	LX
 }
 
 
@@ -200,6 +198,26 @@ $sequence "unused SUR" {
 
 
 // Female Assassin sequences
+$sequence "run" {
+	"anims/_run"
+	fps 30
+	loop
+	rotate -90
+	ACT_RUN 1
+	LX
+	{ event 1004 6 "common/npc_step2.wav" }
+	{ event 1004 18 "common/npc_step4.wav" }
+}
+$sequence "walk" {
+	"anims/_run"
+	fps 30
+	loop
+	rotate -90
+	ACT_WALK 1
+	LX
+	{ event 1004 6 "common/npc_step2.wav" }
+	{ event 1004 18 "common/npc_step4.wav" }
+}
 $sequence "reload" {
 	"anims/AIPFDR_ATBTR"
 	fps 30
