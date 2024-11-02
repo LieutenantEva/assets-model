@@ -9,15 +9,15 @@ $keepallbones
 $bodygroup "body" {
 	studio "bodies/UIWRKR_SKN"
 }
-$bodygroup "hammer" {
+$bodygroup "Sledgehammer" {
 	studio "bodies/UIWRKR_Hammer"
 	blank
 }
-$bodygroup "mine" {
+$bodygroup "Metal Detector" {
 	blank
 	studio "bodies/UIWRKR_MineDetector"
 }
-$bodygroup "box" {
+$bodygroup "Supply Box" {
 	blank
 	studio "bodies/UIWRKR_Box"
 }
@@ -55,7 +55,7 @@ $sequence "DefaultConditionState STA" {
 	fps 9
 	loop
 	rotate -90
-	ACT_IDLE 10
+	ACT_IDLE 50
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/UIWRKR_IDA"
@@ -68,14 +68,10 @@ $sequence "DefaultConditionState IDA" {
 
 // Running
 $sequence "MOVING" {
-	"anims/RNA"
-	fps 30 //16
+	"anims/UIWRKR_RNA"
+	fps 16
 	loop
 	rotate -90
-	ACT_RUN 1
-	LX
-	{ event 1004 0 "common/npc_step1.wav" }
-	{ event 1004 11 "common/npc_step3.wav" }
 }
 
 
@@ -221,7 +217,6 @@ $sequence "SPECIAL_CHEERING" {
 }
 
 
-// Stop! Hammer time!
 $sequence "ACTIVELY_CONSTRUCTING" {
 	"anims/UIWRKR_BDA"
 	fps 30
@@ -232,17 +227,6 @@ $sequence "TRANS_Stand TRANS_Constructing" {
 	"anims/UIWRKR_TRA1"
 	fps 30
 	rotate -90
-	ACT_MELEE_ATTACK1 1
-	{ event 1 59 }
-	{ event 2 59 }
-	{ event 1 59 }
-	{ event 2 59 }
-	{ event 1 59 }
-	{ event 2 59 }
-	{ event 1 59 }
-	{ event 2 59 }
-	{ event 1 59 }
-	{ event 2 59 }
 }
 $sequence "TRANS_Constructing TRANS_Stand" {
 	"anims/UIWRKR_TRA2"
@@ -267,6 +251,42 @@ $sequence "unused SST" {
 
 
 // Basic monster sequences
+$sequence "run" {
+	"anims/_run"
+	fps 30
+	loop
+	rotate -90
+	ACT_RUN 1
+	LX
+	{ event 1004 0 "common/npc_step1.wav" }
+	{ event 1004 12 "common/npc_step3.wav" }
+}
+$sequence "walk" {
+	"anims/_run"
+	fps 30
+	loop
+	rotate -90
+	ACT_WALK 1
+	LX
+	{ event 1004 0 "common/npc_step1.wav" }
+	{ event 1004 12 "common/npc_step3.wav" }
+}
+$sequence "stop! hammer time!" {
+	"anims/_attack"
+	fps 30
+	rotate -90
+	ACT_MELEE_ATTACK1 1
+	{ event 1 59 }
+	{ event 2 59 }
+	{ event 1 59 }
+	{ event 2 59 }
+	{ event 1 59 }
+	{ event 2 59 }
+	{ event 1 59 }
+	{ event 2 59 }
+	{ event 1 59 }
+	{ event 2 59 }
+}
 $sequence "victorydance" {
 	"anims/UIWRKR_CHA"
 	fps 30
