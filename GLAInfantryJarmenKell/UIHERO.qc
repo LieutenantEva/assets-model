@@ -105,20 +105,16 @@ $sequence "TRANS_FiringA TRANS_FiringAInjured" {
 
 // --- moving
 $sequence "MOVING" {
-	"anims/RNA2"
+	"anims/UIHERO_RNA2"
 	fps 30
 	loop
 	rotate -90
-	ACT_RUN 1
-	LX
 }
 $sequence "MOVING REALLYDAMAGED" {
-	"anims/IRNA"
-	fps 26
+	"anims/UIHERO_IRNA"
+	fps 30
 	loop
 	rotate -90
-	ACT_RUN_HURT 1
-	LX
 }
 
 
@@ -256,6 +252,31 @@ $sequence "unused ISST" {
 
 
 // Female Assassin sequences
+$sequence "run" {
+	"anims/_run"
+	fps 30
+	loop
+	rotate -90
+	ACT_RUN 1
+	LX
+	{ event 1004 4 "common/npc_step2.wav" }
+	{ event 1004 20 "common/npc_step4.wav" }
+	{ event 1004 34 "common/npc_step2.wav" }
+	{ event 1004 50 "common/npc_step4.wav" }
+}
+$sequence "limprun" {
+	"anims/_limprun"
+	fps 26
+	loop
+	rotate -90
+	ACT_RUN_HURT 1
+	LX
+	{ event 1004 2 "common/npc_step3.wav" }
+	{ event 1004 15 "common/npc_step2.wav" }
+	{ event 1004 28 "common/npc_step3.wav" }
+	{ event 1004 42 "common/npc_step2.wav" }
+
+}
 $sequence "reload" {
 	"anims/UIHERO_IATA1"
 	fps 30
