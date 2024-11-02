@@ -10,7 +10,7 @@ $bodygroup "body" {
 	studio "bodies/AIOFCR_Body"
 }
 // Barney buggy weapon moment
-$bodygroup "Weapon" {
+$bodygroup "Primary Weapon" {
 	blank
 	studio "bodies/AIOFCR_Pistol"
 	studio "bodies/AIOFCR_Pistol"
@@ -62,16 +62,10 @@ $sequence "DefaultConditionState IDB" {
 
 // Running
 $sequence "MOVING" {
-	"anims/RNA"
+	"anims/AIOFCR_RNA"
 	fps 30
 	loop
 	rotate -90
-	ACT_RUN 1
-	LX
-	{ event 1004 0 "common/npc_step2.wav" }
-	{ event 1004 14 "common/npc_step4.wav" }
-	{ event 1004 22 "common/npc_step2.wav" }
-	{ event 1004 36 "common/npc_step4.wav" }
 }
 
 
@@ -199,17 +193,29 @@ $sequence "unused SWKLP" {
 
 
 // Basic monster sequences
+$sequence "run" {
+	"anims/_run"
+	fps 30
+	loop
+	rotate -90
+	ACT_RUN 1
+	LX
+	{ event 1004 2 "common/npc_step2.wav" }
+	{ event 1004 14 "common/npc_step4.wav" }
+	{ event 1004 23 "common/npc_step2.wav" }
+	{ event 1004 37 "common/npc_step4.wav" }
+}
 $sequence "walk" {
-	"anims/RNA"
+	"anims/_run"
 	fps 30
 	loop
 	rotate -90
 	ACT_WALK 1
 	LX
-	{ event 1004 0 "common/npc_step2.wav" }
+	{ event 1004 2 "common/npc_step2.wav" }
 	{ event 1004 14 "common/npc_step4.wav" }
-	{ event 1004 22 "common/npc_step2.wav" }
-	{ event 1004 36 "common/npc_step4.wav" }
+	{ event 1004 23 "common/npc_step2.wav" }
+	{ event 1004 37 "common/npc_step4.wav" }
 }
 $sequence "reload" {
 	"anims/AIOFCR_ATAST"
