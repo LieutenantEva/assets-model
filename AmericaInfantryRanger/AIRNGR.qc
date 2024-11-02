@@ -9,7 +9,7 @@ $keepallbones
 $bodygroup "body" {
 	studio "bodies/AIRNGR_Body"
 }
-$bodygroup "Weapon" {
+$bodygroup "Primary Weapon" {
 	studio "bodies/AIRNGR_AssaultRifle"
 	blank
 }
@@ -102,8 +102,6 @@ $sequence "TRANS_Stand TRANS_FiringA" {
 	"anims/AIRNGR_ATAST"
 	fps 30
 	rotate -90
-	ACT_RELOAD 1
-	{ event 2 1 }
 }
 $sequence "TRANS_FiringA TRANS_Stand" {
 	"anims/AIRNGR_ATAED"
@@ -191,20 +189,16 @@ $sequence "TRANS_FiringAInjured TRANS_FiringBInjured" {
 
 // --- moving
 $sequence "MOVING" {
-	"anims/RNA"
+	"anims/AIRNGR_RNA"
 	fps 30
 	loop
 	rotate -90
-	ACT_RUN 1
-	LX
 }
 $sequence "MOVING REALLYDAMAGED" {
-	"anims/RNB"
+	"anims/AIRNGR_RNB"
 	fps 30
 	loop
 	rotate -90
-	ACT_RUN_HURT 1
-	LX
 }
 
 
@@ -375,6 +369,39 @@ $sequence "unused SWKB" {
 
 
 // HGrunt/Massn specific anims
+$sequence "run" {
+	"anims/_run"
+	fps 30
+	loop
+	rotate -90
+	ACT_RUN 1
+	LX
+	{ event 1004 2 "common/npc_step2.wav" }
+	{ event 1004 16 "common/npc_step4.wav" }
+	{ event 1004 30 "common/npc_step2.wav" }
+	{ event 1004 44 "common/npc_step4.wav" }
+}
+$sequence "limprun" {
+	"anims/_limprun"
+	fps 30
+	loop
+	rotate -90
+	ACT_RUN_HURT 1
+	LX
+	{ event 1004 8 "common/npc_step2.wav" }
+	{ event 1004 21 "common/npc_step3.wav" }
+	{ event 1004 33 "common/npc_step2.wav" }
+	{ event 1004 47 "common/npc_step3.wav" }
+	{ event 1004 58 "common/npc_step2.wav" }
+	{ event 1004 73 "common/npc_step3.wav" }
+}
+$sequence "reload" {
+	"anims/AIRNGR_ATAST"
+	fps 30
+	rotate -90
+	ACT_RELOAD 1
+	{ event 2 0 }
+}
 $sequence "advance_signal" {
 	"anims/AIRNGR_ENC"
 	fps 100
