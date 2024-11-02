@@ -90,20 +90,16 @@ $sequence "TRANS_Stand TRANS_StandInjured" {
 
 // --- moving
 $sequence "MOVING" {
-	"anims/RNA"
+	"anims/NIHero_RNA"
 	fps 30
 	loop
 	rotate -90
-	ACT_RUN 1
-	LX
 }
 $sequence "MOVING REALLYDAMAGED" {
-	"anims/IRNA"
-	fps 26
+	"anims/NIHero_IRNA"
+	fps 30
 	loop
 	rotate -90
-	ACT_RUN_HURT 1
-	LX
 }
 
 
@@ -294,6 +290,26 @@ $sequence "unused ISST" {
 
 
 // Female Assassin sequences
+$sequence "run" {
+	"anims/_run"
+	fps 30
+	loop
+	rotate -90
+	ACT_RUN 1
+	LX
+	{ event 1004 7 "common/npc_step2.wav" }
+	{ event 1004 18 "common/npc_step4.wav" }
+}
+$sequence "limprun" {
+	"anims/_limprun"
+	fps 30
+	loop
+	rotate -90
+	ACT_RUN_HURT 1
+	LX
+	{ event 1004 11 "common/npc_step2.wav" }
+	{ event 1004 22 "common/npc_step3.wav" }
+}
 $sequence "reload" {
 	"anims/NIHERO_IDB"
 	fps 200
@@ -314,7 +330,7 @@ $sequence "shoot" {
 	frame 0 0
 }
 $sequence "grenadethrow" {
-	"anims/FullAttack"
+	"anims/_attack"
 	fps 30
 	rotate -90
 	ACT_RANGE_ATTACK2 1
