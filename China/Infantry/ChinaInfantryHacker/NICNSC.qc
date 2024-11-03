@@ -46,7 +46,6 @@ $sequence "pose" {
 
 
 // Idle
-
 $sequence "DefaultConditionState STA" {
 	"anims/NIHCKR_STA"
 	fps 25
