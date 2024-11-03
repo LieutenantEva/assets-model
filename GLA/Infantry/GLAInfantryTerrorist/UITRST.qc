@@ -252,6 +252,18 @@ $sequence "triggerbomb" {
 	{ event 3 23 }
 	{ event 3 23 }
 	{ event 3 23 }
+	{ event 3 23 }
+	{ event 3 23 }
+	{ event 3 23 }
+	{ event 3 23 }
+	{ event 3 23 }
+	{ event 3 23 }
+	{ event 3 23 }
+	{ event 3 23 }
+	{ event 3 23 }
+	{ event 3 23 }
+	{ event 3 23 }
+	{ event 3 23 }
 }
 $sequence "victorydance" {
 	"anims/UITRST_CHA"
