@@ -225,7 +225,6 @@ $sequence "DYING DTA" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 1 }
 	{ event 2001 60 }
 	X
 }
@@ -234,7 +233,6 @@ $sequence "DYING DTB" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 1 }
 	{ event 2001 40 }
 	X
 }
@@ -243,7 +241,6 @@ $sequence "DYING IDTA" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 1 }
 	{ event 2001 60 }
 	X
 }
@@ -252,7 +249,6 @@ $sequence "DYING IDTB" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 1 }
 	{ event 2001 40 }
 	X
 }
@@ -285,16 +281,19 @@ $sequence "PARACHUTING" {
 	fps 30
 	loop
 	rotate -90
+	ACT_GLIDE 1
 }
 $sequence "TRANS_Falling TRANS_Chute" {
 	"anims/AIHERO_POP"
 	fps 30
 	rotate -90
+	ACT_HOVER 1
 }
 $sequence "TRANS_Chute TRANS_Stand" {
 	"anims/AIHERO_PTD"
 	fps 30
 	rotate -90
+	ACT_LAND 1
 }
 
 
