@@ -113,18 +113,18 @@ $sequence "DYING DTB" {
 	X
 }
 $sequence "TRANS_Dying TRANS_Flailing" {
-	"anims/NIOFCR_ADTE1"
+	"anims/ADTE1"
 	fps 30
 	rotate -90
 }
 $sequence "DYING EXPLODED_FLAILING" {
-	"anims/NIOFCR_ADTE2"
+	"anims/ADTE2"
 	fps 30
 	loop
 	rotate -90
 }
 $sequence "DYING EXPLODED_BOUNCING" {
-	"anims/NIOFCR_ADTE3"
+	"anims/ADTE3"
 	fps 30
 	rotate -90
 }
