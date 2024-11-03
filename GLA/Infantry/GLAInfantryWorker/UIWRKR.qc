@@ -217,6 +217,7 @@ $sequence "SPECIAL_CHEERING" {
 }
 
 
+// Sledgehammer
 $sequence "ACTIVELY_CONSTRUCTING" {
 	"anims/UIWRKR_BDA"
 	fps 30
