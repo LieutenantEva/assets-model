@@ -180,7 +180,6 @@ $sequence "DYING DTA" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 1 }
 	{ event 2001 109 }
 	X
 }
@@ -189,7 +188,6 @@ $sequence "DYING DTB" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 1 }
 	{ event 2001 13 }
 	X
 }
@@ -237,16 +235,19 @@ $sequence "PARACHUTING" {
 	fps 30
 	loop
 	rotate -90
+	ACT_GLIDE 1
 }
 $sequence "TRANS_Falling TRANS_Chute" {
 	"anims/NIHERO_POP"
 	fps 30
 	rotate -90
+	ACT_HOVER 1
 }
 $sequence "TRANS_Chute TRANS_Stand" {
 	"anims/NIHERO_PTD"
 	fps 30
 	rotate -90
+	ACT_LAND 1
 }
 
 
