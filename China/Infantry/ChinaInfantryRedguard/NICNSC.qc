@@ -236,7 +236,6 @@ $sequence "DYING DTA" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 1 }
 	{ event 2001 20 }
 	X
 }
@@ -245,7 +244,6 @@ $sequence "DYING DTB" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 1 }
 	{ event 2001 28 }
 	X
 }
@@ -295,12 +293,6 @@ $sequence "unused MARN" {
 	loop
 	rotate -90
 }
-$sequence "unused CAPED" {
-	"anims/NICNSC_CAPED"
-	fps 30
-	loop
-	rotate -90
-}
 $sequence "unused CAPST" {
 	"anims/NICNSC_CAPST"
 	fps 30
@@ -315,6 +307,12 @@ $sequence "unused CAP" {
 }
 $sequence "unused CAPB" {
 	"anims/NICNSC_CAPB"
+	fps 30
+	loop
+	rotate -90
+}
+$sequence "unused CAPED" {
+	"anims/NICNSC_CAPED"
 	fps 30
 	loop
 	rotate -90
