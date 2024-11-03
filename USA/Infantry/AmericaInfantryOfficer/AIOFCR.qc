@@ -76,8 +76,6 @@ $sequence "PREATTACK_A" {
 	"anims/AIOFCR_ATAST"
 	fps 30
 	rotate -90
-	ACT_ARM 1
-	{ event 2 8 }
 }
 $sequence "FIRING_A" {
 	"anims/AIOFCR_ATALP"
@@ -90,8 +88,6 @@ $sequence "TRANS_FIRING_A TRANS_STAND" {
 	"anims/AIOFCR_ATAED"
 	fps 30
 	rotate -90
-	ACT_DISARM 1
-	{ event 4 72 }
 }
 
 
@@ -194,7 +190,7 @@ $sequence "unused SWKLP" {
 }
 
 
-// Basic monster sequences
+// Barney/Otis sequences
 $sequence "run" {
 	"anims/_run"
 	fps 30
@@ -230,6 +226,20 @@ $sequence "victorydance" {
 	fps 30
 	rotate -90
 	ACT_VICTORY_DANCE 1
+}
+$sequence "draw" {
+	"anims/AIOFCR_ATAST"
+	fps 30
+	rotate -90
+	ACT_ARM 1
+	{ event 2 8 }
+}
+$sequence "holster" {
+	"anims/AIOFCR_ATAED"
+	fps 30
+	rotate -90
+	ACT_DISARM 1
+	{ event 4 72 }
 }
 $sequence "shoot" {
 	"anims/AIOFCR_ATALP"
