@@ -191,12 +191,6 @@ $sequence "SPECIAL_CHEERING" {
 
 
 // !!!UNUSED!!!
-$sequence "unused SWK" {
-	"anims/UITunF_SWK"
-	fps 30
-	loop
-	rotate -90
-}
 $sequence "unused SUR" {
 	"anims/UITunF_SUR"
 	fps 30
@@ -205,6 +199,12 @@ $sequence "unused SUR" {
 }
 $sequence "unused SST" {
 	"anims/UITunF_SST"
+	fps 30
+	loop
+	rotate -90
+}
+$sequence "unused SWK" {
+	"anims/UITunF_SWK"
 	fps 30
 	loop
 	rotate -90
