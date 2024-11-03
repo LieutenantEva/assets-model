@@ -138,14 +138,14 @@ $sequence "TRANS_Chute TRANS_Stand" {
 
 
 // !!!UNUSED!!!
-$sequence "unused SST" {
-	"anims/AIRPLT_SST"
+$sequence "unused SUR" {
+	"anims/AIRPLT_SUR"
 	fps 30
 	loop
 	rotate -90
 }
-$sequence "unused SUR" {
-	"anims/AIRPLT_SUR"
+$sequence "unused SST" {
+	"anims/AIRPLT_SST"
 	fps 30
 	loop
 	rotate -90
