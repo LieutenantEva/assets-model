@@ -33,8 +33,6 @@ $hbox 7 "UITECH R FOOT" -1.00 -3.00 -2.50 4.00 12.60 4.00
 $attachment 0 "BIOGUNFX" 0 0 0
 $attachment 1 "UITECH R HAND" 0 0 0
 $attachment 2 "UITECH HEAD" 0 0 0
-$attachment 3 "BIOGUNFX" -38.20 0 0
-$attachment 4 "BIOGUNFX" -64.40 0 0
 
 
 // NORMAL STANDING
