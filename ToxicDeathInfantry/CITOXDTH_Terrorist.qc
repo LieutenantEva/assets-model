@@ -1,4 +1,4 @@
-$modelname "InfantryDeath_Toxic_Terrorist.mdl"
+$modelname "ToxicDeathInfantry_Terrorist.mdl"
 $cd "."
 $cdtexture "./textures"
 $cliptotextures
