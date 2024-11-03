@@ -208,7 +208,6 @@ $sequence "DYING DTA" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 1 }
 	{ event 2001 180 }
 	X
 }
@@ -217,7 +216,6 @@ $sequence "DYING DTB" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 11 1 }
 	{ event 2001 66 }
 	X
 }
