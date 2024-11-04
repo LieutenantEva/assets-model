@@ -212,6 +212,12 @@ $sequence "TRANS_Chute TRANS_Stand" {
 
 
 // !!!UNUSED!!!
+$sequence "unused AST" {
+	"anims/UIHERO_AST"
+	fps 30
+	loop
+	rotate -90
+}
 $sequence "unused IATA1" {
 	"anims/UIHERO_IATA1"
 	fps 30
