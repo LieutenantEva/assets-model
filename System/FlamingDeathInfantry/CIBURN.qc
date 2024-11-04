@@ -69,9 +69,9 @@ $sequence "run" {
 	ACT_RUN 1
 	LX
 	{ event 1004 6 "common/npc_step2.wav" }
-	{ event 1004 16 "common/npc_step3.wav" }
+	{ event 1004 16 "common/npc_step4.wav" }
 	{ event 1004 26 "common/npc_step2.wav" }
 	{ event 1004 36 "common/npc_step4.wav" }
 	{ event 1004 46 "common/npc_step2.wav" }
-	{ event 1004 61 "common/npc_step3.wav" }
+	{ event 1004 61 "common/npc_step4.wav" }
 }

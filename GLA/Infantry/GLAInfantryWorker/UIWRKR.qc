@@ -259,8 +259,8 @@ $sequence "run" {
 	rotate -90
 	ACT_RUN 1
 	LX
-	{ event 1004 0 "common/npc_step1.wav" }
-	{ event 1004 12 "common/npc_step3.wav" }
+	{ event 1004 0 "common/npc_step2.wav" }
+	{ event 1004 12 "common/npc_step4.wav" }
 }
 $sequence "walk" {
 	"anims/_run"
@@ -269,8 +269,8 @@ $sequence "walk" {
 	rotate -90
 	ACT_WALK 1
 	LX
-	{ event 1004 0 "common/npc_step1.wav" }
-	{ event 1004 12 "common/npc_step3.wav" }
+	{ event 1004 0 "common/npc_step2.wav" }
+	{ event 1004 12 "common/npc_step4.wav" }
 }
 $sequence "stop! hammer time!" {
 	"anims/_attack"

@@ -309,7 +309,7 @@ $sequence "limprun" {
 	ACT_RUN_HURT 1
 	LX
 	{ event 1004 11 "common/npc_step2.wav" }
-	{ event 1004 22 "common/npc_step3.wav" }
+	{ event 1004 22 "common/npc_step4.wav" }
 }
 $sequence "reload" {
 	"anims/NIHERO_IDB"

@@ -229,7 +229,7 @@ $sequence "walk" {
 	ACT_WALK 1
 	LX
 	{ event 1004 5 "common/npc_step2.wav" }
-	{ event 1004 15 "common/npc_step3.wav" }
+	{ event 1004 15 "common/npc_step4.wav" }
 }
 $sequence "reload" {
 	"anims/UITRST_STA"

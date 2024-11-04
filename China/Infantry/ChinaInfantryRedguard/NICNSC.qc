@@ -352,11 +352,11 @@ $sequence "limprun" {
 	ACT_RUN_HURT 1
 	LX
 	{ event 1004 3 "common/npc_step2.wav" }
-	{ event 1004 16 "common/npc_step3.wav" }
+	{ event 1004 16 "common/npc_step4.wav" }
 	{ event 1004 28 "common/npc_step2.wav" }
-	{ event 1004 40 "common/npc_step3.wav" }
+	{ event 1004 40 "common/npc_step4.wav" }
 	{ event 1004 53 "common/npc_step2.wav" }
-	{ event 1004 64 "common/npc_step3.wav" }
+	{ event 1004 64 "common/npc_step4.wav" }
 }
 $sequence "reload" {
 	"anims/NICNSC_SA2AA"

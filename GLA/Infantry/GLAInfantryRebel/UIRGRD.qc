@@ -306,9 +306,9 @@ $sequence "limprun" {
 	rotate -90
 	ACT_RUN_HURT 1
 	LX
-	{ event 1004 2 "common/npc_step3.wav" }
+	{ event 1004 2 "common/npc_step4.wav" }
 	{ event 1004 16 "common/npc_step2.wav" }
-	{ event 1004 29 "common/npc_step3.wav" }
+	{ event 1004 29 "common/npc_step4.wav" }
 	{ event 1004 43 "common/npc_step2.wav" }
 }
 $sequence "reload" {

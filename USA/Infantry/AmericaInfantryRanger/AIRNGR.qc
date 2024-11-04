@@ -387,11 +387,11 @@ $sequence "limprun" {
 	ACT_RUN_HURT 1
 	LX
 	{ event 1004 8 "common/npc_step2.wav" }
-	{ event 1004 21 "common/npc_step3.wav" }
+	{ event 1004 21 "common/npc_step4.wav" }
 	{ event 1004 33 "common/npc_step2.wav" }
-	{ event 1004 47 "common/npc_step3.wav" }
+	{ event 1004 47 "common/npc_step4.wav" }
 	{ event 1004 58 "common/npc_step2.wav" }
-	{ event 1004 73 "common/npc_step3.wav" }
+	{ event 1004 73 "common/npc_step4.wav" }
 }
 $sequence "reload" {
 	"anims/AIRNGR_ATAST"

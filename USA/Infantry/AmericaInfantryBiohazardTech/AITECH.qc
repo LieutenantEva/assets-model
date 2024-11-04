@@ -184,7 +184,7 @@ $sequence "run" {
 	ACT_RUN 1
 	LX
 	{ event 1004 14 "common/npc_step2.wav" }
-	{ event 1004 33 "common/npc_step3.wav" }
+	{ event 1004 33 "common/npc_step4.wav" }
 }
 $sequence "walk" {
 	"anims/_walk"
@@ -194,7 +194,7 @@ $sequence "walk" {
 	ACT_WALK 1
 	LX
 	{ event 1004 14 "common/npc_step2.wav" }
-	{ event 1004 33 "common/npc_step3.wav" }
+	{ event 1004 33 "common/npc_step4.wav" }
 }
 $sequence "reload" {
 	"anims/AITECH_IDA"
