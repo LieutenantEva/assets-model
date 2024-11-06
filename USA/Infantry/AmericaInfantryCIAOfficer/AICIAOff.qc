@@ -40,10 +40,10 @@ $attachment 2 "AIOFCR HEAD" 0 0 0
 // NORMAL STANDING
 $sequence "DefaultConditionState STA" {
 	"anims/AIOFCR_STA"
-	fps 21
+	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 22
 }
 //Regular spice animations
 $sequence "DefaultConditionState IDA" {
@@ -51,7 +51,7 @@ $sequence "DefaultConditionState IDA" {
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 $sequence "DefaultConditionState IDB" {
 	"anims/AIOFCR_IDB"
@@ -213,10 +213,34 @@ $sequence "run" {
 }
 $sequence "walk" {
 	"anims/_run"
-	fps 30
+	fps 15
 	loop
 	rotate -90
 	ACT_WALK 1
+	LX
+	{ event 1004 2 "common/npc_step2.wav" }
+	{ event 1004 14 "common/npc_step4.wav" }
+	{ event 1004 23 "common/npc_step2.wav" }
+	{ event 1004 37 "common/npc_step4.wav" }
+}
+$sequence "limprun" {
+	"anims/_run"
+	fps 15
+	loop
+	rotate -90
+	ACT_RUN_HURT 1
+	LX
+	{ event 1004 2 "common/npc_step2.wav" }
+	{ event 1004 14 "common/npc_step4.wav" }
+	{ event 1004 23 "common/npc_step2.wav" }
+	{ event 1004 37 "common/npc_step4.wav" }
+}
+$sequence "limpwalk" {
+	"anims/_run"
+	fps 15
+	loop
+	rotate -90
+	ACT_WALK_HURT 1
 	LX
 	{ event 1004 2 "common/npc_step2.wav" }
 	{ event 1004 14 "common/npc_step4.wav" }
