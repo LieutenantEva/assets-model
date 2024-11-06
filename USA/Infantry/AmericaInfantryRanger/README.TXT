@@ -536,3 +536,65 @@ Object AmericaInfantryRanger
   BuildCompletion = APPEARS_AT_RALLY_POINT
 
 End
+
+;------------------------------------------------------------------------------
+Locomotor BasicHumanLocomotor
+  Surfaces = GROUND RUBBLE
+  Speed = 20 ;30                ; in dist/sec
+  SpeedDamaged = 10 ;30         ; in dist/sec
+  TurnRate = 500            ; in degrees/sec
+  TurnRateDamaged = 500    ; in degrees/sec
+  Acceleration = 100        ; in dist/(sec^2)
+  AccelerationDamaged = 50 ; in dist/(sec^2)
+  Braking = 100             ; in dist/(sec^2)
+  MinTurnSpeed = 0          ; in dist/sec
+  ZAxisBehavior = NO_Z_MOTIVE_FORCE
+  Appearance = TWO_LEGS
+  StickToGround = Yes       ; walking guys aren't allowed to catch huge (or even small) air.
+  GroupMovementPriority = MOVES_FRONT;   Moves in the front of a group, behind small arms, ahead of artillery
+End
+
+;------------------------------------------------------------------------------
+Weapon RangerAdvancedCombatRifle
+  PrimaryDamage           = 5.0
+  PrimaryDamageRadius     = 0.0       ; 0 primary radius means "hits only intended victim"
+  AttackRange             = 100.0
+  DamageType              = SMALL_ARMS
+  DeathType               = NORMAL
+  WeaponSpeed             = 999999.0          ; dist/sec (huge value == effectively instant)
+  ProjectileObject        = NONE
+  FireFX                  = WeaponFX_GenericMachineGunFire
+  VeterancyFireFX         = HEROIC WeaponFX_GenericMachineGunFireWithRedTracers
+  FireSound               = RangerWeapon
+  RadiusDamageAffects     = ALLIES ENEMIES NEUTRALS
+  DelayBetweenShots       = 100              ; time between shots, msec
+  ClipSize                = 3                    ; how many shots in a Clip (0 == infinite)
+  ClipReloadTime          = 700              ; how long to reload a Clip, msec
+  WeaponBonus             = DRONE_SPOTTING RATE_OF_FIRE 200%
+  WeaponBonus             = DRONE_SPOTTING RANGE        200%
+  WeaponBonus             = DRONE_SPOTTING DAMAGE       200%
+End
+
+;------------------------------------------------------------------------------
+Weapon RangerFlashBangGrenadeWeapon
+  PrimaryDamage           = 35.0
+  PrimaryDamageRadius     = 10.0
+  SecondaryDamage         = 10.0
+  SecondaryDamageRadius   = 40.0
+  AttackRange             = 175.0 
+  MinimumAttackRange      = 20.0
+  DamageType              = SURRENDER
+  DeathType               = NORMAL
+  WeaponSpeed             = 120 
+  ProjectileObject        = RangerFlashBangGrenade
+  RadiusDamageAffects     = ALLIES ENEMIES NEUTRALS
+  FireSound               = RangerFlashBangWeapon
+  ScatterRadius           = 4          ; This weapon will scatter somewhere within a circle of this radius, instead of hitting someone directly
+  DelayBetweenShots       = 0     ; time between shots, msec
+  ClipSize                = 1              ; how many shots in a Clip (0 == infinite)
+  ClipReloadTime          = 2000     ; how long to reload a Clip, msec
+  AutoReloadsClip         = Yes 
+  ProjectileDetonationFX  = WeaponFX_RangerFlashBangGrenadeDetonation
+  ProjectileCollidesWith  = STRUCTURES WALLS
+  AllowAttackGarrisonedBldgs  = Yes
+End

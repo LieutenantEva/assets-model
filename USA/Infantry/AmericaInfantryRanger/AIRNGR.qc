@@ -36,17 +36,17 @@ $attachment 2 "AIRNGR HEAD" 0 0 0
 // --- Idle
 $sequence "DefaultConditionState STA" {
 	"anims/AIRNGR_STA"
-	fps 35
+	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 36
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/AIRNGR_IDA"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 $sequence "DefaultConditionState IDB" {
 	"anims/AIRNGR_IDB"
@@ -57,7 +57,7 @@ $sequence "DefaultConditionState IDB" {
 }
 $sequence "REALLYDAMAGED STB" {
 	"anims/AIRngr_STB"
-	fps 35
+	fps 30
 	loop
 	rotate -90
 }
@@ -340,14 +340,14 @@ $sequence "unused SUR" {
 	loop
 	rotate -90
 }
-$sequence "unused SURB" {
-	"anims/AIRNGR_SURB"
+$sequence "unused SST" {
+	"anims/AIRNGR_SST"
 	fps 30
 	loop
 	rotate -90
 }
-$sequence "unused SST" {
-	"anims/AIRNGR_SST"
+$sequence "unused SURB" {
+	"anims/AIRNGR_SURB"
 	fps 30
 	loop
 	rotate -90
@@ -379,6 +379,18 @@ $sequence "run" {
 	{ event 1004 30 "common/npc_step2.wav" }
 	{ event 1004 44 "common/npc_step4.wav" }
 }
+$sequence "walk" {
+	"anims/_run"
+	fps 15
+	loop
+	rotate -90
+	ACT_WALK 1
+	LX
+	{ event 1004 2 "common/npc_step2.wav" }
+	{ event 1004 16 "common/npc_step4.wav" }
+	{ event 1004 30 "common/npc_step2.wav" }
+	{ event 1004 44 "common/npc_step4.wav" }
+}
 $sequence "limprun" {
 	"anims/_limprun"
 	fps 30
@@ -393,16 +405,30 @@ $sequence "limprun" {
 	{ event 1004 58 "common/npc_step2.wav" }
 	{ event 1004 73 "common/npc_step4.wav" }
 }
+$sequence "limpwalk" {
+	"anims/_limprun"
+	fps 30
+	loop
+	rotate -90
+	ACT_WALK_HURT 1
+	LX
+	{ event 1004 8 "common/npc_step2.wav" }
+	{ event 1004 21 "common/npc_step4.wav" }
+	{ event 1004 33 "common/npc_step2.wav" }
+	{ event 1004 47 "common/npc_step4.wav" }
+	{ event 1004 58 "common/npc_step2.wav" }
+	{ event 1004 73 "common/npc_step4.wav" }
+}
 $sequence "reload" {
 	"anims/AIRNGR_ATAST"
-	fps 30
+	fps 25
 	rotate -90
 	ACT_RELOAD 1
 	{ event 2 0 }
 }
 $sequence "advance_signal" {
 	"anims/AIRNGR_ENC"
-	fps 100
+	fps 321
 	rotate -90
 	ACT_SIGNAL1 1
 	{ event 10 1 }
@@ -432,7 +458,7 @@ $sequence "crouching_idle" {
 }
 $sequence "crouching_wait" {
 	"anims/AIRNGR_ATAED"
-	fps 30
+	fps 1
 	loop
 	rotate -90
 	ACT_CROUCH 0
@@ -440,7 +466,7 @@ $sequence "crouching_wait" {
 }
 $sequence "throwgrenade" {
 	"anims/AIRngr_ATBA"
-	fps 30
+	fps 11
 	rotate -90
 	ACT_RANGE_ATTACK2 1
 	{ event 7 9 }
@@ -454,34 +480,38 @@ $sequence "launchgrenade" {
 }
 $sequence "drop_grenade" {
 	"anims/AIRNGR_FDP1"
-	fps 60
+	fps 103
 	rotate -90
 	ACT_SPECIAL_ATTACK1 1
 	{ event 9 83 }
 }
 $sequence "crouching_mp5" {
 	"anims/AIRngr_ATA"
-	fps 30
+	fps 6
 	rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 4 0 }
 	{ event 5001 0 "50" }
-	{ event 5 4 }
-	{ event 5001 4 "50" }
+	{ event 5 1 }
+	{ event 5001 1 "50" }
+	{ event 6 2 }
+	{ event 5001 2 "50" }
 }
 $sequence "standing_mp5" {
 	"anims/AIRngr_ATA"
-	fps 30
+	fps 6
 	rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 4 0 }
 	{ event 5001 0 "50" }
-	{ event 5 4 }
-	{ event 5001 4 "50" }
+	{ event 5 1 }
+	{ event 5001 1 "50" }
+	{ event 6 2 }
+	{ event 5001 2 "50" }
 }
 $sequence "crouching_shotgun" {
 	"anims/AIRngr_ATA"
-	fps 13
+	fps 6
 	rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 4 0 }
@@ -489,7 +519,7 @@ $sequence "crouching_shotgun" {
 }
 $sequence "standing_shotgun" {
 	"anims/AIRngr_ATA"
-	fps 13
+	fps 6
 	rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 4 0 }
