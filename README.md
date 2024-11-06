@@ -9,8 +9,8 @@
 (56.5769 m - (-0.203455 m)) * 30 FPS / (43-1) frames = 40.55739642857143 units
 
 ## Formula
-```LX = Movement Speed * (frame counts - 1) / FPS```
-For Blender: ```X Length = LX / 5```
+- ```LX = Movement Speed * (frame counts - 1) / FPS```
+- For Blender: ```X Length = LX / 5```
 
 ## CNC-2-HG Conversion
 - 20 units = 304 LX
