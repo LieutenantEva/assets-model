@@ -51,17 +51,17 @@ $attachment 2 "AIHERO1 HEAD" 0 0 0
 // idle
 $sequence "DefaultConditionState STA" {
 	"anims/AIHERO_STA"
-	fps 25
+	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 26
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/AIHERO_IDA"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 $sequence "DefaultConditionState IDB" {
 	"anims/AIHERO_IDB"
@@ -99,14 +99,14 @@ $sequence "TRANS_Stand TRANS_StandInjured" {
 // moving
 $sequence "MOVING" {
 	"anims/AIHERO_RNA"
-	fps 26
+	fps 30
 	loop
 	rotate -90
 }
 // injured moving
 $sequence "MOVING REALLYDAMAGED" {
 	"anims/AIHERO_IRNA"
-	fps 26
+	fps 30
 	loop
 	rotate -90
 }
@@ -341,12 +341,32 @@ $sequence "run" {
 	{ event 1004 0 "common/npc_step2.wav" }
 	{ event 1004 11 "common/npc_step4.wav" }
 }
+$sequence "walk" {
+	"anims/_run"
+	fps 15
+	loop
+	rotate -90
+	ACT_WALK 1
+	LX
+	{ event 1004 0 "common/npc_step2.wav" }
+	{ event 1004 11 "common/npc_step4.wav" }
+}
 $sequence "limprun" {
 	"anims/_limprun"
 	fps 30
 	loop
 	rotate -90
 	ACT_RUN_HURT 1
+	LX
+	{ event 1004 10 "common/npc_step2.wav" }
+	{ event 1004 21 "common/npc_step4.wav" }
+}
+$sequence "limpwalk" {
+	"anims/_limprun"
+	fps 30
+	loop
+	rotate -90
+	ACT_WALK_HURT 1
 	LX
 	{ event 1004 10 "common/npc_step2.wav" }
 	{ event 1004 21 "common/npc_step4.wav" }
@@ -365,38 +385,32 @@ $sequence "victorydance" {
 }
 $sequence "shoot" {
 	"anims/AIHERO_ATA"
-	fps 45
+	fps 54
 	rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 1 0 }
-	{ event 1 0 }
-	{ event 1 0 }
 	{ event 5001 0 "31" }
 	{ event 1 5 }
-	{ event 1 5 }
-	{ event 1 5 }
 	{ event 5001 5 "31" }
-	{ event 1 10 }
-	{ event 1 10 }
-	{ event 1 10 }
-	{ event 5001 10 "31" }
+	{ event 1 11 }
+	{ event 5001 11 "31" }
 }
 $sequence "grenadethrow" {
 	"anims/AIHERO_ATB1"
-	fps 60
+	fps 146
 	rotate -90
 	ACT_RANGE_ATTACK2 1
 	{ event 2 42 }
 }
 $sequence "kick" {
 	"anims/AIHERO_ATC"
-	fps 30
+	fps 26
 	rotate -90
 	ACT_MELEE_ATTACK1 1
 }
 $sequence "kickshort" {
 	"anims/AIHERO_ATC"
-	fps 30
+	fps 26
 	rotate -90
 	ACT_MELEE_ATTACK2 1
 }
