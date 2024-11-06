@@ -50,17 +50,17 @@ $sequence "pose" {
 // --- idle
 $sequence "DefaultConditionState STA" {
 	"anims/NIHERO_STA"
-	fps 17
+	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 18
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/NIHERO_IDA"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 $sequence "DefaultConditionState IDB" {
 	"anims/NIHERO_IDB"
@@ -301,6 +301,16 @@ $sequence "run" {
 	{ event 1004 7 "common/npc_step2.wav" }
 	{ event 1004 18 "common/npc_step4.wav" }
 }
+$sequence "walk" {
+	"anims/_run"
+	fps 30
+	loop
+	rotate -90
+	ACT_WALK 1
+	LX
+	{ event 1004 7 "common/npc_step2.wav" }
+	{ event 1004 18 "common/npc_step4.wav" }
+}
 $sequence "limprun" {
 	"anims/_limprun"
 	fps 30
@@ -310,6 +320,16 @@ $sequence "limprun" {
 	LX
 	{ event 1004 11 "common/npc_step2.wav" }
 	{ event 1004 22 "common/npc_step4.wav" }
+}
+$sequence "limpwalk" {
+	"anims/_limprun"
+	fps 30
+	loop
+	rotate -90
+	ACT_WALK_HURT 1
+	LX
+	{ event 1004 7 "common/npc_step2.wav" }
+	{ event 1004 18 "common/npc_step4.wav" }
 }
 $sequence "reload" {
 	"anims/NIHERO_IDB"
