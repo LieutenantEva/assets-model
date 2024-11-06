@@ -461,3 +461,22 @@ Weapon RedguardMachineGun
   ClipSize              = 0                    ; how many shots in a Clip (0 == infinite)
   ClipReloadTime        = 0              ; how long to reload a Clip, msec
 End
+
+;------------------------------------------------------------------------------
+Weapon RedguardBayonet
+  PrimaryDamage = 10000.0         ; always kills target in one hit
+  PrimaryDamageRadius = 0.0       ; 0 primary radius means "hits only intended victim"
+  AttackRange = 2.0
+  DamageType = MELEE
+  DeathType = NORMAL
+  WeaponSpeed = 999999.0          ; dist/sec (huge value == effectively instant)
+  ProjectileObject = NONE
+  FireFX = WeaponFX_GenericMachineGunFire
+  FireSound = HeroUSAKnifeAttack
+  RadiusDamageAffects = ALLIES ENEMIES NEUTRALS
+  DelayBetweenShots = 1900        ; time between shots, msec
+  ClipSize = 0                    ; how many shots in a Clip (0 == infinite)
+  ClipReloadTime = 0              ; how long to reload a Clip, msec
+  PreAttackDelay = 1400
+  PreAttackType = PER_ATTACK ; Do the delay each time we attack a new target
+End

@@ -384,7 +384,7 @@ $sequence "limpwalk" {
 }
 $sequence "reload" {
 	"anims/NICNSC_SA2AA"
-	fps 30
+	fps 31
 	rotate -90
 	ACT_RELOAD 1
 	{ event 2 0 }
@@ -463,9 +463,6 @@ $sequence "crouching_mp5" {
 	{ event 4 0 }
 	{ event 5 0 }
 	{ event 6 0 }
-	{ event 4 0 }
-	{ event 5 0 }
-	{ event 6 0 }
 	{ event 5001 0 "50" }
 }
 $sequence "standing_mp5" {
@@ -473,9 +470,6 @@ $sequence "standing_mp5" {
 	fps 32
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 4 0 }
-	{ event 5 0 }
-	{ event 6 0 }
 	{ event 4 0 }
 	{ event 5 0 }
 	{ event 6 0 }
@@ -487,7 +481,6 @@ $sequence "crouching_shotgun" {
 	rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 4 0 }
-	{ event 4 0 }
 	{ event 5001 0 "51" }
 }
 $sequence "standing_shotgun" {
@@ -495,7 +488,6 @@ $sequence "standing_shotgun" {
 	fps 32
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 4 0 }
 	{ event 4 0 }
 	{ event 5001 0 "51" }
 }
