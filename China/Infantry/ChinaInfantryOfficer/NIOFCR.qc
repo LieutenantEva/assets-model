@@ -215,6 +215,30 @@ $sequence "walk" {
 	{ event 1004 23 "common/npc_step2.wav" }
 	{ event 1004 37 "common/npc_step4.wav" }
 }
+$sequence "limprun" {
+	"anims/_run"
+	fps 15
+	loop
+	rotate -90
+	ACT_RUN_HURT 1
+	LX
+	{ event 1004 2 "common/npc_step2.wav" }
+	{ event 1004 14 "common/npc_step4.wav" }
+	{ event 1004 23 "common/npc_step2.wav" }
+	{ event 1004 37 "common/npc_step4.wav" }
+}
+$sequence "limpwalk" {
+	"anims/_run"
+	fps 15
+	loop
+	rotate -90
+	ACT_WALK_HURT 1
+	LX
+	{ event 1004 2 "common/npc_step2.wav" }
+	{ event 1004 14 "common/npc_step4.wav" }
+	{ event 1004 23 "common/npc_step2.wav" }
+	{ event 1004 37 "common/npc_step4.wav" }
+}
 $sequence "reload" {
 	"anims/NIOFCR_ATAST"
 	fps 30
