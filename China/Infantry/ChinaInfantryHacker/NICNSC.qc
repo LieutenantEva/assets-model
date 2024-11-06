@@ -48,17 +48,17 @@ $sequence "pose" {
 // Idle
 $sequence "DefaultConditionState STA" {
 	"anims/NIHCKR_STA"
-	fps 25
+	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 26
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/NIHCKR_IDA"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 $sequence "DefaultConditionState IDB" {
 	"anims/NIHCKR_IDB"
@@ -72,7 +72,7 @@ $sequence "DefaultConditionState IDB" {
 // Running
 $sequence "MOVING" {
 	"anims/NIHCKR_RNA"
-	fps 14
+	fps 30
 	loop
 	rotate -90
 }
