@@ -34,14 +34,14 @@ $sequence "DefaultConditionState STA" {
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 8
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/NIAMBSDR_IDA"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 $sequence "DefaultConditionState IDB" {
 	"anims/NIAMBSDR_IDB"
