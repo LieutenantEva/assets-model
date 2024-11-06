@@ -44,14 +44,14 @@ $sequence "DefaultConditionState STA" {
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 31
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/NIMSST_IDA"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 $sequence "DefaultConditionState IDB" {
 	"anims/NIMSST_IDB"
@@ -74,7 +74,7 @@ $sequence "FIRING_A" {
 // Running
 $sequence "MOVING" {
 	"anims/NIMSST_RNA"
-	fps 20
+	fps 30
 	loop
 	rotate -90
 }
@@ -86,7 +86,7 @@ $sequence "DYING DTA" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 2001 21 }
+	{ event 2001 38 }
 	X
 }
 $sequence "DYING DTB" {
@@ -94,7 +94,7 @@ $sequence "DYING DTB" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 2001 103 }
+	{ event 2001 106 }
 	X
 }
 $sequence "TRANS_Dying TRANS_Flailing" {
@@ -166,7 +166,7 @@ $sequence "unused SST" {
 }
 
 
-// Basic monster sequences
+// Bullsquid sequences
 $sequence "run" {
 	"anims/_run"
 	fps 30
@@ -187,13 +187,33 @@ $sequence "walk" {
 	{ event 1004 3 "common/npc_step2.wav" }
 	{ event 1004 14 "common/npc_step4.wav" }
 }
+$sequence "limprun" {
+	"anims/_run"
+	fps 15
+	loop
+	rotate -90
+	ACT_RUN_HURT 1
+	LX
+	{ event 1004 3 "common/npc_step2.wav" }
+	{ event 1004 14 "common/npc_step4.wav" }
+}
+$sequence "limpwalk" {
+	"anims/_run"
+	fps 15
+	loop
+	rotate -90
+	ACT_WALK_HURT 1
+	LX
+	{ event 1004 3 "common/npc_step2.wav" }
+	{ event 1004 14 "common/npc_step4.wav" }
+}
 $sequence "reload" {
 	"anims/NIMSST_IDA"
 	fps 294
 	rotate -90
 	ACT_RELOAD 1
 }
-$sequence "shoot1" {
+$sequence "shoot" {
 	"anims/NIMSST_ATA"
 	fps 116
 	rotate -90

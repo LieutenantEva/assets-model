@@ -288,3 +288,54 @@ Object ChinaInfantryTankHunter
   BuildCompletion = APPEARS_AT_RALLY_POINT
 
 End
+
+;------------------------------------------------------------------------------
+Locomotor MissileDefenderLocomotor
+  Surfaces = GROUND RUBBLE
+  Speed = 20 ;30                ; in dist/sec
+  SpeedDamaged = 10 ;30         ; in dist/sec
+  TurnRate = 500            ; in degrees/sec
+  TurnRateDamaged = 500    ; in degrees/sec
+  Acceleration = 100        ; in dist/(sec^2)
+  AccelerationDamaged = 50 ; in dist/(sec^2)
+  Braking = 100             ; in dist/(sec^2)
+  MinTurnSpeed = 0          ; in dist/sec
+  ZAxisBehavior = NO_Z_MOTIVE_FORCE
+  Appearance = TWO_LEGS
+  StickToGround = Yes       ; walking guys aren't allowed to catch huge (or even small) air.
+  GroupMovementPriority = MOVES_MIDDLE;   Moves in the middle of a group, behind small arms, ahead of artillery
+End
+
+;------------------------------------------------------------------------------
+;This weapon fires standard anti-tank missiles at range
+;------------------------------------------------------------------------------
+Weapon ChinaInfantryTankHunterMissileLauncher
+  PrimaryDamage = 40.0            
+  PrimaryDamageRadius = 5.0      
+  ScatterRadiusVsInfantry     = 10.0     ;When this weapon is used against infantry, it can randomly miss by as much as this distance.
+  AttackRange = 175.0
+  MinimumAttackRange = 5.0  ; Rockets take some distance to target, and you don't want them to blow up in your face.
+  DamageType = INFANTRY_MISSILE   ;ignored for projectile weapons
+  DeathType = EXPLODED
+  WeaponSpeed = 600               ; ignored for projectile weapons
+  ProjectileObject = TankHunterMissile
+  ProjectileExhaust           = MissileExhaust
+  VeterancyProjectileExhaust  = HEROIC HeroicMissileExhaust
+  RadiusDamageAffects = ALLIES ENEMIES NEUTRALS
+  ScatterRadius = 0      ; This weapon will scatter somewhere within a circle of this radius, instead of hitting someone directly
+  DelayBetweenShots = 1000  ; time between shots, msec
+  ClipSize = 0             ; how many shots in a Clip (0 == infinite)
+  ClipReloadTime = 0    ; how long to reload a Clip, msec
+  AutoReloadsClip = Yes 
+  FireSound = TankHunterWeapon
+  FireFX = FX_BuggyMissileIgnition
+  ProjectileDetonationFX = WeaponFX_RocketBuggyMissileDetonation
+
+  AntiAirborneVehicle   = Yes
+  AntiAirborneInfantry  = Yes
+
+  ; note, these only apply to units that aren't the explicit target 
+  ; (ie, units that just happen to "get in the way"... projectiles
+  ; always collide with the Designated Target, regardless of these flags
+  ProjectileCollidesWith = STRUCTURES
+End
