@@ -247,3 +247,38 @@ Object AmericaInfantryPilot
   BuildCompletion = APPEARS_AT_RALLY_POINT
 
 End
+
+;------------------------------------------------------------------------------
+Locomotor ColonelBurtonGroundLocomotor
+  Surfaces = GROUND RUBBLE
+  Speed = 30                ; in dist/sec
+  SpeedDamaged = 20         ; in dist/sec
+  TurnRate = 500            ; in degrees/sec
+  TurnRateDamaged = 500     ; in degrees/sec
+  Acceleration = 100        ; in dist/(sec^2)
+  AccelerationDamaged = 50 ; in dist/(sec^2)
+  Braking = 100             ; in dist/(sec^2)
+  MinTurnSpeed = 0          ; in dist/sec
+  ZAxisBehavior = NO_Z_MOTIVE_FORCE
+  Appearance = TWO_LEGS
+  StickToGround = Yes       ; walking guys aren't allowed to catch huge (or even small) air.
+  GroupMovementPriority = MOVES_BACK;   Moves in the back of a group, out of danger.
+End
+
+;------------------------------------------------------------------------------
+; basically the same as BasicHumanLocomotor, but roughly 25% faster
+Locomotor BasicHumanLocomotorPlus25
+  Surfaces = GROUND RUBBLE
+  Speed = 25                ; in dist/sec
+  SpeedDamaged = 12         ; in dist/sec
+  TurnRate = 360            ; in degrees/sec
+  TurnRateDamaged = 350     ; in degrees/sec
+  Acceleration = 125        ; in dist/(sec^2)
+  AccelerationDamaged = 60  ; in dist/(sec^2)
+  Braking = 100             ; in dist/(sec^2)
+  MinTurnSpeed = 0          ; in dist/sec
+  ZAxisBehavior = NO_Z_MOTIVE_FORCE
+  Appearance = TWO_LEGS
+  StickToGround = Yes       ; walking guys aren't allowed to catch huge (or even small) air.
+  GroupMovementPriority = MOVES_FRONT;   Moves in the front of a group, behind small arms, ahead of artillery
+End

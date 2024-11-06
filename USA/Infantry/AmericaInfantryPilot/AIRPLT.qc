@@ -35,17 +35,17 @@ $hbox 7 "RPILOT R FOOT" -1.00 -3.00 -2.00 4.00 11.30 3.00
 // Idle
 $sequence "DefaultConditionState STA" {
 	"anims/AIRPLT_STA"
-	fps 20
+	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 21
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/IDA"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 $sequence "DefaultConditionState IDB" {
 	"anims/AIRPLT_IDB"
@@ -173,10 +173,34 @@ $sequence "run" {
 }
 $sequence "walk" {
 	"anims/_run"
-	fps 30
+	fps 15
 	loop
 	rotate -90
 	ACT_WALK 1
+	LX
+	{ event 1004 7 "common/npc_step2.wav" }
+	{ event 1004 20 "common/npc_step4.wav" }
+	{ event 1004 30 "common/npc_step2.wav" }
+	{ event 1004 41 "common/npc_step4.wav" }
+}
+$sequence "limprun" {
+	"anims/_run"
+	fps 15
+	loop
+	rotate -90
+	ACT_RUN_HURT 1
+	LX
+	{ event 1004 7 "common/npc_step2.wav" }
+	{ event 1004 20 "common/npc_step4.wav" }
+	{ event 1004 30 "common/npc_step2.wav" }
+	{ event 1004 41 "common/npc_step4.wav" }
+}
+$sequence "limpwalk" {
+	"anims/_run"
+	fps 15
+	loop
+	rotate -90
+	ACT_WALK_HURT 1
 	LX
 	{ event 1004 7 "common/npc_step2.wav" }
 	{ event 1004 20 "common/npc_step4.wav" }
