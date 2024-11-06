@@ -10,3 +10,11 @@
 
 ## Formula
 ```Delta X = Movement Speed * (frame counts - 1) / FPS```
+
+## CNC-2-HG Conversion
+- 20 units = 304 LX
+- 10 units = 152 LX
+- 1 unit = 15.2 LX
+
+Formula for Blender:
+```Blender delta x = Delta X / 5```
