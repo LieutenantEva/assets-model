@@ -390,10 +390,10 @@ $sequence "shoot" {
 	ACT_RANGE_ATTACK1 1
 	{ event 1 0 }
 	{ event 5001 0 "31" }
-	{ event 1 5 }
-	{ event 5001 5 "31" }
-	{ event 1 11 }
-	{ event 5001 11 "31" }
+	{ event 1 9 }
+	{ event 5001 2 "31" }
+	{ event 1 18 }
+	{ event 5001 4 "31" }
 }
 $sequence "grenadethrow" {
 	"anims/AIHERO_ATB1"
