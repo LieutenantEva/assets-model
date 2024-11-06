@@ -426,3 +426,38 @@ Object ChinaInfantryRedguard
   BuildCompletion = APPEARS_AT_RALLY_POINT
 
 End
+
+;------------------------------------------------------------------------------
+Locomotor RedguardLocomotor
+  Surfaces = GROUND RUBBLE
+  Speed = 25 ;30                ; in dist/sec
+  SpeedDamaged = 15 ;30         ; in dist/sec ;DEMO -- To allieviate skating appearence, wounded speed is same as normal
+  TurnRate = 500            ; in degrees/sec
+  TurnRateDamaged = 500     ; in degrees/sec
+  Acceleration = 100        ; in dist/(sec^2)
+  AccelerationDamaged = 50 ; in dist/(sec^2)
+  Braking = 150             ; in dist/(sec^2)
+  MinTurnSpeed = 0          ; in dist/sec
+  ZAxisBehavior = NO_Z_MOTIVE_FORCE
+  Appearance = TWO_LEGS
+  StickToGround = Yes       ; walking guys aren't allowed to catch huge (or even small) air.
+  GroupMovementPriority = MOVES_FRONT;   Moves in the back of a group, out of danger.
+End
+
+;------------------------------------------------------------------------------
+Weapon RedguardMachineGun
+  PrimaryDamage         = 15.0
+  PrimaryDamageRadius   = 0.0       ; 0 primary radius means "hits only intended victim"
+  AttackRange           = 100.0
+  DamageType            = SMALL_ARMS
+  DeathType             = NORMAL
+  WeaponSpeed           = 999999.0          ; dist/sec (huge value == effectively instant)
+  ProjectileObject      = NONE
+  FireFX                = WeaponFX_GenericMachineGunFire
+  VeterancyFireFX       = HEROIC WeaponFX_GenericMachineGunFireWithRedTracers
+  FireSound             = RedGuardWeapon
+  RadiusDamageAffects   = ALLIES ENEMIES NEUTRALS
+  DelayBetweenShots     = 1000               ; time between shots, msec
+  ClipSize              = 0                    ; how many shots in a Clip (0 == infinite)
+  ClipReloadTime        = 0              ; how long to reload a Clip, msec
+End

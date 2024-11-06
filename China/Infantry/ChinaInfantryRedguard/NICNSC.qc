@@ -42,17 +42,17 @@ $attachment 2 "NICNSC HEAD" 0 0 0
 // ------- Standing-Around Animations
 $sequence "DefaultConditionState STA" {
 	"anims/NICNSC_STA"
-	fps 35
+	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 36
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/NICNSC_IDA"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 $sequence "DefaultConditionState IDB" {
 	"anims/NICNSC_IDB"
@@ -195,13 +195,13 @@ $sequence "TRANS_Chute TRANS_Stand" {
 // ------- Movement Animations
 $sequence "MOVING" {
 	"anims/NICNSC_RNA"
-	fps 26
+	fps 30
 	loop
 	rotate -90
 }
 $sequence "MOVING REALLYDAMAGED" {
 	"anims/NICNSC_RNB"
-	fps 28
+	fps 30
 	loop
 	rotate -90
 }
@@ -344,12 +344,36 @@ $sequence "run" {
 	{ event 1004 22 "common/npc_step2.wav" }
 	{ event 1004 32 "common/npc_step4.wav" }
 }
+$sequence "walk" {
+	"anims/_walk"
+	fps 30
+	loop
+	rotate -90
+	ACT_WALK 1
+	LX
+	{ event 1004 3 "common/npc_step2.wav" }
+	{ event 1004 25 "common/npc_step4.wav" }
+}
 $sequence "limprun" {
 	"anims/_limprun"
 	fps 30
 	loop
 	rotate -90
 	ACT_RUN_HURT 1
+	LX
+	{ event 1004 3 "common/npc_step2.wav" }
+	{ event 1004 16 "common/npc_step4.wav" }
+	{ event 1004 28 "common/npc_step2.wav" }
+	{ event 1004 40 "common/npc_step4.wav" }
+	{ event 1004 53 "common/npc_step2.wav" }
+	{ event 1004 64 "common/npc_step4.wav" }
+}
+$sequence "limpwalk" {
+	"anims/_limprun"
+	fps 30
+	loop
+	rotate -90
+	ACT_WALK_HURT 1
 	LX
 	{ event 1004 3 "common/npc_step2.wav" }
 	{ event 1004 16 "common/npc_step4.wav" }
@@ -367,7 +391,7 @@ $sequence "reload" {
 }
 $sequence "kick" {
 	"anims/NICNSC_ATB1"
-	fps 30
+	fps 26
 	rotate -90
 	ACT_MELEE_ATTACK1 1
 	{ event 3 16 }
@@ -375,7 +399,7 @@ $sequence "kick" {
 }
 $sequence "advance_signal" {
 	"anims/NICNSC_CHA"
-	fps 200
+	fps 191
 	rotate -90
 	ACT_SIGNAL1 1
 	{ event 10 1 }
@@ -405,40 +429,37 @@ $sequence "crouching_idle" {
 }
 $sequence "crouching_wait" {
 	"anims/NICNSC_AA2SA"
-	fps 30
+	fps 1
 	rotate -90
 	ACT_CROUCH 0
 	frame 0 0
 }
 $sequence "throwgrenade" {
 	"anims/NICNSC_ATA2"
-	fps 30
+	fps 32
 	rotate -90
 	ACT_RANGE_ATTACK2 1
 	{ event 7 0 }
 }
 $sequence "launchgrenade" {
 	"anims/NICNSC_ATA2"
-	fps 30
+	fps 32
 	rotate -90
 	ACT_RANGE_ATTACK2 1
 	{ event 8 0 }
 }
 $sequence "drop_grenade" {
 	"anims/NICNSC_FDP1"
-	fps 60
+	fps 96
 	rotate -90
 	ACT_SPECIAL_ATTACK1 1
 	{ event 9 83 }
 }
 $sequence "crouching_mp5" {
 	"anims/NICNSC_ATA"
-	fps 30
+	fps 32
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 4 0 }
-	{ event 5 0 }
-	{ event 6 0 }
 	{ event 4 0 }
 	{ event 5 0 }
 	{ event 6 0 }
@@ -449,12 +470,9 @@ $sequence "crouching_mp5" {
 }
 $sequence "standing_mp5" {
 	"anims/NICNSC_ATA"
-	fps 30
+	fps 32
 	rotate -90
 	ACT_RANGE_ATTACK1 1
-	{ event 4 0 }
-	{ event 5 0 }
-	{ event 6 0 }
 	{ event 4 0 }
 	{ event 5 0 }
 	{ event 6 0 }
@@ -465,7 +483,7 @@ $sequence "standing_mp5" {
 }
 $sequence "crouching_shotgun" {
 	"anims/NICNSC_ATA"
-	fps 30
+	fps 32
 	rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 4 0 }
@@ -474,7 +492,7 @@ $sequence "crouching_shotgun" {
 }
 $sequence "standing_shotgun" {
 	"anims/NICNSC_ATA"
-	fps 30
+	fps 32
 	rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 4 0 }
