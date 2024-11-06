@@ -1,4 +1,5 @@
-## HGrunt Linear X movements
+## HGrunt Linear X Movements
+
 ### Walk
 (111.99 m - (-0.196408 m)) * 30 FPS / (85-1) frames = 40.06657428571429 LX
 ### Run
@@ -9,10 +10,12 @@
 (56.5769 m - (-0.203455 m)) * 30 FPS / (43-1) frames = 40.55739642857143 LX
 
 ## Formula
-- ```LX = Movement Speed * (total frame - 1) / frame rate```
+- ```LX = movement speed * (total frame - 1) / frame rate```
 - For Blender: ```X Length = LX / 5```
 
 ## CNC-2-HG Conversion
+- 25 units = 380 LX
 - 20 units = 304 LX
+- 15 units = 228 LX
 - 10 units = 152 LX
 - 1 unit = 15.2 LX
