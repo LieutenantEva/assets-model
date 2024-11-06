@@ -42,24 +42,24 @@ $attachment 2 "AIPFDR HEAD" 0 0 0
 // Idle
 $sequence "DefaultConditionState STA" {
 	"anims/AIPFDR_STA"
-	fps 21
+	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 22
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/IDA"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 
 
 // Running
 $sequence "MOVING" {
 	"anims/AIPFDR_RNA"
-	fps 25
+	fps 30
 	loop
 	rotate -90
 }
@@ -212,10 +212,30 @@ $sequence "run" {
 }
 $sequence "walk" {
 	"anims/_run"
-	fps 30
+	fps 15
 	loop
 	rotate -90
 	ACT_WALK 1
+	LX
+	{ event 1004 6 "common/npc_step2.wav" }
+	{ event 1004 18 "common/npc_step4.wav" }
+}
+$sequence "limprun" {
+	"anims/_run"
+	fps 15
+	loop
+	rotate -90
+	ACT_RUN_HURT 1
+	LX
+	{ event 1004 6 "common/npc_step2.wav" }
+	{ event 1004 18 "common/npc_step4.wav" }
+}
+$sequence "limpwalk" {
+	"anims/_run"
+	fps 15
+	loop
+	rotate -90
+	ACT_WALK_HURT 1
 	LX
 	{ event 1004 6 "common/npc_step2.wav" }
 	{ event 1004 18 "common/npc_step4.wav" }
@@ -234,7 +254,7 @@ $sequence "victorydance" {
 }
 $sequence "shoot" {
 	"anims/AIPFDR_ATB"
-	fps 15
+	fps 11
 	rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 1 0 }
@@ -262,7 +282,7 @@ $sequence "shoot" {
 }
 $sequence "grenadethrow" {
 	"anims/AIPFDR_ATBTR"
-	fps 30
+	fps 25
 	rotate -90
 	ACT_RANGE_ATTACK2 1
 	{ event 2 0 }
@@ -281,10 +301,10 @@ $sequence "grenadethrow" {
 //}
 $sequence "jump" {
 	"anims/AIPFDR_DVA"
-	fps 30
+	fps 41
 	rotate -90
 	ACT_HOP 1
-	{ event 3 0 }
+	{ event 3 16 }
 }
 $sequence "fly_up" {
 	"anims/AIPFDR_STB"
