@@ -263,3 +263,46 @@ Object AmericaInfantryBiohazardTech
   ShadowTexture = ShadowI;
   BuildCompletion = APPEARS_AT_RALLY_POINT
 End
+
+;------------------------------------------------------------------------------
+Locomotor HazMatHumanLocomotor
+  Surfaces = GROUND RUBBLE
+  Speed = 25                ; in dist/sec
+  SpeedDamaged = 20         ; in dist/sec
+  TurnRate = 180            ; in degrees/sec
+  TurnRateDamaged = 150     ; in degrees/sec
+  Acceleration = 100        ; in dist/(sec^2)
+  AccelerationDamaged = 50 ; in dist/(sec^2)
+  Braking = 100             ; in dist/(sec^2)
+  MinTurnSpeed = 0          ; in dist/sec
+  ZAxisBehavior = NO_Z_MOTIVE_FORCE
+  Appearance = TWO_LEGS
+  StickToGround = Yes       ; walking guys aren't allowed to catch huge (or even small) air.
+End
+
+;------------------------------------------------------------------------------
+Weapon BioHazardTechCleanHazardWeapon 
+  PrimaryDamage               = 4.0            
+  PrimaryDamageRadius         = 25.0      
+  AttackRange                 = 100.0
+  MinimumAttackRange          = 10.0
+  DamageType                  = HAZARD_CLEANUP
+  DeathType                   = NORMAL
+  WeaponSpeed                 = 600                     ;  dist/sec 
+  WeaponRecoil                = 0                      ; angle to deflect the model when firing
+  ProjectileObject            = BioHazardCleanupStreamProjectile
+  FireFX                      = WeaponFX_CleanupFireWeapon
+  ProjectileDetonationFX      = WeaponFX_CleanupToxinDetonation
+  FireSound                   = ToxinTractorWeaponLoop
+  FireSoundLoopTime           = 80                ; loop the firing sound until there's this much delay between shots 
+  RadiusDamageAffects         = ALLIES ENEMIES NEUTRALS
+  DelayBetweenShots           = 40                ; time between shots, msec
+  ClipSize                    = 30                         ; how many shots in a Clip (0 == infinite)
+  ClipReloadTime              = 40                   ; how long to reload a Clip, msec
+  ProjectileStreamName        = CleanupHazardProjectileStream ; Drawing helper for this weapon.  Tracks all projectiles in air
+
+  ; note, these only apply to units that aren't the explicit target 
+  ; (ie, units that just happen to "get in the way"... projectiles
+  ; always collide with the Designated Target, regardless of these flags
+  ProjectileCollidesWith = ENEMIES STRUCTURES WALLS SHRUBBERY
+End

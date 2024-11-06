@@ -38,17 +38,17 @@ $attachment 2 "UITECH HEAD" 0 0 0
 // NORMAL STANDING
 $sequence "DefaultConditionState STA" {
 	"anims/STA"
-	fps 21
+	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 22
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/AITECH_IDA"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 $sequence "DefaultConditionState IDB" {
 	"anims/IDB"
@@ -71,13 +71,13 @@ $sequence "FIRING_A" {
 // Running
 $sequence "MOVING" {
 	"anims/AITECH_WKA"
-	fps 15
+	fps 30
 	loop
 	rotate -90
 }
 $sequence "MOVING FIRING_A" {
 	"anims/AITECH_WKB"
-	fps 15
+	fps 30
 	loop
 	rotate -90
 }
@@ -192,6 +192,26 @@ $sequence "walk" {
 	loop
 	rotate -90
 	ACT_WALK 1
+	LX
+	{ event 1004 14 "common/npc_step2.wav" }
+	{ event 1004 33 "common/npc_step4.wav" }
+}
+$sequence "limprun" {
+	"anims/_walk"
+	fps 30
+	loop
+	rotate -90
+	ACT_RUN_HURT 1
+	LX
+	{ event 1004 14 "common/npc_step2.wav" }
+	{ event 1004 33 "common/npc_step4.wav" }
+}
+$sequence "limpwalk" {
+	"anims/_walk"
+	fps 30
+	loop
+	rotate -90
+	ACT_WALK_HURT 1
 	LX
 	{ event 1004 14 "common/npc_step2.wav" }
 	{ event 1004 33 "common/npc_step4.wav" }
