@@ -45,14 +45,14 @@ $sequence "DefaultConditionState STA" {
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 31
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/NITHNT_IDA"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 $sequence "DefaultConditionState IDB" {
 	"anims/NITHNT_IDB"
@@ -75,7 +75,7 @@ $sequence "FIRING_A" {
 // Running
 $sequence "MOVING" {
 	"anims/NITHNT_RNA"
-	fps 20
+	fps 30
 	loop
 	rotate -90
 }
@@ -87,7 +87,7 @@ $sequence "DYING DTA" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 2001 43 }
+	{ event 2001 67 }
 	X
 }
 $sequence "DYING DTB" {
@@ -95,7 +95,7 @@ $sequence "DYING DTB" {
 	fps 30
 	rotate -90
 	ACT_DIESIMPLE 1
-	{ event 2001 103 }
+	{ event 2001 105 }
 	X
 }
 $sequence "TRANS_Dying TRANS_Flailing" {
@@ -180,10 +180,30 @@ $sequence "run" {
 }
 $sequence "walk" {
 	"anims/_run"
-	fps 30
+	fps 15
 	loop
 	rotate -90
 	ACT_WALK 1
+	LX
+	{ event 1004 3 "common/npc_step2.wav" }
+	{ event 1004 14 "common/npc_step4.wav" }
+}
+$sequence "limprun" {
+	"anims/_run"
+	fps 15
+	loop
+	rotate -90
+	ACT_RUN_HURT 1
+	LX
+	{ event 1004 3 "common/npc_step2.wav" }
+	{ event 1004 14 "common/npc_step4.wav" }
+}
+$sequence "limpwalk" {
+	"anims/_run"
+	fps 15
+	loop
+	rotate -90
+	ACT_WALK_HURT 1
 	LX
 	{ event 1004 3 "common/npc_step2.wav" }
 	{ event 1004 14 "common/npc_step4.wav" }
@@ -194,7 +214,7 @@ $sequence "reload" {
 	rotate -90
 	ACT_RELOAD 1
 }
-$sequence "shoot1" {
+$sequence "shoot" {
 	"anims/NITHNT_ATA"
 	fps 116
 	rotate -90
