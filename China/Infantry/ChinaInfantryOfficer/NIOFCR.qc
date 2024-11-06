@@ -40,10 +40,10 @@ $attachment 2 "NIOFCR HEAD" 0 0 0
 // NORMAL STANDING
 $sequence "DefaultConditionState STA" {
 	"anims/NIOFCR_STA"
-	fps 21
+	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 22
 }
 //Regular spice animations
 $sequence "DefaultConditionState IDA" {
@@ -51,7 +51,7 @@ $sequence "DefaultConditionState IDA" {
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 $sequence "DefaultConditionState IDB" {
 	"anims/NIOFCR_IDB"
