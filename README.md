@@ -9,12 +9,10 @@
 (56.5769 m - (-0.203455 m)) * 30 FPS / (43-1) frames = 40.55739642857143 units
 
 ## Formula
-```Delta X = Movement Speed * (frame counts - 1) / FPS```
+```LX = Movement Speed * (frame counts - 1) / FPS```
+For Blender: ```X Length = LX / 5```
 
 ## CNC-2-HG Conversion
 - 20 units = 304 LX
 - 10 units = 152 LX
 - 1 unit = 15.2 LX
-
-Formula for Blender:
-```Blender delta x = Delta X / 5```
