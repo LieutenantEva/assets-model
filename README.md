@@ -14,6 +14,7 @@
 - For Blender: ```X Length = LX / 5```
 
 ## CNC-2-HG Conversion
+- 30 units = 456 LX
 - 25 units = 380 LX
 - 20 units = 304 LX
 - 15 units = 228 LX
