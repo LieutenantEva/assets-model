@@ -168,7 +168,7 @@ $sequence "run" {
 }
 $sequence "walk" {
 	"anims/_run"
-	fps 30
+	fps 15
 	loop
 	rotate -90
 	ACT_WALK 1
