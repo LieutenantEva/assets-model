@@ -31,24 +31,24 @@ $hbox 7 "UIWRKR R FOOT" -0.80 -2.41 -1.88 4.10 10.58 3.17
 // Idle
 $sequence "DefaultConditionState STA" {
 	"anims/UIWRKR_STA"
-	fps 9
+	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 10
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/UIWRKR_IDA"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 
 
 // Running
 $sequence "MOVING" {
 	"anims/UIWRKR_RNA"
-	fps 16
+	fps 30
 	loop
 	rotate -90
 }
@@ -103,10 +103,30 @@ $sequence "run" {
 }
 $sequence "walk" {
 	"anims/_run"
-	fps 30
+	fps 20
 	loop
 	rotate -90
 	ACT_WALK 1
+	LX
+	{ event 1004 0 "common/npc_step2.wav" }
+	{ event 1004 12 "common/npc_step4.wav" }
+}
+$sequence "limprun" {
+	"anims/_run"
+	fps 20
+	loop
+	rotate -90
+	ACT_RUN_HURT 1
+	LX
+	{ event 1004 0 "common/npc_step2.wav" }
+	{ event 1004 12 "common/npc_step4.wav" }
+}
+$sequence "limpwalk" {
+	"anims/_run"
+	fps 20
+	loop
+	rotate -90
+	ACT_WALK_HURT 1
 	LX
 	{ event 1004 0 "common/npc_step2.wav" }
 	{ event 1004 12 "common/npc_step4.wav" }
