@@ -252,3 +252,83 @@ Object GLAInfantryStingerSoldier
   BuildCompletion = APPEARS_AT_RALLY_POINT
 
 End
+
+;------------------------------------------------------------------------------
+Locomotor BasicHumanLocomotor
+  Surfaces = GROUND RUBBLE
+  Speed = 20 ;30                ; in dist/sec
+  SpeedDamaged = 10 ;30         ; in dist/sec
+  TurnRate = 500            ; in degrees/sec
+  TurnRateDamaged = 500    ; in degrees/sec
+  Acceleration = 100        ; in dist/(sec^2)
+  AccelerationDamaged = 50 ; in dist/(sec^2)
+  Braking = 100             ; in dist/(sec^2)
+  MinTurnSpeed = 0          ; in dist/sec
+  ZAxisBehavior = NO_Z_MOTIVE_FORCE
+  Appearance = TWO_LEGS
+  StickToGround = Yes       ; walking guys aren't allowed to catch huge (or even small) air.
+  GroupMovementPriority = MOVES_FRONT;   Moves in the front of a group, behind small arms, ahead of artillery
+End
+
+;------------------------------------------------------------------------------
+Weapon StingerMissileWeapon
+  PrimaryDamage = 20.0            
+  PrimaryDamageRadius = 5.0      
+  ScatterRadiusVsInfantry     = 10.0     ;When this weapon is used against infantry, it can randomly miss by as much as this distance.
+  AttackRange = 225.0
+  DamageType = EXPLOSION          ; ignored for projectile weapons
+  DeathType = EXPLODED
+  WeaponSpeed = 750               ; ignored for projectile weapons
+  ProjectileObject = StingerMissile
+  ProjectileExhaust           = MissileExhaust
+  VeterancyProjectileExhaust  = HEROIC HeroicMissileExhaust
+  RadiusDamageAffects = ALLIES ENEMIES NEUTRALS
+  DelayBetweenShots = 0  ; time between shots, msec
+  ClipSize = 1             ; how many shots in a Clip (0 == infinite)
+  ClipReloadTime = 2000    ; how long to reload a Clip, msec
+  AutoReloadsClip = Yes 
+  FireFX = FX_StingerMissileIgnition
+  FireSound = StingerMissileWeapon
+  ProjectileDetonationFX = WeaponFX_StingerMissileDetonation
+  AntiAirborneVehicle = No
+  AntiAirborneInfantry = No
+  AntiGround = Yes
+  WeaponBonus = PLAYER_UPGRADE DAMAGE 125% ; AP rocket upgrade
+
+
+  ; note, these only apply to units that aren't the explicit target 
+  ; (ie, units that just happen to "get in the way"... projectiles
+  ; always collide with the Designated Target, regardless of these flags
+  ProjectileCollidesWith = STRUCTURES
+End
+
+;------------------------------------------------------------------------------
+Weapon StingerMissileWeaponAir
+  PrimaryDamage = 30.0            
+  PrimaryDamageRadius = 10.0      
+  ScatterRadiusVsInfantry     = 10.0     ;When this weapon is used against infantry, it can randomly miss by as much as this distance.
+  AttackRange = 400.0
+  DamageType = EXPLOSION          ; ignored for projectile weapons
+  DeathType = EXPLODED
+  WeaponSpeed = 600               ; ignored for projectile weapons
+  ProjectileObject = StingerMissile
+  ProjectileExhaust           = MissileExhaust
+  VeterancyProjectileExhaust  = HEROIC HeroicMissileExhaust
+  RadiusDamageAffects = ALLIES ENEMIES NEUTRALS
+  DelayBetweenShots = 0  ; time between shots, msec
+  ClipSize = 1             ; how many shots in a Clip (0 == infinite)
+  ClipReloadTime = 2000    ; how long to reload a Clip, msec
+  AutoReloadsClip = Yes 
+  FireFX = FX_StingerMissileIgnition
+  FireSound = StingerMissileWeapon
+  ProjectileDetonationFX = WeaponFX_StingerMissileDetonation
+  AntiAirborneVehicle = Yes
+  AntiAirborneInfantry = No
+  AntiGround = No
+  AntiBallisticMissile = Yes
+
+  ; note, these only apply to units that aren't the explicit target 
+  ; (ie, units that just happen to "get in the way"... projectiles
+  ; always collide with the Designated Target, regardless of these flags
+  ProjectileCollidesWith = STRUCTURES
+End

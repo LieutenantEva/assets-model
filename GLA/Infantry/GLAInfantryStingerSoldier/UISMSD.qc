@@ -38,24 +38,24 @@ $attachment 2 "EXHAUST01" 0 0 0
 // Idle
 $sequence "DefaultConditionState STA" {
 	"anims/UISMSD_STA"
-	fps 45
+	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 46
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/UISMSD_IDA"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 4
+	ACT_IDLE 2
 }
 $sequence "DefaultConditionState IDB" {
 	"anims/IDB"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 $sequence "DefaultConditionState STB" {
 	"anims/UISMSD_STB"
@@ -80,13 +80,13 @@ $sequence "DefaultConditionState IDD" {
 // Walking
 $sequence "MOVING WKA" {
 	"anims/UISMSD_WKA"
-	fps 25
+	fps 30
 	loop
 	rotate -90
 }
 $sequence "MOVING WKB" {
 	"anims/UISMSD_WKB"
-	fps 25
+	fps 30
 	loop
 	rotate -90
 }
@@ -289,20 +289,6 @@ $sequence "run" {
 	{ event 1004 3 "common/npc_step2.wav" }
 	{ event 1004 18 "common/npc_step4.wav" }
 }
-$sequence "run2" {
-	"anims/_walk2"
-	fps 30
-	loop
-	rotate -90
-	ACT_RUN 1
-	LX
-	{ event 1004 11 "common/npc_step2.wav" }
-	{ event 1004 26 "common/npc_step4.wav" }
-	{ event 1004 48 "common/npc_step2.wav" }
-	{ event 1004 72 "common/npc_step4.wav" }
-	{ event 1004 98 "common/npc_step2.wav" }
-	{ event 1004 121 "common/npc_step4.wav" }
-}
 $sequence "walk" {
 	"anims/_walk"
 	fps 30
@@ -313,12 +299,26 @@ $sequence "walk" {
 	{ event 1004 3 "common/npc_step2.wav" }
 	{ event 1004 18 "common/npc_step4.wav" }
 }
-$sequence "walk2" {
-	"anims/_walk2"
+$sequence "limprun" {
+	"anims/_limpwalk"
 	fps 30
 	loop
 	rotate -90
-	ACT_WALK 1
+	ACT_RUN_HURT 1
+	LX
+	{ event 1004 11 "common/npc_step2.wav" }
+	{ event 1004 26 "common/npc_step4.wav" }
+	{ event 1004 48 "common/npc_step2.wav" }
+	{ event 1004 72 "common/npc_step4.wav" }
+	{ event 1004 98 "common/npc_step2.wav" }
+	{ event 1004 121 "common/npc_step4.wav" }
+}
+$sequence "limpwalk" {
+	"anims/_limpwalk"
+	fps 30
+	loop
+	rotate -90
+	ACT_WALK_HURT 1
 	LX
 	{ event 1004 11 "common/npc_step2.wav" }
 	{ event 1004 26 "common/npc_step4.wav" }
@@ -335,7 +335,7 @@ $sequence "reload" {
 }
 $sequence "shoot" {
 	"anims/UISMSD_ATA"
-	fps 40
+	fps 59.50
 	rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 1 5 }
@@ -345,7 +345,7 @@ $sequence "shoot" {
 }
 $sequence "shoot2" {
 	"anims/UISMSD_ATB"
-	fps 69
+	fps 104
 	rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 1 51 }
