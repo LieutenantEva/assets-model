@@ -252,3 +252,60 @@ Object GLAInfantryTerrorist
   BuildCompletion = APPEARS_AT_RALLY_POINT
 
 End
+
+;------------------------------------------------------------------------------
+Locomotor FastHumanLocomotor
+  Surfaces = GROUND RUBBLE
+  Speed = 25 ;30                ; in dist/sec
+  SpeedDamaged = 15 ;30         ; in dist/sec
+  TurnRate = 500            ; in degrees/sec
+  TurnRateDamaged = 500     ; in degrees/sec
+  Acceleration = 100        ; in dist/(sec^2)
+  AccelerationDamaged = 50 ; in dist/(sec^2)
+  Braking = 100             ; in dist/(sec^2)
+  MinTurnSpeed = 0          ; in dist/sec
+  ZAxisBehavior = NO_Z_MOTIVE_FORCE
+  Appearance = TWO_LEGS
+  StickToGround = Yes       ; walking guys aren't allowed to catch huge (or even small) air.
+  GroupMovementPriority = MOVES_FRONT;   Moves in the front of a group, behind small arms, ahead of artillery
+End
+
+;------------------------------------------------------------------------------
+; This weapon kills itself (to presumably trigger detonations on death)
+Weapon TerroristSuicideWeapon
+  LeechRangeWeapon = Yes
+  AttackRange = 1.0
+  PrimaryDamage = 999999.0            
+  PrimaryDamageRadius = 1.0      
+  DamageDealtAtSelfPosition = Yes   ; this is a suicide bomber... remember?
+  RadiusDamageAffects = SELF SUICIDE
+  DamageType = EXPLOSION
+  DeathType = SUICIDED
+  WeaponSpeed = 99999.0             
+  DelayBetweenShots = 0              
+  ClipSize = 1                        
+  ClipReloadTime = 0                  
+  AutoReloadsClip = No 
+  ;PreAttackDelay = 600             ;766 matches the animation timing his detonating
+End
+
+;------------------------------------------------------------------------------
+Weapon SuicideDynamitePack
+  PrimaryDamage = 500.0           ;was 150.0
+  PrimaryDamageRadius = 18.0      ;was 6.0
+  SecondaryDamage = 300.0         ;was 30.0
+  SecondaryDamageRadius = 50.0    ;was 25.0
+  AttackRange = 5.0       ; must be very close to use this weapon!
+  DamageType = EXPLOSION
+  DeathType = SUICIDED
+  WeaponSpeed = 99999.0             
+  ProjectileObject = NONE
+  DamageDealtAtSelfPosition = Yes   ; this is a suicide bomber... remember?
+  RadiusDamageAffects = SELF SUICIDE ALLIES ENEMIES NEUTRALS NOT_SIMILAR
+  DelayBetweenShots = 0              
+  ClipSize = 1                        
+  ClipReloadTime = 0                  
+  AutoReloadsClip = No 
+  FireFX = WeaponFX_SuicideDynamitePackDetonation
+  FireSound = CarBomberDie
+End

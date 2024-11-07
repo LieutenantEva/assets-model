@@ -31,10 +31,10 @@ $hbox 7 "UITRST R FOOT" 0.00 -4.00 -4.00 4.00 13.00 4.00
 // Idle
 $sequence "DefaultConditionState STA" {
 	"anims/UITRST_STA"
-	fps 25
+	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 26
 }
 //Regular spice animations
 $sequence "DefaultConditionState IDA" {
@@ -42,36 +42,36 @@ $sequence "DefaultConditionState IDA" {
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 4
+	ACT_IDLE 2
 }
 $sequence "DefaultConditionState IDB" {
 	"anims/UITRST_IDB"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 
 
 // Running
 $sequence "MOVING" {
 	"anims/UITRST_RNA"
-	fps 15
+	fps 30
 	loop
 	rotate -90
 }
 
 
 // Attacking
+$sequence "ATTACKING MOVING" {
+	"anims/UITRST_RNB"
+	fps 30
+	loop
+	rotate -90
+}
 $sequence "PREATTACK_A" {
 	"anims/UITRST_ATA"
 	fps 30
-	rotate -90
-}
-$sequence "ATTACKING MOVING" {
-	"anims/UITRST_RNB"
-	fps 10
-	loop
 	rotate -90
 }
 
@@ -221,19 +221,49 @@ $sequence "run" {
 	{ event 1004 5 "common/npc_step2.wav" }
 	{ event 1004 13 "common/npc_step4.wav" }
 }
-$sequence "walk" {
-	"anims/_walk"
+$sequence "run2" {
+	"anims/_run2"
 	fps 30
+	loop
+	rotate -90
+	ACT_RUN 1
+	LX
+	{ event 1004 5 "common/npc_step2.wav" }
+	{ event 1004 15 "common/npc_step4.wav" }
+}
+$sequence "walk" {
+	"anims/_run"
+	fps 18
 	loop
 	rotate -90
 	ACT_WALK 1
 	LX
 	{ event 1004 5 "common/npc_step2.wav" }
+	{ event 1004 13 "common/npc_step4.wav" }
+}
+$sequence "limprun" {
+	"anims/_run2"
+	fps 18
+	loop
+	rotate -90
+	ACT_RUN_HURT 1
+	LX
+	{ event 1004 5 "common/npc_step2.wav" }
 	{ event 1004 15 "common/npc_step4.wav" }
+}
+$sequence "limpwalk" {
+	"anims/_run"
+	fps 18
+	loop
+	rotate -90
+	ACT_WALK_HURT 1
+	LX
+	{ event 1004 5 "common/npc_step2.wav" }
+	{ event 1004 13 "common/npc_step4.wav" }
 }
 $sequence "reload" {
 	"anims/UITRST_STA"
-	fps 30
+	fps 1
 	rotate -90
 	ACT_RELOAD 1
 	frame 0 0
