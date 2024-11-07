@@ -280,14 +280,18 @@ $sequence "unused SWKB" {
 
 // Basic monster sequences
 $sequence "run" {
-	"anims/_walk"
+	"anims/_run"
 	fps 30
 	loop
 	rotate -90
 	ACT_RUN 1
 	LX
-	{ event 1004 3 "common/npc_step2.wav" }
-	{ event 1004 18 "common/npc_step4.wav" }
+	{ event 1004 11 "common/npc_step2.wav" }
+	{ event 1004 26 "common/npc_step4.wav" }
+	{ event 1004 48 "common/npc_step2.wav" }
+	{ event 1004 72 "common/npc_step4.wav" }
+	{ event 1004 98 "common/npc_step2.wav" }
+	{ event 1004 121 "common/npc_step4.wav" }
 }
 $sequence "walk" {
 	"anims/_walk"
@@ -300,8 +304,8 @@ $sequence "walk" {
 	{ event 1004 18 "common/npc_step4.wav" }
 }
 $sequence "limprun" {
-	"anims/_limpwalk"
-	fps 30
+	"anims/_run"
+	fps 15
 	loop
 	rotate -90
 	ACT_RUN_HURT 1
@@ -314,18 +318,14 @@ $sequence "limprun" {
 	{ event 1004 121 "common/npc_step4.wav" }
 }
 $sequence "limpwalk" {
-	"anims/_limpwalk"
+	"anims/_walk"
 	fps 30
 	loop
 	rotate -90
-	ACT_WALK_HURT 1
+	ACT_WALK 1
 	LX
-	{ event 1004 11 "common/npc_step2.wav" }
-	{ event 1004 26 "common/npc_step4.wav" }
-	{ event 1004 48 "common/npc_step2.wav" }
-	{ event 1004 72 "common/npc_step4.wav" }
-	{ event 1004 98 "common/npc_step2.wav" }
-	{ event 1004 121 "common/npc_step4.wav" }
+	{ event 1004 3 "common/npc_step2.wav" }
+	{ event 1004 18 "common/npc_step4.wav" }
 }
 $sequence "reload" {
 	"anims/UISMSD_IDC"
