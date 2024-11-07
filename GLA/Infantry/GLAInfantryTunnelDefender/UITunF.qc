@@ -41,24 +41,24 @@ $attachment 3 "EXHAUST01" 0 0 0
 // Idle
 $sequence "DefaultConditionState STA" {
 	"anims/UITunF_STA"
-	fps 20
+	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 21
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/UITunF_IDA"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 4
+	ACT_IDLE 2
 }
 $sequence "DefaultConditionState IDB" {
 	"anims/UITunF_IDB"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 $sequence "DefaultConditionState IDC" {
 	"anims/UITunF_IDC"
@@ -72,13 +72,13 @@ $sequence "DefaultConditionState IDC" {
 // Running
 $sequence "MOVING RNA" {
 	"anims/UITunF_RNA"
-	fps 15
+	fps 30
 	loop
 	rotate -90
 }
 $sequence "MOVING RNB" {
 	"anims/UITunF_RNB"
-	fps 25
+	fps 30
 	loop
 	rotate -90
 }
@@ -87,7 +87,7 @@ $sequence "MOVING RNB" {
 // Walking
 $sequence "MOVING WKA" {
 	"anims/UITunF_WKA"
-	fps 16
+	fps 30
 	loop
 	rotate -90
 }
@@ -211,7 +211,7 @@ $sequence "unused SWK" {
 }
 
 
-// Basic monster sequences
+// Bullsquid sequences
 $sequence "run" {
 	"anims/_run"
 	fps 30
@@ -264,6 +264,30 @@ $sequence "walk3" {
 	loop
 	rotate -90
 	ACT_WALK 1
+	LX
+	{ event 1004 16 "common/npc_step4.wav" }
+	{ event 1004 31 "common/npc_step2.wav" }
+	{ event 1004 46 "common/npc_step4.wav" }
+	{ event 1004 59 "common/npc_step2.wav" }
+	{ event 1004 77 "common/npc_step4.wav" }
+	{ event 1004 91 "common/npc_step2.wav" }
+}
+$sequence "limprun" {
+	"anims/_run"
+	fps 15
+	loop
+	rotate -90
+	ACT_RUN_HURT 1
+	LX
+	{ event 1004 4 "common/npc_step2.wav" }
+	{ event 1004 14 "common/npc_step4.wav" }
+}
+$sequence "limpwalk" {
+	"anims/_walk2"
+	fps 30
+	loop
+	rotate -90
+	ACT_WALK_HURT 1
 	LX
 	{ event 1004 16 "common/npc_step4.wav" }
 	{ event 1004 31 "common/npc_step2.wav" }
