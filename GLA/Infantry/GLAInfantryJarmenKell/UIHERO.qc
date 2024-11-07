@@ -38,17 +38,17 @@ $attachment 2 "UIHERO HEAD" 0 0 0
 // --- idle
 $sequence "DefaultConditionState STA" {
 	"anims/UIHERO_STA"
-	fps 21
+	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 22
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/UIHERO_IDA"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 // TODO: It's too damn big!
 //$sequence "DefaultConditionState IDB" {
@@ -269,9 +269,21 @@ $sequence "run" {
 	{ event 1004 34 "common/npc_step2.wav" }
 	{ event 1004 50 "common/npc_step4.wav" }
 }
+$sequence "walk" {
+	"anims/_run"
+	fps 20
+	loop
+	rotate -90
+	ACT_WALK 1
+	LX
+	{ event 1004 4 "common/npc_step2.wav" }
+	{ event 1004 20 "common/npc_step4.wav" }
+	{ event 1004 34 "common/npc_step2.wav" }
+	{ event 1004 50 "common/npc_step4.wav" }
+}
 $sequence "limprun" {
 	"anims/_limprun"
-	fps 26
+	fps 30
 	loop
 	rotate -90
 	ACT_RUN_HURT 1
@@ -280,11 +292,22 @@ $sequence "limprun" {
 	{ event 1004 15 "common/npc_step2.wav" }
 	{ event 1004 28 "common/npc_step4.wav" }
 	{ event 1004 42 "common/npc_step2.wav" }
-
+}
+$sequence "limpwalk" {
+	"anims/_limprun"
+	fps 30
+	loop
+	rotate -90
+	ACT_WALK_HURT 1
+	LX
+	{ event 1004 2 "common/npc_step4.wav" }
+	{ event 1004 15 "common/npc_step2.wav" }
+	{ event 1004 28 "common/npc_step4.wav" }
+	{ event 1004 42 "common/npc_step2.wav" }
 }
 $sequence "reload" {
 	"anims/UIHERO_IATA1"
-	fps 30
+	fps 45
 	rotate -90
 	ACT_RELOAD 1
 }
@@ -296,7 +319,7 @@ $sequence "victorydance" {
 }
 $sequence "shoot" {
 	"anims/UIHERO_ATA"
-	fps 30
+	fps 55
 	rotate -90
 	ACT_RANGE_ATTACK1 1
 	{ event 1 0 }

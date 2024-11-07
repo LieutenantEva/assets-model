@@ -336,3 +336,57 @@ Object GLAInfantryJarmenKell
   BuildCompletion = APPEARS_AT_RALLY_POINT
 
 End
+
+;------------------------------------------------------------------------------
+Locomotor JarmenKellLocomotor
+  Surfaces = GROUND RUBBLE
+  Speed = 30                 ; in dist/sec
+  SpeedDamaged = 20          ; in dist/sec
+  TurnRate = 500            ; in degrees/sec
+  TurnRateDamaged = 500    ; in degrees/sec
+  Acceleration = 100        ; in dist/(sec^2)
+  AccelerationDamaged = 50 ; in dist/(sec^2)
+  Braking = 100             ; in dist/(sec^2)
+  MinTurnSpeed = 0          ; in dist/sec
+  ZAxisBehavior = NO_Z_MOTIVE_FORCE
+  Appearance = TWO_LEGS
+  StickToGround = Yes       ; walking guys aren't allowed to catch huge (or even small) air.
+  GroupMovementPriority = MOVES_BACK;   Moves in the back of a group, out of danger.
+End
+
+;------------------------------------------------------------------------------
+Weapon GLAJarmenKellRifle
+  PrimaryDamage = 180.0
+  PrimaryDamageRadius = 0.0
+  AttackRange = 225.0
+  DamageType = SNIPER
+  DeathType = NORMAL
+  WeaponSpeed = 999999.0          ; dist/sec (huge value == effectively instant)
+  ProjectileObject = NONE
+  FireFX = WeaponFX_GenericMachineGunFire
+  FireSound = JarmenKellWeapon
+  RadiusDamageAffects = ALLIES ENEMIES NEUTRALS
+  DelayBetweenShots = 1000               ; time between shots, msec
+  ClipSize = 0                    ; how many shots in a Clip (0 == infinite)
+  ClipReloadTime = 0              ; how long to reload a Clip, msec
+  WeaponBonus = PLAYER_UPGRADE DAMAGE 125% ; AP weapon upgrade
+End
+
+;------------------------------------------------------------------------------
+Weapon GLAJarmenKellVehiclePilotSniperRifle
+  PrimaryDamage = 1.0
+  PrimaryDamageRadius = 0.0
+  AttackRange = 225.0
+  DamageType = KILL_PILOT
+  DeathType = NORMAL
+  WeaponSpeed = 999999.0          ; dist/sec (huge value == effectively instant)
+  ProjectileObject = NONE
+  FireFX                = WeaponFX_GenericMachineGunFire
+  VeterancyFireFX       = HEROIC WeaponFX_GenericMachineGunFireWithRedTracers
+  FireSound = JarmenKellWeaponSnipe
+  RadiusDamageAffects = ALLIES ENEMIES NEUTRALS
+  DelayBetweenShots = 0           ; time between shots, msec
+  ClipSize = 1                    ; how many shots in a Clip (0 == infinite)
+  ClipReloadTime = 30000          ; how long to reload a Clip, msec
+  AutoReloadsClip = Yes
+End
