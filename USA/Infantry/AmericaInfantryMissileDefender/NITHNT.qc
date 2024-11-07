@@ -167,7 +167,7 @@ $sequence "unused SST" {
 }
 
 
-// Basic monster sequences
+// Bullsquid sequences
 $sequence "run" {
 	"anims/_run"
 	fps 30
