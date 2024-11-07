@@ -278,7 +278,7 @@ $sequence "unused SWKB" {
 }
 
 
-// Basic monster sequences
+// Bullsquid sequences
 $sequence "run" {
 	"anims/_run"
 	fps 30
