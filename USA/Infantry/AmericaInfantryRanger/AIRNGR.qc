@@ -492,10 +492,10 @@ $sequence "crouching_mp5" {
 	ACT_RANGE_ATTACK1 1
 	{ event 4 0 }
 	{ event 5001 0 "50" }
-	{ event 5 2 }
+	{ event 5 1 }
+	{ event 5001 1 "50" }
+	{ event 6 2 }
 	{ event 5001 2 "50" }
-	{ event 6 4 }
-	{ event 5001 4 "50" }
 }
 $sequence "standing_mp5" {
 	"anims/AIRngr_ATA"
@@ -504,10 +504,10 @@ $sequence "standing_mp5" {
 	ACT_RANGE_ATTACK1 1
 	{ event 4 0 }
 	{ event 5001 0 "50" }
-	{ event 5 2 }
+	{ event 5 1 }
+	{ event 5001 1 "50" }
+	{ event 6 2 }
 	{ event 5001 2 "50" }
-	{ event 6 4 }
-	{ event 5001 4 "50" }
 }
 $sequence "crouching_shotgun" {
 	"anims/AIRngr_ATA"
