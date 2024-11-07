@@ -384,3 +384,57 @@ Object GLAInfantryWorker
   BuildCompletion = APPEARS_AT_RALLY_POINT
 
 End
+
+;------------------------------------------------------------------------------
+Locomotor FastHumanLocomotor
+  Surfaces = GROUND RUBBLE
+  Speed = 25 ;30                ; in dist/sec
+  SpeedDamaged = 15 ;30         ; in dist/sec
+  TurnRate = 500            ; in degrees/sec
+  TurnRateDamaged = 500     ; in degrees/sec
+  Acceleration = 100        ; in dist/(sec^2)
+  AccelerationDamaged = 50 ; in dist/(sec^2)
+  Braking = 100             ; in dist/(sec^2)
+  MinTurnSpeed = 0          ; in dist/sec
+  ZAxisBehavior = NO_Z_MOTIVE_FORCE
+  Appearance = TWO_LEGS
+  StickToGround = Yes       ; walking guys aren't allowed to catch huge (or even small) air.
+  GroupMovementPriority = MOVES_FRONT;   Moves in the front of a group, behind small arms, ahead of artillery
+End
+
+;------------------------------------------------------------------------------
+Locomotor WorkerShoesLocomotor
+  Surfaces = GROUND RUBBLE
+  Speed = 30                ; in dist/sec
+  SpeedDamaged = 20 ;30         ; in dist/sec
+  TurnRate = 500            ; in degrees/sec
+  TurnRateDamaged = 500     ; in degrees/sec
+  Acceleration = 150        ; in dist/(sec^2)
+  AccelerationDamaged = 75 ; in dist/(sec^2)
+  Braking = 150             ; in dist/(sec^2)
+  MinTurnSpeed = 0          ; in dist/sec
+  ZAxisBehavior = NO_Z_MOTIVE_FORCE
+  Appearance = TWO_LEGS
+  StickToGround = Yes       ; walking guys aren't allowed to catch huge (or even small) air.
+  GroupMovementPriority = MOVES_FRONT;   Moves in the front of a group, behind small arms, ahead of artillery
+End
+
+;------------------------------------------------------------------------------
+Weapon WorkerMineDisarmingWeapon 
+  PrimaryDamage = 1.0             ; this isn't really used, but must be nonzero for targeting to work well
+  AttackRange = 5.0
+  DamageType = DISARM
+  DeathType = NORMAL
+  ProjectileObject = NONE
+  FireFX = WeaponFX_WorkerMineDisarming
+  DelayBetweenShots = 1000        ; time between shots, msec
+  ClipSize = 0                    ; how many shots in a Clip (0 == infinite)
+  ClipReloadTime = 0              ; how long to reload a Clip, msec
+  AntiGround = No
+  AntiProjectile = No
+  AntiSmallMissile = No
+  AntiMine = Yes
+  PreAttackDelay = 1000           ; we have to wave our magic wand over it a bit
+  PreAttackType = PER_SHOT ; Do the delay every single shot
+  ContinueAttackRange = 100        ; after disarming a mine, look for additional mines within this dist to disarm
+End

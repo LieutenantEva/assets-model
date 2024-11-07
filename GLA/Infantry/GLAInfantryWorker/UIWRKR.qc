@@ -43,33 +43,34 @@ $attachment 2 "UIWRKR HEAD" 0 0 0
 
 $sequence "pose" {
 	"bodies/UIWRKR_SKN"
-	fps 30
+	fps 1
 	loop
 	rotate -90
+	frame 0 0
 }
 
 
 // Idle
 $sequence "DefaultConditionState STA" {
 	"anims/UIWRKR_STA"
-	fps 9
+	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 10
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/UIWRKR_IDA"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 
 
 // Running
 $sequence "MOVING" {
 	"anims/UIWRKR_RNA"
-	fps 16
+	fps 30
 	loop
 	rotate -90
 }
@@ -158,7 +159,7 @@ $sequence "TRANS_MetalDetector_Moving TRANS_Moving" {
 // Carrying supply box
 $sequence "MOVING CARRYING" {
 	"anims/UIWRKR_CARY"
-	fps 12
+	fps 30
 	loop
 	rotate -90
 }
@@ -251,7 +252,7 @@ $sequence "unused SST" {
 }
 
 
-// Basic monster sequences
+// Zombie sequences
 $sequence "run" {
 	"anims/_run"
 	fps 30
@@ -264,10 +265,30 @@ $sequence "run" {
 }
 $sequence "walk" {
 	"anims/_run"
-	fps 30
+	fps 18
 	loop
 	rotate -90
 	ACT_WALK 1
+	LX
+	{ event 1004 0 "common/npc_step2.wav" }
+	{ event 1004 12 "common/npc_step4.wav" }
+}
+$sequence "limprun" {
+	"anims/_run"
+	fps 18
+	loop
+	rotate -90
+	ACT_RUN_HURT 1
+	LX
+	{ event 1004 0 "common/npc_step2.wav" }
+	{ event 1004 12 "common/npc_step4.wav" }
+}
+$sequence "limpwalk" {
+	"anims/_run"
+	fps 18
+	loop
+	rotate -90
+	ACT_WALK_HURT 1
 	LX
 	{ event 1004 0 "common/npc_step2.wav" }
 	{ event 1004 12 "common/npc_step4.wav" }
