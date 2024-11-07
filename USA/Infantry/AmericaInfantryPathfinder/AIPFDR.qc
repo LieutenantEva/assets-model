@@ -212,7 +212,7 @@ $sequence "run" {
 }
 $sequence "walk" {
 	"anims/_run"
-	fps 15
+	fps 20
 	loop
 	rotate -90
 	ACT_WALK 1
@@ -222,7 +222,7 @@ $sequence "walk" {
 }
 $sequence "limprun" {
 	"anims/_run"
-	fps 15
+	fps 20
 	loop
 	rotate -90
 	ACT_RUN_HURT 1
@@ -232,7 +232,7 @@ $sequence "limprun" {
 }
 $sequence "limpwalk" {
 	"anims/_run"
-	fps 15
+	fps 20
 	loop
 	rotate -90
 	ACT_WALK_HURT 1
