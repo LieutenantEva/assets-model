@@ -364,3 +364,39 @@ Object GLAInfantryRebel
   BuildCompletion = APPEARS_AT_RALLY_POINT
 
 End
+
+;------------------------------------------------------------------------------
+Locomotor BasicHumanLocomotor
+  Surfaces = GROUND RUBBLE
+  Speed = 20 ;30                ; in dist/sec
+  SpeedDamaged = 10 ;30         ; in dist/sec
+  TurnRate = 500            ; in degrees/sec
+  TurnRateDamaged = 500    ; in degrees/sec
+  Acceleration = 100        ; in dist/(sec^2)
+  AccelerationDamaged = 50 ; in dist/(sec^2)
+  Braking = 100             ; in dist/(sec^2)
+  MinTurnSpeed = 0          ; in dist/sec
+  ZAxisBehavior = NO_Z_MOTIVE_FORCE
+  Appearance = TWO_LEGS
+  StickToGround = Yes       ; walking guys aren't allowed to catch huge (or even small) air.
+  GroupMovementPriority = MOVES_FRONT;   Moves in the front of a group, behind small arms, ahead of artillery
+End
+
+;------------------------------------------------------------------------------
+Weapon GLARebelMachineGun
+  PrimaryDamage         = 5.0
+  PrimaryDamageRadius   = 0.0       ; 0 primary radius means "hits only intended victim"
+  AttackRange           = 100.0
+  DamageType            = SMALL_ARMS
+  DeathType             = NORMAL
+  WeaponSpeed           = 999999.0          ; dist/sec (huge value == effectively instant)
+  ProjectileObject      = NONE
+  FireFX                = WeaponFX_GenericMachineGunFire
+  VeterancyFireFX       = HEROIC WeaponFX_GenericMachineGunFireWithRedTracers ; Heroic rebels get different FireFX
+  FireSound             = RebelWeapon
+  RadiusDamageAffects   = ALLIES ENEMIES NEUTRALS
+  DelayBetweenShots     = 100               ; time between shots, msec
+  ClipSize              = 3                    ; how many shots in a Clip (0 == infinite)
+  ClipReloadTime        = 700              ; how long to reload a Clip, msec
+  WeaponBonus           = PLAYER_UPGRADE DAMAGE 125% ; AP weapon upgrade
+End
