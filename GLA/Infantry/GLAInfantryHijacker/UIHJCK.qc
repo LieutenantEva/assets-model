@@ -31,17 +31,17 @@ $hbox 7 "UIHJCK R FOOT" -1.00 -8.00 -3.00 4.00 11.00 4.00
 // Idle
 $sequence "DefaultConditionState STA" {
 	"anims/UIHJCK_STA"
-	fps 25
+	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 50
+	ACT_IDLE 26
 }
 $sequence "DefaultConditionState IDA" {
 	"anims/UIHJCK_IDA"
 	fps 30
 	loop
 	rotate -90
-	ACT_IDLE 3
+	ACT_IDLE 2
 }
 $sequence "DefaultConditionState IDB" {
 	"anims/UIHJCK_IDB"
@@ -160,10 +160,30 @@ $sequence "run" {
 }
 $sequence "walk" {
 	"anims/_run"
-	fps 30
+	fps 15
 	loop
 	rotate -90
 	ACT_WALK 1
+	LX
+	{ event 1004 6 "common/npc_step2.wav" }
+	{ event 1004 16 "common/npc_step4.wav" }
+}
+$sequence "limprun" {
+	"anims/_run"
+	fps 15
+	loop
+	rotate -90
+	ACT_RUN_HURT 1
+	LX
+	{ event 1004 6 "common/npc_step2.wav" }
+	{ event 1004 16 "common/npc_step4.wav" }
+}
+$sequence "limpwalk" {
+	"anims/_run"
+	fps 15
+	loop
+	rotate -90
+	ACT_WALK_HURT 1
 	LX
 	{ event 1004 6 "common/npc_step2.wav" }
 	{ event 1004 16 "common/npc_step4.wav" }
