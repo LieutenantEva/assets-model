@@ -52,6 +52,7 @@ $sequence "fire" {
 	"anims/UITech_ATA"
 	fps 30
 	rotate 90
+	ACT_RANGE_ATTACK1 1
 	{ event 5001 0 "21" }
 	{ event 5001 2 "21" }
 	{ event 5001 4 "31" }
@@ -103,21 +104,26 @@ $sequence "spin" {
 	fps 30
 	loop
 	rotate 90
+	ACT_COMBAT_IDLE 1
 }
 $sequence "deploy" {
 	"anims/UITech_IDA"
 	fps 101
 	rotate 90
+	ACT_ARM 1
 }
 $sequence "retire" {
 	"anims/UITech_IDB"
 	fps 92.18
 	rotate 90
+	ACT_DISARM 1
 }
 $sequence "die" {
 	"anims/DTC3"
 	fps 30
 	rotate 90
+	ACT_DIESIMPLE 1
+	X
 }
 $sequence "left" {
 	"anims/UITech_TNA"
