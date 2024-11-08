@@ -38,7 +38,7 @@ $attachment 0 "MUZZLE01" 0 0 0
 $attachment 1 "MUZZLE02" 0 0 0
 $attachment 2 "MUZZLE03" 0 0 0
 $controller 0 "DUM-TURMANMVR" ZR 0 360
-$controller 1 "DUM-TUR" YR -60 60
+$controller 1 "DUM-TUR" YR 60 -60
 
 
 // Turret sequences //
