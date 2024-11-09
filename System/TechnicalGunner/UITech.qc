@@ -8,6 +8,7 @@ $scale 5.0
 $keepallbones
 $bodygroup "body" {
 	studio "bodies/UITech_Body"
+	blank
 }
 $bodygroup "Mount Gun Pole" {
 	studio "bodies/UITech_GunPole"
