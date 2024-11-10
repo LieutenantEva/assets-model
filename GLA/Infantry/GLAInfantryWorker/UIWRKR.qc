@@ -7,7 +7,7 @@ $scale 5.0
 
 $keepallbones
 $bodygroup "body" {
-	studio "bodies/UIWRKR_SKN"
+	studio "bodies/UIWRKR_Body"
 }
 $bodygroup "Sledgehammer" {
 	studio "bodies/UIWRKR_Hammer"
@@ -85,7 +85,7 @@ $sequence "ATTACKING" {
 }
 $sequence "MOVING ATTACKING" {
 	"anims/UIWRKR_MSW"
-	fps 50
+	fps 30
 	rotate -90
 }
 //	STANDING -> ATTACKING
