@@ -6,11 +6,9 @@ $scale 5.0
 
 
 $keepallbones
-$body studio "bodies/AVCHINOOK"
-$texturegroup ConditionState
-{
-  { "avchinook.bmp" }
-  { "avchinook_d.bmp" }
+$bodygroup "body" {
+	studio "bodies/AVCHINOOK"
+	studio "bodies/AVCHINOOK_D"
 }
 $texrendermode avcomanche_p.bmp masked
 
@@ -33,4 +31,10 @@ $sequence "DefaultConditionState" {
 	loop
 	rotate -90
 	ACT_IDLE 1
+}
+$sequence "REALLYDAMAGED" {
+	"anims/AVCHINOOK_D"
+	fps 30
+	loop
+	rotate -90
 }
