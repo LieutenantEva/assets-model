@@ -224,3 +224,72 @@ Object AmericaVehicleChinook
   ShadowSizeX           = 89  ; minimum elevation angle above horizon. Used to limit shadow length
 
 End
+
+;------------------------------------------------------------------------------
+Object ChinookRubbleHull
+
+  ; *** ART Parameters ***
+  Draw = W3DModelDraw ModuleTag_01
+    DefaultConditionState
+      Model        = AVChinook_D1
+    End
+  End
+
+  ; ***DESIGN parameters ***
+  DisplayName      = OBJECT:ComancheHull
+  Side = America
+
+  ; *** ENGINEERING Parameters ***
+  KindOf = IMMOBILE NO_COLLIDE HULK
+
+  Behavior = PhysicsBehavior ModuleTag_02
+    Mass           = 25.0
+    AllowBouncing  = No
+    KillWhenRestingOnGround = Yes
+  End
+  Behavior = LifetimeUpdate ModuleTag_03
+    MinLifetime    = 20000   ; min lifetime in msec
+    MaxLifetime    = 20000   ; max lifetime in msec
+  End
+  Behavior = SlowDeathBehavior ModuleTag_05
+    SinkDelay        = 1500
+    SinkRate            = 1     ; in Dist/Sec
+    DestructionDelay = 16000
+  End
+
+End
+
+;------------------------------------------------------------------------------
+Locomotor ChinookLocomotor
+  Surfaces = AIR
+  Speed = 150               ; in dist/sec
+  SpeedDamaged = 60         ; in dist/sec
+  TurnRate = 180             ; in degrees/sec
+  TurnRateDamaged = 90      ; in degrees/sec
+  Acceleration = 60         ; in dist/(sec^2)
+  AccelerationDamaged = 30  ; in dist/(sec^2)
+  Lift = 120                 ; in dist/(sec^2)
+  LiftDamaged = 80          ; in dist/(sec^2)
+  Braking = 100              ; in dist/(sec^2)
+  MinTurnSpeed = 0          ; in dist/sec
+  PreferredHeight = 100
+  AllowAirborneMotiveForce = Yes
+  ZAxisBehavior = SURFACE_RELATIVE_HEIGHT
+  Appearance = HOVER
+
+  ; this applies only in "ultra-accurate" mode, and is a fudge factor that allows
+  ; us to "slide into place" (rather than turning) when we get close to our destination.
+  ; the magnitude is basically the number of msec it would take us to reach the dest
+  ; at our max speed; if we're under this threshold, we just slide into place...
+  SlideIntoPlaceTime = 100
+
+  PitchStiffness = 0.5                  ;  stiffness of the "springs" in the suspension forward & back.
+  RollStiffness = 0.1                   ;  stiffness of the "springs" in the suspension side to side.
+  PitchDamping = 0.9                    ;  How fast it damps.  0=perfect spring, bounces forever.  1=glued to terrain.
+  RollDamping = 0.9                     ;  How fast it damps.  0=perfect spring, bounces forever.  1=glued to terrain.
+  ForwardVelocityPitchFactor = -0.1     ;  How much velocity will cause the front to lift/dip
+  LateralVelocityRollFactor = 0.1       ;  How much cornering will cause the chassis to roll.
+  Apply2DFrictionWhenAirborne = Yes
+  AirborneTargetingHeight = 30
+  LocomotorWorksWhenDead = Yes          ; HelicopterSlowDeathBehavior needs this to function correctly
+End
