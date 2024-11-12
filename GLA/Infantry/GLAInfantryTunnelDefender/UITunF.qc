@@ -8,9 +8,11 @@ $scale 5.0
 $keepallbones
 $bodygroup "body" {
 	studio "bodies/UITunF_Body"
+	studio "bodies/UITunF_Body2"
 }
 $bodygroup "Primary Weapon" {
 	studio "bodies/UITunF_MissileLauncher"
+	studio "bodies/UITunF_MissileLauncher2"
 	blank
 }
 $bodygroup "Toxin Tank" {

@@ -7,7 +7,7 @@ $scale 5.0
 
 $keepallbones
 $bodygroup "body" {
-	studio "bodies/UISabotr_SKN"
+	studio "bodies/UISABOTR_Body"
 }
 
 

@@ -7,7 +7,8 @@ $scale 5.0
 
 $keepallbones
 $bodygroup "body" {
-	studio "bodies/UITRST_SKN"
+	studio "bodies/UITRST_Body"
+	studio "bodies/UITRST_Body2"
 }
 
 

@@ -13,6 +13,11 @@ $bodygroup "Toxin Tanks" {
 	blank
 	studio "bodies/UIRGRD_F_ToxinTanks"
 }
+$texturegroup "Uniform"
+{
+	{ "Remap1_224_255_255.bmp" }
+	{ "Remap3_224_255_255.bmp" }
+}
 
 
 $flags 0
