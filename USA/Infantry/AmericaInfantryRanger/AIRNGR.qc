@@ -13,6 +13,11 @@ $bodygroup "Primary Weapon" {
 	studio "bodies/AIRNGR_AssaultRifle"
 	blank
 }
+$texturegroup "Uniform"
+{
+	{ "Remap1_224_255_255.bmp" }
+	{ "Remap2_224_255_255.bmp" }
+}
 
 
 $flags 0

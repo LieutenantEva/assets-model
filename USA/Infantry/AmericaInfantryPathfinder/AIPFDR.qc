@@ -16,7 +16,7 @@ $bodygroup "Primary Weapon" {
 	blank
 }
 $texrendermode z_aipthfindr2.bmp masked
-$texrendermode Remap2_223_255_255.bmp masked
+$texrendermode Remap2_224_255_255.bmp masked
 
 
 $flags 0
