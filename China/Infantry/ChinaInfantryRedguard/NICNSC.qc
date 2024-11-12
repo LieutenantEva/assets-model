@@ -16,8 +16,8 @@ $bodygroup "Primary Weapon" {
 }
 $texturegroup "Uniform"
 {
-	{ "Remap1_223_255_255.bmp" }
-	{ "Remap2_223_255_255.bmp" }
+	{ "Remap1_224_255_255.bmp" }
+	{ "Remap2_224_255_255.bmp" }
 }
 
 
