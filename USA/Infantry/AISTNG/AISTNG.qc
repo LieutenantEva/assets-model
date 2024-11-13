@@ -206,8 +206,12 @@ $sequence "run" {
 	rotate -90
 	ACT_RUN 1
 	LX
-	{ event 1004 14 "common/npc_step2.wav" }
-	{ event 1004 33 "common/npc_step4.wav" }
+	{ event 1004 0 "common/npc_step2.wav" }
+	{ event 1004 10 "common/npc_step4.wav" }
+	{ event 1004 22 "common/npc_step2.wav" }
+	{ event 1004 35 "common/npc_step4.wav" }
+	{ event 1004 47 "common/npc_step2.wav" }
+	{ event 1004 59 "common/npc_step4.wav" }
 }
 $sequence "walk" {
 	"anims/_run"
@@ -216,8 +220,12 @@ $sequence "walk" {
 	rotate -90
 	ACT_WALK 1
 	LX
-	{ event 1004 14 "common/npc_step2.wav" }
-	{ event 1004 33 "common/npc_step4.wav" }
+	{ event 1004 0 "common/npc_step2.wav" }
+	{ event 1004 10 "common/npc_step4.wav" }
+	{ event 1004 22 "common/npc_step2.wav" }
+	{ event 1004 35 "common/npc_step4.wav" }
+	{ event 1004 47 "common/npc_step2.wav" }
+	{ event 1004 59 "common/npc_step4.wav" }
 }
 $sequence "limprun" {
 	"anims/_run"
@@ -226,8 +234,12 @@ $sequence "limprun" {
 	rotate -90
 	ACT_RUN_HURT 1
 	LX
-	{ event 1004 14 "common/npc_step2.wav" }
-	{ event 1004 33 "common/npc_step4.wav" }
+	{ event 1004 0 "common/npc_step2.wav" }
+	{ event 1004 10 "common/npc_step4.wav" }
+	{ event 1004 22 "common/npc_step2.wav" }
+	{ event 1004 35 "common/npc_step4.wav" }
+	{ event 1004 47 "common/npc_step2.wav" }
+	{ event 1004 59 "common/npc_step4.wav" }
 }
 $sequence "limpwalk" {
 	"anims/_run"
@@ -236,8 +248,12 @@ $sequence "limpwalk" {
 	rotate -90
 	ACT_WALK_HURT 1
 	LX
-	{ event 1004 14 "common/npc_step2.wav" }
-	{ event 1004 33 "common/npc_step4.wav" }
+	{ event 1004 0 "common/npc_step2.wav" }
+	{ event 1004 10 "common/npc_step4.wav" }
+	{ event 1004 22 "common/npc_step2.wav" }
+	{ event 1004 35 "common/npc_step4.wav" }
+	{ event 1004 47 "common/npc_step2.wav" }
+	{ event 1004 59 "common/npc_step4.wav" }
 }
 $sequence "reload" {
 	"anims/AISTNG_ATA"
