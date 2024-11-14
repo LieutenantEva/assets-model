@@ -33,6 +33,7 @@ $hbox 7 "AISEAL R FOOT" -1.00 -3.00 -3.00 4.00 10.00 2.00
 $attachment 0 "MUZZLE01" 0 0 0
 $attachment 1 "AISEAL R HAND" 0 0 0
 $attachment 2 "AISEAL HEAD" 0 0 0
+$controller 0 "AISEAL HEAD" XR -70 70
 
 
 // Stand Position
@@ -174,7 +175,7 @@ $sequence "limpwalk" {
 }
 $sequence "reload" {
 	"anims/AISeal_TCS"
-	fps 3.66
+	fps 11
 	rotate -90
 	scale 6.7
 	ACT_RELOAD 1
@@ -231,6 +232,7 @@ $sequence "crouching_mp5" {
 	"anims/AISeal_APA"
 	fps 30
 	rotate -90
+	scale 6.7
 	ACT_RANGE_ATTACK1 1
 	{ event 4 0 }
 	{ event 5001 0 "50" }
@@ -312,6 +314,7 @@ $sequence "crouching_shotgun" {
 	"anims/AISeal_APA"
 	fps 31
 	rotate -90
+	scale 6.7
 	ACT_RANGE_ATTACK1 1
 	{ event 4 0 }
 	{ event 5001 0 "51" }
@@ -320,6 +323,7 @@ $sequence "standing_shotgun" {
 	"anims/AISeal_ASA"
 	fps 38
 	rotate -90
+	scale 6.7
 	ACT_RANGE_ATTACK1 1
 	{ event 4 0 }
 	{ event 5001 0 "51" }
