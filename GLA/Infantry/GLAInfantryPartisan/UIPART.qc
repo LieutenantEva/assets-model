@@ -296,7 +296,7 @@ $sequence "crouching_mp5" {
 	{ event 5011 2 "50" }
 	{ event 6 4 }
 	{ event 5001 4 "50" }
-	{ event 5011 4 "5" }
+	{ event 5011 4 "50" }
 	{ event 4 6 }
 	{ event 5001 6 "50" }
 	{ event 5011 6 "50" }
@@ -305,7 +305,7 @@ $sequence "crouching_mp5" {
 	{ event 5011 8 "50" }
 	{ event 6 10 }
 	{ event 5001 10 "50" }
-	{ event 5011 10 "5" }
+	{ event 5011 10 "50" }
 	{ event 4 12 }
 	{ event 5001 12 "50" }
 	{ event 5011 12 "50" }
@@ -314,7 +314,7 @@ $sequence "crouching_mp5" {
 	{ event 5011 14 "50" }
 	{ event 6 16 }
 	{ event 5001 16 "50" }
-	{ event 5011 16 "5" }
+	{ event 5011 16 "50" }
 	{ event 4 18 }
 	{ event 5001 18 "50" }
 	{ event 5011 18 "50" }
@@ -323,7 +323,7 @@ $sequence "crouching_mp5" {
 	{ event 5011 20 "50" }
 	{ event 6 22 }
 	{ event 5001 22 "50" }
-	{ event 5011 22 "5" }
+	{ event 5011 22 "50" }
 	{ event 4 24 }
 	{ event 5001 24 "50" }
 	{ event 5011 24 "50" }
@@ -332,7 +332,7 @@ $sequence "crouching_mp5" {
 	{ event 5011 26 "50" }
 	{ event 6 28 }
 	{ event 5001 28 "50" }
-	{ event 5011 28 "5" }
+	{ event 5011 28 "50" }
 	{ event 4 30 }
 	{ event 5001 30 "50" }
 	{ event 5011 30 "50" }
@@ -341,7 +341,7 @@ $sequence "crouching_mp5" {
 	{ event 5011 32 "50" }
 	{ event 6 34 }
 	{ event 5001 34 "50" }
-	{ event 5011 34 "5" }
+	{ event 5011 34 "50" }
 	{ event 4 36 }
 	{ event 5001 36 "50" }
 	{ event 5011 36 "50" }
@@ -350,7 +350,7 @@ $sequence "crouching_mp5" {
 	{ event 5011 38 "50" }
 	{ event 6 40 }
 	{ event 5001 40 "50" }
-	{ event 5011 40 "5" }
+	{ event 5011 40 "50" }
 	{ event 4 42 }
 	{ event 5001 42 "50" }
 	{ event 5011 42 "50" }
@@ -359,7 +359,7 @@ $sequence "crouching_mp5" {
 	{ event 5011 44 "50" }
 	{ event 6 46 }
 	{ event 5001 46 "50" }
-	{ event 5011 46 "5" }
+	{ event 5011 46 "50" }
 	{ event 4 48 }
 	{ event 5001 48 "50" }
 	{ event 5011 48 "50" }
@@ -368,7 +368,7 @@ $sequence "crouching_mp5" {
 	{ event 5011 50 "50" }
 	{ event 6 52 }
 	{ event 5001 52 "50" }
-	{ event 5011 52 "5" }
+	{ event 5011 52 "50" }
 	{ event 4 54 }
 	{ event 5001 54 "50" }
 	{ event 5011 54 "50" }
@@ -377,7 +377,7 @@ $sequence "crouching_mp5" {
 	{ event 5011 56 "50" }
 	{ event 6 58 }
 	{ event 5001 58 "50" }
-	{ event 5011 58 "5" }
+	{ event 5011 58 "50" }
 	{ event 4 60 }
 	{ event 5001 60 "50" }
 	{ event 5011 60 "50" }
@@ -386,7 +386,7 @@ $sequence "crouching_mp5" {
 	{ event 5011 62 "50" }
 	{ event 6 64 }
 	{ event 5001 64 "50" }
-	{ event 5011 64 "5" }
+	{ event 5011 64 "50" }
 }
 $sequence "standing_mp5" {
 	"anims/UIPART_ATA"
@@ -401,7 +401,7 @@ $sequence "standing_mp5" {
 	{ event 5011 2 "50" }
 	{ event 6 4 }
 	{ event 5001 4 "50" }
-	{ event 5011 4 "5" }
+	{ event 5011 4 "50" }
 	{ event 4 6 }
 	{ event 5001 6 "50" }
 	{ event 5011 6 "50" }
@@ -410,7 +410,7 @@ $sequence "standing_mp5" {
 	{ event 5011 8 "50" }
 	{ event 6 10 }
 	{ event 5001 10 "50" }
-	{ event 5011 10 "5" }
+	{ event 5011 10 "50" }
 	{ event 4 12 }
 	{ event 5001 12 "50" }
 	{ event 5011 12 "50" }
@@ -419,7 +419,7 @@ $sequence "standing_mp5" {
 	{ event 5011 14 "50" }
 	{ event 6 16 }
 	{ event 5001 16 "50" }
-	{ event 5011 16 "5" }
+	{ event 5011 16 "50" }
 	{ event 4 18 }
 	{ event 5001 18 "50" }
 	{ event 5011 18 "50" }
@@ -428,7 +428,7 @@ $sequence "standing_mp5" {
 	{ event 5011 20 "50" }
 	{ event 6 22 }
 	{ event 5001 22 "50" }
-	{ event 5011 22 "5" }
+	{ event 5011 22 "50" }
 	{ event 4 24 }
 	{ event 5001 24 "50" }
 	{ event 5011 24 "50" }
@@ -437,7 +437,7 @@ $sequence "standing_mp5" {
 	{ event 5011 26 "50" }
 	{ event 6 28 }
 	{ event 5001 28 "50" }
-	{ event 5011 28 "5" }
+	{ event 5011 28 "50" }
 	{ event 4 30 }
 	{ event 5001 30 "50" }
 	{ event 5011 30 "50" }
@@ -446,7 +446,7 @@ $sequence "standing_mp5" {
 	{ event 5011 32 "50" }
 	{ event 6 34 }
 	{ event 5001 34 "50" }
-	{ event 5011 34 "5" }
+	{ event 5011 34 "50" }
 	{ event 4 36 }
 	{ event 5001 36 "50" }
 	{ event 5011 36 "50" }
@@ -455,7 +455,7 @@ $sequence "standing_mp5" {
 	{ event 5011 38 "50" }
 	{ event 6 40 }
 	{ event 5001 40 "50" }
-	{ event 5011 40 "5" }
+	{ event 5011 40 "50" }
 	{ event 4 42 }
 	{ event 5001 42 "50" }
 	{ event 5011 42 "50" }
@@ -464,7 +464,7 @@ $sequence "standing_mp5" {
 	{ event 5011 44 "50" }
 	{ event 6 46 }
 	{ event 5001 46 "50" }
-	{ event 5011 46 "5" }
+	{ event 5011 46 "50" }
 	{ event 4 48 }
 	{ event 5001 48 "50" }
 	{ event 5011 48 "50" }
@@ -473,7 +473,7 @@ $sequence "standing_mp5" {
 	{ event 5011 50 "50" }
 	{ event 6 52 }
 	{ event 5001 52 "50" }
-	{ event 5011 52 "5" }
+	{ event 5011 52 "50" }
 	{ event 4 54 }
 	{ event 5001 54 "50" }
 	{ event 5011 54 "50" }
@@ -482,7 +482,7 @@ $sequence "standing_mp5" {
 	{ event 5011 56 "50" }
 	{ event 6 58 }
 	{ event 5001 58 "50" }
-	{ event 5011 58 "5" }
+	{ event 5011 58 "50" }
 	{ event 4 60 }
 	{ event 5001 60 "50" }
 	{ event 5011 60 "50" }
@@ -491,7 +491,7 @@ $sequence "standing_mp5" {
 	{ event 5011 62 "50" }
 	{ event 6 64 }
 	{ event 5001 64 "50" }
-	{ event 5011 64 "5" }
+	{ event 5011 64 "50" }
 }
 $sequence "crouching_shotgun" {
 	"anims/UIPART_ATA"
