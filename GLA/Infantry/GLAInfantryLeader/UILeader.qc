@@ -35,7 +35,7 @@ $sequence "idle" {
 	fps 30
 	loop
 	rotate -90
-	scale 6.7
+	scale 7
 	ACT_IDLE 7
 }
 $sequence "idle2" {
@@ -43,7 +43,7 @@ $sequence "idle2" {
 	fps 30
 	loop
 	rotate -90
-	scale 6.7
+	scale 7
 	ACT_IDLE 2
 }
 
@@ -54,14 +54,14 @@ $sequence "walk" {
 	fps 30
 	loop
 	rotate -90
-	scale 6.7
+	scale 7
 }
 $sequence "run" {
 	"anims/GENERAL_R1"
 	fps 30
 	loop
 	rotate -90
-	scale 6.7
+	scale 7
 }
 
 
@@ -70,7 +70,7 @@ $sequence "die" {
 	"anims/GENERAL_D1"
 	fps 30
 	rotate -90
-	scale 6.7
+	scale 7
 	ACT_DIESIMPLE 1
 	{ event 2001 37 }
 	X
@@ -79,7 +79,7 @@ $sequence "die2" {
 	"anims/GENERAL_D2"
 	fps 30
 	rotate -90
-	scale 6.7
+	scale 7
 	ACT_DIESIMPLE 1
 	{ event 2001 35 }
 	X
@@ -92,7 +92,7 @@ $sequence "run" {
 	fps 30
 	loop
 	rotate -90
-	scale 6.7
+	scale 7
 	ACT_RUN 1
 	LX
 	{ event 1004 0 "common/npc_step2.wav" }
@@ -103,7 +103,7 @@ $sequence "walk" {
 	fps 30
 	loop
 	rotate -90
-	scale 6.7
+	scale 7
 	ACT_WALK 1
 	LX
 	{ event 1004 2 "common/npc_step2.wav" }
@@ -116,7 +116,7 @@ $sequence "limprun" {
 	fps 15
 	loop
 	rotate -90
-	scale 6.7
+	scale 7
 	ACT_RUN_HURT 1
 	LX
 	{ event 1004 0 "common/npc_step2.wav" }
@@ -127,7 +127,7 @@ $sequence "limpwalk" {
 	fps 30
 	loop
 	rotate -90
-	scale 6.7
+	scale 7
 	ACT_WALK_HURT 1
 	LX
 	{ event 1004 2 "common/npc_step2.wav" }
@@ -139,14 +139,14 @@ $sequence "victorydance" {
 	"anims/GENERAL_I2"
 	fps 30
 	rotate -90
-	scale 6.7
+	scale 7
 	ACT_VICTORY_DANCE 1
 }
 $sequence "flinch" {
 	"anims/GENERAL_I1"
 	fps 1
 	rotate -90
-	scale 6.7
+	scale 7
 	ACT_SMALL_FLINCH 1
 	frame 0 0
 }
@@ -154,7 +154,7 @@ $sequence "bigflinch" {
 	"anims/GENERAL_I1"
 	fps 1
 	rotate -90
-	scale 6.7
+	scale 7
 	ACT_BIG_FLINCH 1
 	frame 0 0
 }
@@ -162,7 +162,7 @@ $sequence "laflinch" {
 	"anims/GENERAL_I1"
 	fps 1
 	rotate -90
-	scale 6.7
+	scale 7
 	ACT_FLINCH_LEFTARM 1
 	frame 0 0
 }
@@ -170,7 +170,7 @@ $sequence "raflinch" {
 	"anims/GENERAL_I1"
 	fps 1
 	rotate -90
-	scale 6.7
+	scale 7
 	ACT_FLINCH_RIGHTARM 1
 	frame 0 0
 }
@@ -178,7 +178,7 @@ $sequence "llflinch" {
 	"anims/GENERAL_I1"
 	fps 1
 	rotate -90
-	scale 6.7
+	scale 7
 	ACT_FLINCH_LEFTLEG 1
 	frame 0 0
 }
@@ -186,7 +186,7 @@ $sequence "rlflinch" {
 	"anims/GENERAL_I1"
 	fps 1
 	rotate -90
-	scale 6.7
+	scale 7
 	ACT_FLINCH_RIGHTLEG 1
 	frame 0 0
 }
