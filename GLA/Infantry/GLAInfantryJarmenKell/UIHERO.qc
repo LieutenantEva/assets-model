@@ -50,14 +50,14 @@ $sequence "DefaultConditionState IDA" {
 	rotate -90
 	ACT_IDLE 2
 }
-// TODO: It's too damn big!
-//$sequence "DefaultConditionState IDB" {
-//	"anims/IDB"
-//	fps 30
-//	loop
-//	rotate -90
-//	ACT_IDLE 2
-//}
+// FIXME: Animation cut off to decrease file size.
+$sequence "DefaultConditionState IDB" {
+	"anims/IDB"
+	fps 30
+	loop
+	rotate -90
+	ACT_IDLE 2
+}
 $sequence "REALLYDAMAGED ISTA" {
 	"anims/UIHERO_ISTA"
 	fps 30
