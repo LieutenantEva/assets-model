@@ -203,6 +203,14 @@ $sequence "cower" {
 	rotate -90
 	scale 6.7
 	ACT_COWER 1
+	X
+}
+$sequence "cower2" {
+	"anims/AISeal_TSC2"
+	fps 30
+	rotate -90
+	scale 6.7
+	ACT_COWER 1
 }
 $sequence "combatidle" {
 	"anims/AISeal_ASA"
