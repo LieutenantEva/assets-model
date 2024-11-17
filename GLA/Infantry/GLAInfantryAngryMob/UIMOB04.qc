@@ -75,13 +75,13 @@ $sequence "DefaultConditionState CHB" {
 	loop
 	rotate -90
 }
-// TODO: It's too damn big!
-//$sequence "DefaultConditionState STB" {
-//	"anims/UIMOB04_STB"
-//	fps 30
-//	loop
-//	rotate -90
-//}
+// FIXME: Animation cut off to decrease file size.
+$sequence "DefaultConditionState STB" {
+	"anims/4_STB"
+	fps 30
+	loop
+	rotate -90
+}
 // TRANSITION FROM PISTOL TO AK47
 $sequence "TRANS_STAND_A TRANS_STAND_AK" {
 	"anims/UIMOB04_TB-D"
